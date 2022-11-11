@@ -1,15 +1,15 @@
-file 1707 1668152098                                            
+file 48890 1668191815                                           
 version 2
-run Degugging-4-20221111-08:34:01-7095
+run Degugging-4-20221111-19:36:52-4449
 attr configname Degugging
-attr datetime 20221111-08:34:01
+attr datetime 20221111-19:36:52
 attr experiment Degugging
 attr inifile omnetpp.ini
 attr iterationvars $0=100
 attr iterationvarsf 100-
 attr measurement $0=100
 attr network Network
-attr processid 7095
+attr processid 4449
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -17,7 +17,7 @@ attr runnumber 4
 attr seedset 0
 param *.minion.arrival_mean 3
 param *.minion.service_distribution 0
-param *.minion.service_mean 1
+param *.minion.service_mean 0.5
 param *.boss.arrival_mean 10
 param *.boss.service_distribution 0
 param *.boss.service_mean 5
@@ -43,10 +43,10 @@ vector 4 Network.player minion_waiting_time_stat:vector ETV
 attr source signal_minion_waiting_time
 vector 5 Network.player boss_waiting_time_stat:vector ETV
 attr source signal_boss_waiting_time
-0	1464 50 0 5 0 5.083304679149 3 0 1 2 2
-1	1514 71 0 5 0 5.083304679149 4 0 0 0 0
-2	1585 29 0 7 0 5.726919896272 2 0 1 1 1
-3	1614 29 0 7 0 5.726919896272 2 0 0 0 0
-4	1643 42 2 5 2.387623513697 5.083304679149 2 0 0 0 0
-5	1685 21 7 7 5.726919896272 5.726919896272 1 0 0 0 0
+0	1466 8203 0 1298 0 998.423430974136 327 0 38 1918 33006
+1	9669 16318 0 1298 0 998.423430974136 650 0 37 3181 58987
+2	25987 2718 0 1300 0 998.423622080102 110 0 5 195 475
+3	28705 5413 0 1301 0 999.108807152972 218 0 4 172 388
+4	34118 11419 2 1289 2.387623513697 992.792119321716 340 0 116.91985420312 4624.7716549294 255253.61586376
+5	45537 3352 7 1301 5.726919896272 999.108807152972 109 0 24.366072970046 300.77813615455 3832.573530416
 

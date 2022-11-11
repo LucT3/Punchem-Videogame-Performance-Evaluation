@@ -52,7 +52,7 @@ void Player::initialize()
 }
 
 /**
- * handleMessage method provides the following operations:
+ * function that provides the following operations:
  *  1)handle incoming messages (MINIONS or BOSSES): queuing or defeating them.
  *  2)recover minion life if a BOSS arrive and a MINION is under service(recoverMinion function)
  *  3)emit signals to store statistics about minion/bosses number of jobs
@@ -143,7 +143,7 @@ void Player::handleMessage(cMessage *msg)
 
 /**
  * handle a MINION opponent.
- * Process minion message and emit signals to store statistics
+ * Process minion message and emit signals to store statistics (waiting time)
  */
 void Player::handleMinion(){
     //take the first element of the MINION QUEUE and scheduleAt new simtime to process it
@@ -167,7 +167,7 @@ void Player::handleMinion(){
 
 /**
  * handle a BOSS opponent.
- * Process boss message and emit signals to store statistics
+ * Process boss message and emit signals to store statistics (waiting time)
  */
 void Player::handleBoss(){
     //take the first element of the BOSS QUEUE and scheduleAt new simtime to process it
@@ -290,8 +290,8 @@ simtime_t Player::compute_life_recovered(){
 
 /**
  * Function to delete opponents (boss or minion) from queue and update the current opponent.
- * update player life - the damage is equal to the opponent original life (or service time)
- * Collect statistics about opponents (fight/service time)
+ * update player life. the damage is equal to the opponent original life (service time)
+ * Collect statistics (fight/service time)
  */
 void Player::defeatOpponent(cMessage *msg){
     //check the opponent type to defeat
