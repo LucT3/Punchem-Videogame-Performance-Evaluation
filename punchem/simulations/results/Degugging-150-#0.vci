@@ -1,0 +1,52 @@
+file 1707 1668152124                                            
+version 2
+run Degugging-5-20221111-08:35:05-7146
+attr configname Degugging
+attr datetime 20221111-08:35:05
+attr experiment Degugging
+attr inifile omnetpp.ini
+attr iterationvars $0=150
+attr iterationvarsf 150-
+attr measurement $0=150
+attr network Network
+attr processid 7146
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 5
+attr seedset 0
+param *.minion.arrival_mean 3
+param *.minion.service_distribution 0
+param *.minion.service_mean 1
+param *.boss.arrival_mean 10
+param *.boss.service_distribution 0
+param *.boss.service_mean 5
+param *.player.recover_rate_x 150
+param *.minion.arrival_mean 3
+param *.minion.service_distribution 0
+param *.minion.service_mean 1
+param *.boss.arrival_mean 10
+param *.boss.service_distribution 0
+param *.boss.service_mean 5
+param *.player.recover_rate_x -150
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+attr title "number of overall minions, vector"
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 5 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+0	1464 50 0 5 0 5.083304679149 3 0 1 2 2
+1	1514 71 0 5 0 5.083304679149 4 0 0 0 0
+2	1585 29 0 7 0 5.726919896272 2 0 1 1 1
+3	1614 29 0 7 0 5.726919896272 2 0 0 0 0
+4	1643 42 2 5 2.387623513697 5.083304679149 2 0 0 0 0
+5	1685 21 7 7 5.726919896272 5.726919896272 1 0 0 0 0
+
