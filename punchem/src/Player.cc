@@ -24,6 +24,9 @@ void Player::initialize()
     minion = new cMessage("MinionMessage");
     boss = new cMessage("BossMessage");
     recover_rate_x = par("recover_rate_x");
+    counter_minion_defeated = 0;
+    counter_minion_recovered = 0;
+    counter_boss_defeated = 0;
 
     //initialize current opponent
     current_opponent = nullptr;
@@ -34,20 +37,28 @@ void Player::initialize()
     signal_minion_jobs_queue_number = registerSignal("signal_minion_jobs_queue_number");
     signal_minion_response_time = registerSignal("signal_minion_response_time");
     signal_minion_waiting_time = registerSignal("signal_minion_waiting_time");
+    signal_minion_recovered = registerSignal("signal_minion_recovered");
+    signal_minion_defeated = registerSignal("signal_minion_defeated");
+
 
     //record initial state
     emit(signal_minion_jobs_number,0);
     emit(signal_minion_jobs_queue_number,0);
+    emit(signal_minion_recovered,0);
+    emit(signal_minion_defeated,0);
+
 
     //BOSS signals
     signal_boss_jobs_number = registerSignal("signal_boss_jobs_number");
     signal_boss_jobs_queue_number = registerSignal("signal_boss_jobs_queue_number");
     signal_boss_response_time = registerSignal("signal_boss_response_time");
     signal_boss_waiting_time = registerSignal("signal_boss_waiting_time");
+    signal_boss_defeated = registerSignal("signal_boss_defeated");
 
     //record initial state
     emit(signal_boss_jobs_number,0);
     emit(signal_boss_jobs_queue_number,0);
+    emit(signal_boss_defeated,0);
 
 }
 
@@ -228,7 +239,9 @@ void Player::recoverMinion(){
     current_opponent_lifetime = msg->getService_time();
 
 
-    //emit signals (signals for recovering, if needed)
+    //emit signals (signals for recovering)
+    counter_minion_recovered += 1;
+    emit(signal_minion_recovered,counter_minion_recovered);
 
 }
 
@@ -307,6 +320,8 @@ void Player::defeatOpponent(cMessage *msg){
         boss_queue.pop();
         EV << "PLAYER - defeatOpponent() - BOSS defeated. remaining bosses: "<< get_number_of_bosses() << endl;
         //collect statistics
+        counter_boss_defeated += 1;
+        emit(signal_boss_defeated,counter_boss_defeated);
         if(boss_queue.size() > 0){
             emit(signal_boss_jobs_queue_number, boss_queue.size());
         }
@@ -319,6 +334,8 @@ void Player::defeatOpponent(cMessage *msg){
         minion_queue.pop();
         EV << "PLAYER - defeatOpponent() - MINION defeated. remaining minions:  "<< get_number_of_minions() << endl;
         //collect statistics
+        counter_minion_defeated += 1;
+        emit(signal_minion_defeated,counter_minion_defeated);
         if(minion_queue.size() > 0){
             emit(signal_minion_jobs_queue_number,minion_queue.size());
         }

@@ -1,66 +1,79 @@
 version 2
-run Example_GameMode_Easy-0-20221113-11:22:10-9301
+run Example_GameMode_Easy-0-20221114-16:52:05-13504
 attr configname Example_GameMode_Easy
-attr datetime 20221113-11:22:10
+attr datetime 20221114-16:52:05
 attr experiment Example_GameMode_Easy
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network Network
-attr processid 9301
+attr processid 13504
 attr repetition 0
 attr replication #0
 attr resultdir results
 attr runnumber 0
 attr seedset 0
+param *.minion.arrival_distribution 0
+param *.minion.service_distribution 0
 param *.minion.arrival_mean 1
-param *.minion.service_distribution 0
 param *.minion.service_mean 1
-param *.boss.arrival_mean 10
+param *.boss.arrival_distribution 0
 param *.boss.service_distribution 0
+param *.boss.arrival_mean 10
 param *.boss.service_mean 3
-param *.player.recover_rate_x -10
-param *.minion.arrival_mean 3
+param *.player.recover_rate_x 0
+param *.minion.arrival_distribution 0
 param *.minion.service_distribution 0
+param *.minion.arrival_mean 3
 param *.minion.service_mean 1
-param *.boss.arrival_mean 10
+param *.boss.arrival_distribution 0
 param *.boss.service_distribution 0
+param *.boss.arrival_mean 10
 param *.boss.service_mean 5
-param *.player.recover_rate_x -150
 
 vector 0 Network.player minion_jobs_number_stat:vector ETV
 attr source signal_minion_jobs_number
-attr title "number of overall minions, vector"
 vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
 attr source signal_minion_jobs_queue_number
-vector 2 Network.player boss_jobs_number_stat:vector ETV
+vector 2 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 3 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 4 Network.player boss_jobs_number_stat:vector ETV
 attr source signal_boss_jobs_number
-vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+vector 5 Network.player boss_jobs_queue_number_stat:vector ETV
 attr source signal_boss_jobs_queue_number
+vector 6 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
 0	0	0	0
 1	0	0	0
 2	0	0	0
 3	0	0	0
-vector 4 Network.player minion_waiting_time_stat:vector ETV
+4	0	0	0
+5	0	0	0
+6	0	0	0
+vector 7 Network.player minion_waiting_time_stat:vector ETV
 attr source signal_minion_waiting_time
-vector 5 Network.player minion_response_time_stat:vector ETV
-attr source signal_minion_response_time
-vector 6 Network.player boss_waiting_time_stat:vector ETV
-attr source signal_boss_waiting_time
 0	2	0.795874504566	1
-0	5	1.69443489305	1
-0	7	2.950365651097	2
-0	9	4.809969863172	3
 1	2	0.795874504566	0
+7	2	0.795874504566	0
+vector 8 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
 1	3	1.335480331078	0
+3	3	1.335480331078	1
+8	3	1.335480331078	0.539605826512
+0	5	1.69443489305	1
 1	5	1.69443489305	0
+7	5	1.69443489305	0
+0	7	2.950365651097	2
 1	7	2.950365651097	1
+0	9	4.809969863172	3
 1	9	4.809969863172	2
+vector 9 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
 2	11	5.726919896272	1
-3	11	5.726919896272	0
-4	2	0.795874504566	0
-4	5	1.69443489305	0
-5	3	1.335480331078	0.539605826512
-6	11	5.726919896272	0
+4	11	5.726919896272	1
+5	11	5.726919896272	0
+9	11	5.726919896272	0
 

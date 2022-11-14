@@ -1,15 +1,15 @@
-file 75944 1668363109                                           
+file 75923 1668434873                                           
 version 2
-run Constant_verification_hard_game_mode-0-20221113-19:11:47-8963
+run Constant_verification_hard_game_mode-0-20221114-15:07:50-6976
 attr configname Constant_verification_hard_game_mode
-attr datetime 20221113-19:11:47
+attr datetime 20221114-15:07:50
 attr experiment Constant_verification_hard_game_mode
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network Network
-attr processid 8963
+attr processid 6976
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -18,7 +18,7 @@ attr seedset 0
 param *.minion.arrival_distribution 1
 param *.minion.service_distribution 1
 param *.minion.arrival_mean 0.5
-param *.minion.service_mean 3
+param *.minion.service_mean 2
 param *.boss.arrival_distribution 1
 param *.boss.service_distribution 1
 param *.boss.arrival_mean 5
@@ -35,7 +35,6 @@ param *.boss.service_mean 5
 
 vector 0 Network.player minion_jobs_number_stat:vector ETV
 attr source signal_minion_jobs_number
-attr title "number of overall minions, vector"
 vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
 attr source signal_minion_jobs_queue_number
 vector 2 Network.player boss_jobs_number_stat:vector ETV
@@ -50,12 +49,12 @@ vector 6 Network.player boss_waiting_time_stat:vector ETV
 attr source signal_boss_waiting_time
 vector 7 Network.player boss_response_time_stat:vector ETV
 attr source signal_boss_response_time
-0	1848 32189 0 4500 0 1000 2001 0 1999 1999006 2664667036
-1	34037 32197 0 4500 0 1000 2002 0 1998 1997011 2660671049
-2	66234 2727 0 4499 0 1000 201 0 101 10200 686900
-3	68961 4069 0 4499 0 1000 300 0 100 14950 995050
-4	73030 23 2 13 0.5 3.5 2 0 2.5 2.5 6.25
-5	73053 11 13 13 3.5 3.5 1 3 3 3 9
-6	73064 1443 22 4474 5 995 100 0 495 24750 8208750
-7	74507 1436 64 4474 15 995 99 10 500 25245 8458725
+0	1801 32186 0 4501 0 1000 2001 0 1998 1997012 2660671064
+1	33987 32204 0 4501 0 1000 2003 0 1997 1995021 2656679085
+2	66191 2727 0 4500 0 1000 201 0 101 10200 686900
+3	68918 4069 0 4500 0 1000 300 0 100 14950 995050
+4	72987 33 2 18 0.5 4.5 3 0 3 4.5 11.25
+5	73020 23 9 18 2.5 4.5 2 2 3.5 5.5 16.25
+6	73043 1443 23 4475 5 995 100 0 495 24750 8208750
+7	74486 1436 65 4475 15 995 99 10 500 25245 8458725
 

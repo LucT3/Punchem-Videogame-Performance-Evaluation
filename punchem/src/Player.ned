@@ -26,7 +26,7 @@ simple Player
         
         //MINION PARAMETERS
         @signal [signal_minion_jobs_number];
-        @statistic [minion_jobs_number_stat] (title="number of overall minions"; source="signal_minion_jobs_number"; record=vector);
+        @statistic [minion_jobs_number_stat] (source="signal_minion_jobs_number"; record=vector);
         
         @signal [signal_minion_jobs_queue_number];
         @statistic [minion_jobs_queue_number_stat] (source="signal_minion_jobs_queue_number"; record=vector);
@@ -36,6 +36,12 @@ simple Player
         
         @signal [signal_minion_waiting_time];
         @statistic [minion_waiting_time_stat] (source="signal_minion_waiting_time"; record=vector);
+        
+        @signal [signal_minion_defeated];
+        @statistic [minion_defeated_stat] (source = "signal_minion_defeated" ; record = vector, stats);
+        
+        @signal [signal_minion_recovered];
+        @statistic [minion_recovered_stat] (source = "signal_minion_recovered" ; record = vector, stats);
         
         
         //BOSS PARAMETERS
@@ -50,6 +56,9 @@ simple Player
         
         @signal [signal_boss_waiting_time];
         @statistic [boss_waiting_time_stat] (source="signal_boss_waiting_time"; record=vector);
+        
+        @signal [signal_boss_defeated];
+        @statistic [boss_defeated_stat] (source = "signal_boss_defeated" ; record = vector, stats);
         
              
 	gates:
