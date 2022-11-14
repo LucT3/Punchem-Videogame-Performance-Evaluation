@@ -1,27 +1,37 @@
+file 27939 1668361386                                           
 version 2
-run General-0-20221113-11:30:05-9613
-attr configname General
-attr datetime 20221113-11:30:05
-attr experiment General
+run Constant_verification_easy_game_mode-1-20221113-18:42:59-7992
+attr configname Constant_verification_easy_game_mode
+attr datetime 20221113-18:42:59
+attr experiment Constant_verification_easy_game_mode
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network Network
-attr processid 9613
-attr repetition 0
-attr replication #0
+attr processid 7992
+attr repetition 1
+attr replication #1
 attr resultdir results
-attr runnumber 0
-attr seedset 0
-param *.minion.arrival_mean 3
+attr runnumber 1
+attr seedset 1
 param *.minion.arrival_distribution 1
 param *.minion.service_distribution 1
+param *.minion.arrival_mean 3
 param *.minion.service_mean 1
+param *.boss.arrival_distribution 1
+param *.boss.service_distribution 1
 param *.boss.arrival_mean 10
+param *.boss.service_mean 3
+param *.player.recover_rate_x 0
+param *.minion.arrival_distribution 0
+param *.minion.service_distribution 0
+param *.minion.arrival_mean 3
+param *.minion.service_mean 1
+param *.boss.arrival_distribution 0
 param *.boss.service_distribution 0
+param *.boss.arrival_mean 10
 param *.boss.service_mean 5
-param *.player.recover_rate_x -150
 
 vector 0 Network.player minion_jobs_number_stat:vector ETV
 attr source signal_minion_jobs_number
@@ -32,40 +42,20 @@ vector 2 Network.player boss_jobs_number_stat:vector ETV
 attr source signal_boss_jobs_number
 vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
 attr source signal_boss_jobs_queue_number
-0	0	0	0
-1	0	0	0
-2	0	0	0
-3	0	0	0
 vector 4 Network.player minion_waiting_time_stat:vector ETV
 attr source signal_minion_waiting_time
 vector 5 Network.player minion_response_time_stat:vector ETV
 attr source signal_minion_response_time
 vector 6 Network.player boss_waiting_time_stat:vector ETV
 attr source signal_boss_waiting_time
-0	2	3	1
-1	2	3	0
-1	3	4	0
-2	5	5.726919896272	1
-3	5	5.726919896272	0
-4	2	3	0
-5	3	4	1
-6	5	5.726919896272	0
 vector 7 Network.player boss_response_time_stat:vector ETV
 attr source signal_boss_response_time
-0	7	6	1
-0	13	9	2
-0	17	12	3
-1	7	6	0
-1	13	9	1
-1	17	12	2
-2	9	7.773598739036	2
-2	11	8.036281107502	3
-3	9	7.773598739036	1
-3	11	8.036281107502	2
-3	14	9.728331850735	2
-3	15	10.095084040557	1
-6	14	9.728331850735	1.954733111699
-6	15	10.095084040557	2.058802933055
-7	14	9.728331850735	4.001411954463
-7	15	10.095084040557	2.321485301521
+0	1844 4016 0 1295 0 999 334 0 2 366 432
+1	5860 8028 0 1297 0 1000 667 0 1 66 66
+2	13888 1216 0 1298 0 1000 101 0 1 100 100
+3	15104 2411 0 1298 0 1000 200 0 0 0 0
+4	17515 4008 2 1295 3 999 333 0 3 231 495
+5	21523 4012 3 1297 4 1000 333 1 4 564 1290
+6	25535 1208 11 1298 10 1000 100 0 0 0 0
+7	26743 1195 14 1287 13 993 99 3 3 297 891
 

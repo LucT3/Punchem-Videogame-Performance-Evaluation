@@ -238,9 +238,9 @@ void Player::recoverMinion(){
  *      1)compute the lost life (gap between simTimes)
  *      2)compute the remianing life percentage (based on lost life)
  *      3)compute the recover rate "x" to apply to the actual life
- *          3.1)calculated recover rate
- *          3.2)no minion recover
- *          3.3)fixed recover rate
+ *          3.1)no minion life recover (recover rate <= 0)
+ *          3.2)x % of the recover percentage (recover rate  0 < x < 100)
+ *          3.3)100% of the recover percentage (recover rate >= 100)
  *      4)update the actual life
  *
  */
@@ -327,6 +327,14 @@ void Player::defeatOpponent(cMessage *msg){
     }
     else{
         EV << "PLAYER - defeatOpponent() - ERROR!" << endl;
+    }
+
+    //collect statistics on response time
+    if (msg_type == "BossMessage"){
+        emit(signal_boss_response_time, simTime() - defeated_opponent->enter_queue_time);
+    }
+    else{
+        emit(signal_minion_response_time, simTime() - defeated_opponent->enter_queue_time);
     }
 
     //memory deallocation

@@ -1,0 +1,124 @@
+file 27975 1668361765                                           
+version 2
+run Constant_verification_easy_game_mode-0-20221113-18:16:17-7103
+attr configname Constant_verification_easy_game_mode
+attr datetime 20221113-18:16:17
+attr experiment Constant_verification_easy_game_mode
+attr inifile omnetpp.ini
+attr iterationvars $0=0
+attr iterationvarsf 0-
+attr measurement $0=0
+attr network Network
+attr processid 7103
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.minion.arrival_distribution 1
+param *.minion.service_distribution 1
+param *.minion.arrival_mean 3
+param *.minion.service_mean 1
+param *.boss.arrival_distribution 1
+param *.boss.service_distribution 1
+param *.boss.arrival_mean 10
+param *.boss.service_mean 3
+param *.player.recover_rate_x 0
+param *.minion.arrival_distribution 0
+param *.minion.service_distribution 0
+param *.minion.arrival_mean 3
+param *.minion.service_mean 1
+param *.boss.arrival_distribution 0
+param *.boss.service_distribution 0
+param *.boss.arrival_mean 10
+param *.boss.service_mean 5
+param *.player.recover_rate_x 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+attr title "number of overall minions, vector"
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+0	1488 8 0 0 0 0 1 0 0 0 0
+1	1496 8 0 0 0 0 1 0 0 0 0
+2	1504 8 0 0 0 0 1 0 0 0 0
+3	1512 8 0 0 0 0 1 0 0 0 0
+vector 4 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+0	1619 8 2 2 3 3 1 1 1 1 1
+1	1627 8 2 2 3 3 1 0 0 0 0
+4	1635 8 2 2 3 3 1 0 0 0 0
+vector 5 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+1	1744 8 3 3 4 4 1 0 0 0 0
+5	1752 8 3 3 4 4 1 1 1 1 1
+0	1760 8 5 5 6 6 1 1 1 1 1
+1	1768 8 5 5 6 6 1 0 0 0 0
+4	1776 8 5 5 6 6 1 0 0 0 0
+1	1784 8 6 6 7 7 1 0 0 0 0
+5	1792 8 6 6 7 7 1 1 1 1 1
+0	1800 8 8 8 9 9 1 1 1 1 1
+1	1808 8 8 8 9 9 1 0 0 0 0
+4	1816 8 8 8 9 9 1 0 0 0 0
+1	1824 10 10 10 10 10 1 0 0 0 0
+5	1834 10 10 10 10 10 1 1 1 1 1
+vector 6 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+2	1939 10 11 11 10 10 1 1 1 1 1
+3	1949 10 11 11 10 10 1 0 0 0 0
+6	1959 10 11 11 10 10 1 0 0 0 0
+0	1969 10 13 13 12 12 1 1 1 1 1
+1	1979 10 13 13 12 12 1 0 0 0 0
+vector 7 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+3	2086 10 14 14 13 13 1 0 0 0 0
+4	2096 10 14 14 13 13 1 1 1 1 1
+7	2106 10 14 14 13 13 1 3 3 3 9
+1	2116 10 15 15 14 14 1 0 0 0 0
+5	2126 10 15 15 14 14 1 2 2 2 4
+0	2136 10 17 17 15 15 1 1 1 1 1
+1	2146 10 17 17 15 15 1 0 0 0 0
+4	2156 10 17 17 15 15 1 0 0 0 0
+1	2166 10 18 18 16 16 1 0 0 0 0
+5	2176 10 18 18 16 16 1 1 1 1 1
+0	2186 10 20 20 18 18 1 1 1 1 1
+1	2196 10 20 20 18 18 1 0 0 0 0
+4	2206 10 20 20 18 18 1 0 0 0 0
+1	2216 10 21 21 19 19 1 0 0 0 0
+5	2226 10 21 21 19 19 1 1 1 1 1
+2	2236 10 23 23 20 20 1 1 1 1 1
+3	2246 10 23 23 20 20 1 0 0 0 0
+6	2256 10 23 23 20 20 1 0 0 0 0
+0	2266 10 25 25 21 21 1 1 1 1 1
+1	2276 10 25 25 21 21 1 0 0 0 0
+3	2286 10 26 26 23 23 1 0 0 0 0
+4	2296 10 26 26 23 23 1 2 2 2 4
+7	2306 10 26 26 23 23 1 3 3 3 9
+1	2316 10 28 28 24 24 1 0 0 0 0
+5	2326 10 28 28 24 24 1 3 3 3 9
+0	2336 10 29 29 24 24 1 1 1 1 1
+1	2346 10 29 29 24 24 1 0 0 0 0
+4	2356 10 29 29 24 24 1 0 0 0 0
+1	2366 10 30 30 25 25 1 0 0 0 0
+5	2376 10 30 30 25 25 1 1 1 1 1
+0	2386 10 32 32 27 27 1 1 1 1 1
+1	2396 10 32 32 27 27 1 0 0 0 0
+4	2406 10 32 32 27 27 1 0 0 0 0
+1	2416 10 33 33 28 28 1 0 0 0 0
+5	2426 10 33 33 28 28 1 1 1 1 1
+2	2436 10 36 36 30 30 1 1 1 1 1
+3	2446 10 36 36 30 30 1 0 0 0 0
+6	2456 10 36 36 30 30 1 0 0 0 0
+0	2466 3924 37 1295 30 999 324 1 2 357 423
+1	6390 7850 37 1297 30 1000 648 0 1 66 66
+2	14240 1178 50 1298 40 1000 97 1 1 97 97
+3	15418 2353 39 1298 33 1000 194 0 0 0 0
+4	17771 3924 39 1295 33 999 324 0 3 228 490
+5	21695 3926 41 1297 34 1000 324 1 4 552 1270
+6	25621 1178 50 1298 40 1000 97 0 0 0 0
+7	26799 1175 39 1287 33 993 97 3 3 291 873
+
