@@ -43,19 +43,25 @@ void Boss::handleMessage(cMessage *msg)
 //Wait for a new opponent arrival (random time), extracted from an exponential distribution
 void Boss::wait_new_arrival(){
     simtime_t arrival_time;
+    //to handle the degeneracy test
+    if (arrival_mean != 0 && service_mean != 0){
+        // exponential distribution
+        if (arrival_distribution == 0) {
+            arrival_time = exponential(arrival_mean, arrival_rng);
+        }
+        // constant distribution
+        else {
+            arrival_time = arrival_mean;
+        }
 
-    // exponential distribution
-    if (arrival_distribution == 0) {
-        arrival_time = exponential(arrival_mean, arrival_rng);
+        scheduleAt(simTime() + arrival_time, timer_);
+
+        EV << "BOSS - new opponent arrives at: " << simTime()+arrival_time << endl;
     }
-    // constant distribution
-    else {
-        arrival_time = arrival_mean;
+    else{
+        EV << "BOSS - No bosses, not possible to play" << endl;
+        endSimulation();
     }
-
-    scheduleAt(simTime() + arrival_time, timer_);
-
-    EV << "BOSS - new opponent arrives at: " << simTime()+arrival_time << endl;
 }
 
 

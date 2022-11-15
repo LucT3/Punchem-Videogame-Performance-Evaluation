@@ -1,0 +1,57 @@
+version 2
+run Consistency_test-0-20221115-10:10:17-8313
+attr configname Consistency_test
+attr datetime 20221115-10:10:17
+attr experiment Consistency_test
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network
+attr processid 8313
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.minion.arrival_distribution 0
+param *.minion.service_distribution 0
+param *.boss.arrival_distribution 0
+param *.boss.service_distribution 0
+param *.minion.arrival_distribution 0
+param *.minion.service_distribution 0
+param *.minion.arrival_mean 3
+param *.minion.service_mean 1
+param *.boss.arrival_distribution 0
+param *.boss.service_distribution 0
+param *.boss.arrival_mean 10
+param *.boss.service_mean 5
+
+statistic Network.player boss_defeated_stat:stats
+field count 199
+field mean 99
+field stddev 57.590508477237
+field min 0
+field max 198
+field sum 19701
+field sqrsum 2607099
+attr source signal_boss_defeated
+statistic Network.player minion_recovered_stat:stats
+field count 72
+field mean 35.5
+field stddev 20.928449536456
+field min 0
+field max 71
+field sum 2556
+field sqrsum 121836
+attr source signal_minion_recovered
+statistic Network.player minion_defeated_stat:stats
+field count 656
+field mean 327.5
+field stddev 189.51517089669
+field min 0
+field max 655
+field sum 214840
+field sqrsum 93885080
+attr source signal_minion_defeated
+

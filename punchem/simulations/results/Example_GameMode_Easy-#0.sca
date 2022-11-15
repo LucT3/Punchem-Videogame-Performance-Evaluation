@@ -1,14 +1,14 @@
 version 2
-run Example_GameMode_Easy-0-20221114-16:52:05-13504
+run Example_GameMode_Easy-0-20221115-08:42:05-6202
 attr configname Example_GameMode_Easy
-attr datetime 20221114-16:52:05
+attr datetime 20221115-08:42:05
 attr experiment Example_GameMode_Easy
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network Network
-attr processid 13504
+attr processid 6202
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -33,30 +33,30 @@ param *.boss.arrival_mean 10
 param *.boss.service_mean 5
 
 statistic Network.player boss_defeated_stat:stats
-field count 1
-field mean 0
-field stddev -nan
+field count 1019
+field mean 509
+field stddev 294.3042643252
 field min 0
-field max 0
-field sum 0
-field sqrsum 0
+field max 1018
+field sum 518671
+field sqrsum 352177609
 attr source signal_boss_defeated
 statistic Network.player minion_recovered_stat:stats
-field count 2
-field mean 0.5
-field stddev 0.70710678118655
+field count 706
+field mean 352.5
+field stddev 203.94893151636
 field min 0
-field max 1
-field sum 1
-field sqrsum 1
+field max 705
+field sum 248865
+field sqrsum 117049505
 attr source signal_minion_recovered
 statistic Network.player minion_defeated_stat:stats
-field count 2
-field mean 0.5
-field stddev 0.70710678118655
+field count 6917
+field mean 3458
+field stddev 1996.9102383432
 field min 0
-field max 1
-field sum 1
-field sqrsum 1
+field max 6916
+field sum 23918986
+field sqrsum 110290444446
 attr source signal_minion_defeated
 

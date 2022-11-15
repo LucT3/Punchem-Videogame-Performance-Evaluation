@@ -1,0 +1,68 @@
+file 2382596 1668503668                                         
+version 2
+run Consistency_test_1-0-20221115-10:14:25-8525
+attr configname Consistency_test_1
+attr datetime 20221115-10:14:25
+attr experiment Consistency_test_1
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network
+attr processid 8525
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.minion.arrival_mean 1.1
+param *.minion.service_mean 0.5
+param *.boss.arrival_mean 2.2
+param *.boss.service_mean 1.5
+param *.minion.arrival_distribution 0
+param *.minion.service_distribution 0
+param *.boss.arrival_distribution 0
+param *.boss.service_distribution 0
+param *.minion.arrival_distribution 0
+param *.minion.service_distribution 0
+param *.minion.arrival_mean 3
+param *.minion.service_mean 1
+param *.boss.arrival_distribution 0
+param *.boss.service_distribution 0
+param *.boss.arrival_mean 10
+param *.boss.service_mean 5
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 3 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 4 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 5 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 6 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 7 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 8 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 9 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 10 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+0	1990 271380 0 37888 0 9999.81603919608 9022 0 3068 13874599 28463071145
+1	273370 450299 0 37888 0 9999.81603919608 14975 0 3067 23026378 47249390926
+2	723669 43042 0 37758 0 9959.192356903495 1449 0 1448 1049076 1013057724
+3	766711 180357 0 37756 0 9959.159530097547 5954 0 5953 17722081 70338939489
+4	947068 127542 0 37885 0 9998.891111047115 4634 0 22 15421 90219
+5	1074610 254822 0 37886 0 9999.354426040417 9261 0 21 21561 127965
+6	1329432 139981 0 37886 0 9999.354426040417 4628 0 4627 10706878 33030718630
+7	1469413 306142 2 37756 0.875461955022 9959.159530097547 7401 0 2821.6752770763 10899659.698187 21099197919.775
+8	1775555 246231 3 37756 1.145264868278 9959.159530097547 5953 0.269802913256 2822.4791638852 8747827.2702222 16947429486.95
+9	2021786 168665 5 37886 1.25992237718 9999.354426040417 4628 0 32.64922143392 15852.841592673 161833.88200185
+10	2190451 192144 12 37886 2.460345963519 9999.354426040417 4627 0.0011186974 34.403479742955 22691.840432313 228990.774447
+

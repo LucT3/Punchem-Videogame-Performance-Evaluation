@@ -21,7 +21,7 @@ package punchem_luca;
 simple Player
 {       
     parameters:
-        double recover_rate_x = default(0); //<=0 is "no minion life recover ", 1<= x <= 99  is "x% recover rate", x >= 100 is "100% of recover rate"
+        double recover_rate_x = default(100); //<=0 is "no minion life recover ", 1<= x <= 99  is "x% recover rate", x >= 100 is "100% of recover rate"
         
         
         //MINION PARAMETERS

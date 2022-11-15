@@ -61,22 +61,29 @@ void Minion::wait_new_arrival(){
 //generate new opponent and set the service time (opponent life)
 void Minion::generate_new_opponent(){
     simtime_t service_time;
+    //to handle the degeneracy test
+    if(arrival_mean != 0 && service_mean != 0){
+        if (service_distribution == 0) {
+            service_time = exponential(service_mean, service_rng);
+        }
+        else {
+            service_time = service_mean;
+        }
 
-    if (service_distribution == 0) {
-        service_time = exponential(service_mean, service_rng);
+        // Send the new opponent to the player as a message containing the service time (opponent life)
+        OpponentMessage* msg = new OpponentMessage();
+        msg->setService_time(service_time);
+        //msg->setType(1); //0 is a boss, 1 is a minion
+        msg->setName("MinionMessage");
+        send(msg, "out");
+
+        EV << "MINION - generated new opponent. life = " << service_time << endl;
     }
-    else {
-        service_time = service_mean;
+    else{
+        EV << "MINION - no minions, not possible to play"<< endl;
+        endSimulation();
     }
 
-    // Send the new opponent to the player as a message containing the service time (opponent life)
-    OpponentMessage* msg = new OpponentMessage();
-    msg->setService_time(service_time);
-    //msg->setType(1); //0 is a boss, 1 is a minion
-    msg->setName("MinionMessage");
-    send(msg, "out");
-
-    EV << "MINION - generated new opponent. life = " << service_time << endl;
 
 }
 
