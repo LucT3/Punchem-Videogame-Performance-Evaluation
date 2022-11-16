@@ -22,43 +22,44 @@ simple Player
 {       
     parameters:
         double recover_rate_x = default(100); //<=0 is "no minion life recover ", 1<= x <= 99  is "x% recover rate", x >= 100 is "100% of recover rate"
-        
+        int counter_minion_defeated = default(0);
+        int counter_boss_defeated = default(0);
         
         //MINION PARAMETERS
         @signal [signal_minion_jobs_number];
-        @statistic [minion_jobs_number_stat] (source="signal_minion_jobs_number"; record=vector);
+        @statistic [minion_jobs_number_stat] (source="signal_minion_jobs_number"; record = vector);
         
         @signal [signal_minion_jobs_queue_number];
-        @statistic [minion_jobs_queue_number_stat] (source="signal_minion_jobs_queue_number"; record=vector);
+        @statistic [minion_jobs_queue_number_stat] (source="signal_minion_jobs_queue_number"; record = vector);
         
         @signal [signal_minion_response_time];
-        @statistic [minion_response_time_stat] (source="signal_minion_response_time"; record=vector);
+        @statistic [minion_response_time_stat] (source="signal_minion_response_time"; record = mean, vector);
         
         @signal [signal_minion_waiting_time];
-        @statistic [minion_waiting_time_stat] (source="signal_minion_waiting_time"; record=vector);
+        @statistic [minion_waiting_time_stat] (source="signal_minion_waiting_time"; record = mean, vector);
         
         @signal [signal_minion_defeated];
-        @statistic [minion_defeated_stat] (source = "signal_minion_defeated" ; record = vector, stats);
+        @statistic [minion_defeated_stat] (source = "signal_minion_defeated" ; record = count, mean, vector);
         
         @signal [signal_minion_recovered];
-        @statistic [minion_recovered_stat] (source = "signal_minion_recovered" ; record = vector, stats);
+        @statistic [minion_recovered_stat] (source = "signal_minion_recovered" ; record = count, mean, vector);
         
         
         //BOSS PARAMETERS
         @signal [signal_boss_jobs_number];
-        @statistic [boss_jobs_number_stat] (source="signal_boss_jobs_number"; record=vector);
+        @statistic [boss_jobs_number_stat] (source="signal_boss_jobs_number"; record = vector);
         
         @signal [signal_boss_jobs_queue_number];
-        @statistic [boss_jobs_queue_number_stat] (source="signal_boss_jobs_queue_number"; record=vector);
+        @statistic [boss_jobs_queue_number_stat] (source="signal_boss_jobs_queue_number"; record = vector);
         
         @signal [signal_boss_response_time];
-        @statistic [boss_response_time_stat] (source="signal_boss_response_time"; record=vector);
+        @statistic [boss_response_time_stat] (source="signal_boss_response_time"; record = mean, vector);
         
         @signal [signal_boss_waiting_time];
-        @statistic [boss_waiting_time_stat] (source="signal_boss_waiting_time"; record=vector);
+        @statistic [boss_waiting_time_stat] (source="signal_boss_waiting_time"; record = mean, vector);
         
         @signal [signal_boss_defeated];
-        @statistic [boss_defeated_stat] (source = "signal_boss_defeated" ; record = vector, stats);
+        @statistic [boss_defeated_stat] (source = "signal_boss_defeated" ; record = count, mean, vector);
         
              
 	gates:

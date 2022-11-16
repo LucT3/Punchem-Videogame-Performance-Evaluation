@@ -1,0 +1,61 @@
+file 32046 1668599068                                           
+version 2
+run Example_GameMode_Easy-3-20221116-12:44:28-27589
+attr configname Example_GameMode_Easy
+attr datetime 20221116-12:44:28
+attr experiment Example_GameMode_Easy
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network
+attr processid 27589
+attr repetition 3
+attr replication #3
+attr resultdir results
+attr runnumber 3
+attr seedset 3
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param *.minion.arrival_mean 10
+param *.minion.service_mean 1
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+param *.boss.arrival_mean 10
+param *.boss.service_mean 2.1
+param *.player.recover_rate_x 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 3 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 4 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 5 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 6 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 7 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 8 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 9 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 10 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+0	1768 2245 0 542 0 995.943592048176 92 0 3 106 140
+1	4013 4473 0 543 0 996.235272352 183 0 2 30 38
+2	8486 180 0 328 0 547.386107935574 8 0 7 28 140
+3	8666 2318 0 543 0 996.235272352 92 0 91 4186 255346
+4	10984 2215 0 527 0 958.961713567915 91 0 5 118 200
+5	13199 4430 0 528 0 960.349259906327 181 0 4 56 108
+6	17629 2304 0 528 0 960.349259906327 91 0 90 4095 247065
+7	19933 2785 2 542 1.674284220833 995.943592048176 98 0 13.769991313129 67.037647422268 406.33463195974
+8	22718 3398 3 543 3.178022521188 996.235272352 91 1.2038115e-05 8.918524265287 135.72827536828 431.12283501582
+9	26116 2457 5 527 7.214300764146 958.961713567915 90 0 15.005642628797 84.709229823567 812.38089097059
+10	28573 3472 8 528 11.181765327599 960.349259906327 90 0.053066244189 16.172230093276 260.40930232989 1918.1076830267
+

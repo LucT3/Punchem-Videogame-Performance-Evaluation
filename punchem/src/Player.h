@@ -37,13 +37,13 @@ class Player : public cSimpleModule
 
     //parameters
     cMessage *timer_ = nullptr;
-    unsigned int counter_minion;
-    unsigned int counter_boss;
+    unsigned int counter_minion = 0;
+    unsigned int counter_boss = 0;
     double recover_rate_x;
 
-    unsigned int counter_minion_defeated;
-    unsigned int counter_minion_recovered;
-    unsigned int counter_boss_defeated;
+    unsigned int counter_minion_defeated = 0;
+    unsigned int counter_minion_recovered = 0;
+    unsigned int counter_boss_defeated = 0;
 
 
     Opponent *current_opponent = nullptr;
