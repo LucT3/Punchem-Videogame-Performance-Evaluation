@@ -1,15 +1,15 @@
-file 39601 1668599067                                           
+file 89234 1668680835                                           
 version 2
-run Example_GameMode_Easy-2-20221116-12:44:27-27584
+run Example_GameMode_Easy-2-20221117-11:27:15-9930
 attr configname Example_GameMode_Easy
-attr datetime 20221116-12:44:27
+attr datetime 20221117-11:27:15
 attr experiment Example_GameMode_Easy
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network Network
-attr processid 27584
+attr processid 9930
 attr repetition 2
 attr replication #2
 attr resultdir results
@@ -17,12 +17,12 @@ attr runnumber 2
 attr seedset 2
 param **.minion.arrival_distribution 0
 param **.minion.service_distribution 0
-param *.minion.arrival_mean 10
-param *.minion.service_mean 1
-param **.boss.arrival_distribution 0
-param **.boss.service_distribution 0
-param *.boss.arrival_mean 10
-param *.boss.service_mean 2.1
+param *.minion.arrival_mean 20
+param *.minion.service_mean 2
+param **.boss.arrival_distribution 1
+param **.boss.service_distribution 1
+param *.boss.arrival_mean 1500
+param *.boss.service_mean 0.1
 param *.player.recover_rate_x 0
 
 vector 0 Network.player minion_jobs_number_stat:vector ETV
@@ -39,23 +39,23 @@ vector 5 Network.player boss_jobs_queue_number_stat:vector ETV
 attr source signal_boss_jobs_queue_number
 vector 6 Network.player boss_defeated_stat:vector ETV
 attr source signal_boss_defeated
-vector 7 Network.player boss_waiting_time_stat:vector ETV
-attr source signal_boss_waiting_time
-vector 8 Network.player boss_response_time_stat:vector ETV
-attr source signal_boss_response_time
-vector 9 Network.player minion_waiting_time_stat:vector ETV
+vector 7 Network.player minion_waiting_time_stat:vector ETV
 attr source signal_minion_waiting_time
-vector 10 Network.player minion_response_time_stat:vector ETV
+vector 8 Network.player minion_response_time_stat:vector ETV
 attr source signal_minion_response_time
-0	1768 2749 0 666 0 999.8027166863 112 0 4 154 268
-1	4517 5439 0 666 0 999.8027166863 221 0 3 85 141
-2	9956 412 0 628 0 937.107409917488 17 0 16 136 1496
-3	10368 2808 0 657 0 985.958758035319 110 0 109 5995 437635
-4	13176 2754 0 662 0 998.006421206962 113 0 4 140 208
-5	15930 5485 0 662 0 998.006421206962 224 0 3 56 80
-6	21415 2853 0 660 0 992.409537069572 112 0 111 6216 462056
-7	24268 3042 2 662 14.754344449757 998.006421206962 112 0 9.328311635009 63.357818125377 272.67669332792
-8	27310 4163 3 660 15.171782214922 992.409537069572 111 0.012637283508 11.713963607148 298.77741645913 1609.3906825902
-9	31473 3923 11 656 20.669550506509 985.919423558647 125 0 16.31917076345 176.667608396 1097.3453614806
-10	35396 4204 12 657 20.679978851329 985.958758035319 109 0.007571693101 14.535245904033 244.3985453604 1260.2117498535
+vector 9 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 10 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+0	1768 13155 0 1532 0 9996.455846944374 506 0 5 558 692
+1	14923 26309 0 1533 0 9996.713854616136 1011 0 4 106 162
+2	41232 8 0 0 0 0 1 0 0 0 0
+3	41240 14064 0 1533 0 9996.713854616136 506 0 505 127765 43056805
+4	55304 88 0 1385 0 9000 7 0 1 6 6
+5	55392 180 0 1386 0 9000.1 13 0 0 0 0
+6	55572 100 0 1386 0 9000.1 7 0 6 21 91
+7	55672 13703 2 1532 41.339101013018 9996.455846944374 505 0 8.525979888741 119.0919637087 553.36610827283
+8	69375 19668 3 1533 41.359957702659 9996.713854616136 505 0.000683322853 11.799364052128 1097.4635819002 4550.1607342228
+9	89043 80 245 1385 1500 9000 6 0 0 0 0
+10	89123 110 246 1386 1500.1 9000.1 6 0.1 0.1 0.6 0.06
 

@@ -1,14 +1,14 @@
 version 2
-run Example_GameMode_Easy-0-20221116-12:44:27-27573
+run Example_GameMode_Easy-0-20221117-11:27:15-9920
 attr configname Example_GameMode_Easy
-attr datetime 20221116-12:44:27
+attr datetime 20221117-11:27:15
 attr experiment Example_GameMode_Easy
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network Network
-attr processid 27573
+attr processid 9920
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -16,32 +16,32 @@ attr runnumber 0
 attr seedset 0
 param **.minion.arrival_distribution 0
 param **.minion.service_distribution 0
-param *.minion.arrival_mean 10
-param *.minion.service_mean 1
-param **.boss.arrival_distribution 0
-param **.boss.service_distribution 0
-param *.boss.arrival_mean 10
-param *.boss.service_mean 2.1
+param *.minion.arrival_mean 20
+param *.minion.service_mean 2
+param **.boss.arrival_distribution 1
+param **.boss.service_distribution 1
+param *.boss.arrival_mean 1500
+param *.boss.service_mean 0.1
 param *.player.recover_rate_x 0
 
-scalar Network.player boss_defeated_stat:count 110
+scalar Network.player boss_defeated_stat:count 7
 attr source signal_boss_defeated
-scalar Network.player boss_defeated_stat:mean 54.5
+scalar Network.player boss_defeated_stat:mean 3
 attr source signal_boss_defeated
-scalar Network.player boss_waiting_time_stat:mean 0.1957450172446
+scalar Network.player boss_waiting_time_stat:mean 0
 attr source signal_boss_waiting_time
-scalar Network.player boss_response_time_stat:mean 1.9272621218712
+scalar Network.player boss_response_time_stat:mean 0.1
 attr source signal_boss_response_time
-scalar Network.player minion_recovered_stat:count 5
+scalar Network.player minion_recovered_stat:count 1
 attr source signal_minion_recovered
-scalar Network.player minion_recovered_stat:mean 2
+scalar Network.player minion_recovered_stat:mean 0
 attr source signal_minion_recovered
-scalar Network.player minion_defeated_stat:count 100
+scalar Network.player minion_defeated_stat:count 494
 attr source signal_minion_defeated
-scalar Network.player minion_defeated_stat:mean 49.5
+scalar Network.player minion_defeated_stat:mean 246.5
 attr source signal_minion_defeated
-scalar Network.player minion_waiting_time_stat:mean 0.31789287136328
+scalar Network.player minion_waiting_time_stat:mean 0.14601420089927
 attr source signal_minion_waiting_time
-scalar Network.player minion_response_time_stat:mean 1.300097653109
+scalar Network.player minion_response_time_stat:mean 2.0797253638963
 attr source signal_minion_response_time
 

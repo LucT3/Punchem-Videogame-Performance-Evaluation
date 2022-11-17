@@ -353,10 +353,11 @@ void Player::defeatOpponent(cMessage *msg){
     //collect statistics on response time
     if (msg_type == "BossMessage"){
         emit(signal_boss_response_time, simTime() - defeated_opponent->enter_queue_time);
-        EV << "Boss response time " << simTime() - defeated_opponent->enter_queue_time << endl;
+        EV << "PLAYER - defeatOpponent() - Boss response time: " << simTime() - defeated_opponent->enter_queue_time << endl;
     }
     else{
         emit(signal_minion_response_time, simTime() - defeated_opponent->enter_queue_time);
+        EV << "PLAYER - defeatOpponent() - Minion response time: " << simTime() - defeated_opponent->enter_queue_time << endl;
     }
 
     //memory deallocation
