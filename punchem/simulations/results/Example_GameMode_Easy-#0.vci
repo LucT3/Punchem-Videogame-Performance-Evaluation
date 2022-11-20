@@ -1,15 +1,15 @@
-file 87158 1668680835                                           
+file 112624 1668972918                                          
 version 2
-run Example_GameMode_Easy-0-20221117-11:27:15-9920
+run Example_GameMode_Easy-0-20221120-20:35:18-14525
 attr configname Example_GameMode_Easy
-attr datetime 20221117-11:27:15
+attr datetime 20221120-20:35:18
 attr experiment Example_GameMode_Easy
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network Network
-attr processid 9920
+attr processid 14525
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -17,13 +17,13 @@ attr runnumber 0
 attr seedset 0
 param **.minion.arrival_distribution 0
 param **.minion.service_distribution 0
-param *.minion.arrival_mean 20
-param *.minion.service_mean 2
-param **.boss.arrival_distribution 1
-param **.boss.service_distribution 1
-param *.boss.arrival_mean 1500
-param *.boss.service_mean 0.1
-param *.player.recover_rate_x 0
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+param *.boss.arrival_mean 10
+param *.boss.service_mean 5
+param *.player.recover_rate_x 100
 
 vector 0 Network.player minion_jobs_number_stat:vector ETV
 attr source signal_minion_jobs_number
@@ -47,15 +47,15 @@ vector 9 Network.player boss_waiting_time_stat:vector ETV
 attr source signal_boss_waiting_time
 vector 10 Network.player boss_response_time_stat:vector ETV
 attr source signal_boss_response_time
-0	1768 12861 0 1496 0 9975.678062923934 494 0 3 534 622
-1	14629 25700 0 1497 0 9975.788896544359 987 0 2 82 94
-2	40329 8 0 0 0 0 1 0 0 0 0
-3	40337 13725 0 1497 0 9975.788896544359 494 0 493 121771 40062659
-4	54062 88 0 1334 0 9000 7 0 1 6 6
-5	54150 180 0 1335 0 9000.1 13 0 0 0 0
-6	54330 100 0 1335 0 9000.1 7 0 6 21 91
-7	54430 13343 2 1496 15.917490091316 9975.678062923934 493 0 6.338713155383 71.98500104334 239.6998611779
-8	67773 19194 3 1497 16.99670174434 9975.788896544359 493 0.000228775245 13.898228574673 1025.3046044009 4184.710866566
-9	86967 80 224 1334 1500 9000 6 0 0 0 0
-10	87047 110 225 1335 1500.1 9000.1 6 0.1 0.1 0.6 0.06
+0	1767 12684 0 1797 0 997.567806292393 494 0 75 10055 441245
+1	14451 25295 0 1797 0 997.567806292393 982 0 74 19114 843226
+2	39746 1437 0 1789 0 993.210230971233 56 0 55 1540 56980
+3	41183 13236 0 1787 0 992.305114198981 489 0 488 119316 38857244
+4	54419 2735 0 1799 0 998.423622080102 110 0 5 195 475
+5	57154 5446 0 1800 0 999.108807152972 218 0 4 172 388
+6	62600 2827 0 1800 0 999.108807152972 109 0 108 5886 425754
+7	65427 20628 2 1787 1.591749009132 992.305114198981 543 0 149.5007438135 19273.587752043 1641306.6339956
+8	86055 18971 3 1787 2.131354835644 992.305114198981 488 0.015655179145 149.51248162722 18211.450378248 1554363.2791301
+9	105026 3368 7 1800 5.726919896272 999.108807152972 109 0 24.366072970046 300.77813615455 3832.573530416
+10	108394 4229 16 1800 9.728331850735 999.108807152972 108 0.121370652183 28.946370899801 746.1586383014 9755.0951812866
 
