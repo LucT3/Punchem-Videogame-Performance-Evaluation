@@ -1,14 +1,14 @@
 version 2
-run Example_GameMode_Easy-0-20221120-20:35:18-14525
+run Example_GameMode_Easy-0-20221122-17:53:33-8387
 attr configname Example_GameMode_Easy
-attr datetime 20221120-20:35:18
+attr datetime 20221122-17:53:33
 attr experiment Example_GameMode_Easy
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network Network
-attr processid 14525
+attr processid 8387
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -38,6 +38,13 @@ vector 5 Network.player boss_jobs_queue_number_stat:vector ETV
 attr source signal_boss_jobs_queue_number
 vector 6 Network.player boss_defeated_stat:vector ETV
 attr source signal_boss_defeated
+0	0	0	0
+1	0	0	0
+2	0	0	0
+3	0	0	0
+4	0	0	0
+5	0	0	0
+6	0	0	0
 vector 7 Network.player minion_waiting_time_stat:vector ETV
 attr source signal_minion_waiting_time
 vector 8 Network.player minion_response_time_stat:vector ETV
@@ -46,7 +53,6 @@ vector 9 Network.player boss_waiting_time_stat:vector ETV
 attr source signal_boss_waiting_time
 vector 10 Network.player boss_response_time_stat:vector ETV
 attr source signal_boss_response_time
-0	0	0	0
 0	2	1.591749009132	1
 0	5	3.3888697861	1
 0	9	5.900731302195	2
@@ -540,7 +546,6 @@ attr source signal_boss_response_time
 0	1793	994.656975972939	3
 0	1795	995.901049811101	4
 0	1797	997.567806292393	5
-1	0	0	0
 1	2	1.591749009132	0
 1	3	2.131354835644	0
 1	5	3.3888697861	0
@@ -1522,7 +1527,6 @@ attr source signal_boss_response_time
 1	1793	994.656975972939	2
 1	1795	995.901049811101	3
 1	1797	997.567806292393	4
-2	0	0	0
 2	7	5.726919896272	1
 2	58	34.851463712067	2
 2	127	78.057489859078	3
@@ -1578,7 +1582,6 @@ attr source signal_boss_response_time
 2	1697	949.633697054565	53
 2	1770	985.971298188676	54
 2	1789	993.210230971233	55
-3	0	0	0
 3	3	2.131354835644	1
 3	27	21.194523264145	2
 3	30	22.468648502305	3
@@ -2067,7 +2070,6 @@ attr source signal_boss_response_time
 3	1785	991.889482636409	486
 3	1786	992.092836067031	487
 3	1787	992.305114198981	488
-4	0	0	0
 4	7	5.726919896272	1
 4	11	7.773598739036	2
 4	13	8.036281107502	3
@@ -2177,7 +2179,6 @@ attr source signal_boss_response_time
 4	1770	985.971298188676	1
 4	1789	993.210230971233	1
 4	1799	998.423622080102	2
-5	0	0	0
 5	7	5.726919896272	0
 5	11	7.773598739036	1
 5	13	8.036281107502	2
@@ -2395,7 +2396,6 @@ attr source signal_boss_response_time
 5	1789	993.210230971233	0
 5	1799	998.423622080102	1
 5	1800	999.108807152972	1
-6	0	0	0
 6	16	9.728331850735	1
 6	17	10.095084040557	2
 6	22	16.252623266766	3

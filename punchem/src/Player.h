@@ -36,7 +36,6 @@ class Player : public cSimpleModule
 {
 
     //parameters
-    cMessage *timer_ = nullptr;
     unsigned int counter_minion = 0;
     unsigned int counter_boss = 0;
     double recover_rate_x;
@@ -49,17 +48,14 @@ class Player : public cSimpleModule
     Opponent *current_opponent = nullptr;
     simtime_t current_opponent_simTime;
     simtime_t current_opponent_lifetime;
-    cMessage *minion = nullptr;
-    cMessage *boss = nullptr;
+    cMessage *minion = nullptr; //timer for boss messages
+    cMessage *boss = nullptr; //timer for minion messages
 
 
 
     //queues for minions and bosses
     std::queue <Opponent*> minion_queue;
     std::queue <Opponent*> boss_queue;
-
-    //pointer to minion recovering (COULD NOT DECLARED HERE)
-    //MinionMessage* recovering_minion_msg = nullptr;
 
 
     //signals

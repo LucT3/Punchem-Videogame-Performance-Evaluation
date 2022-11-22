@@ -20,7 +20,6 @@ Define_Module(Player);
 void Player::initialize()
 {
     //initialize parameters
-    timer_ = new cMessage("timer");
     minion = new cMessage("MinionMessage");
     boss = new cMessage("BossMessage");
     recover_rate_x = par("recover_rate_x");
@@ -167,7 +166,6 @@ void Player::handleMinion(){
     EV <<"PLAYER - handleMinion() - Minion life : " << msg->getService_time() << endl;
     EV <<"PLAYER - handleMinion() - Minion defeat time : " << simTime() + msg->getService_time() << endl;
 
-    //scheduleAt(simTime() + msg->getService_time(), timer_);
     scheduleAt(simTime() + msg->getService_time(), minion);
 
     //job enter in the service - record the waiting time
@@ -189,7 +187,6 @@ void Player::handleBoss(){
     OpponentMessage* msg = check_and_cast<OpponentMessage*>(current_opponent->message);
     EV <<"PLAYER - handleBoss() - Boss defeat time : " << simTime() + msg->getService_time()<< endl << endl;
 
-    //scheduleAt(simTime() + msg->getService_time(), timer_);
     scheduleAt(simTime() + msg->getService_time(), boss);
 
     //job enter in the service - record the waiting time
@@ -388,12 +385,6 @@ unsigned int Player::get_number_of_bosses(){
 void Player::finish(){
     EV << "PLAYER - finish() - GAME OVER! " << endl;
 
-    //delete timer
-    if (this == timer_->getOwner()){
-        EV <<"Delete timer_" << endl;
-        delete timer_;
-    }
-
 
     //delete minion queue
     while (!minion_queue.empty()){
@@ -415,6 +406,7 @@ void Player::finish(){
         EV << "Deallocated Memory" << endl;
     }
 
+    //delete timers
     cancelAndDelete(minion);
     cancelAndDelete(boss);
 

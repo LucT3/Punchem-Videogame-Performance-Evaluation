@@ -1,14 +1,14 @@
 version 2
-run Example_GameMode_Easy-0-20221120-20:35:18-14525
+run Example_GameMode_Easy-0-20221122-17:53:33-8387
 attr configname Example_GameMode_Easy
-attr datetime 20221120-20:35:18
+attr datetime 20221122-17:53:33
 attr experiment Example_GameMode_Easy
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network Network
-attr processid 14525
+attr processid 8387
 attr repetition 0
 attr replication #0
 attr resultdir results

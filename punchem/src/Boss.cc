@@ -94,6 +94,7 @@ void Boss::generate_new_opponent(){
  */
 void Boss::finish()
 {
+    //delete timer
     if (this == timer_->getOwner()) {
         EV << "Delete timer_" << endl;
         delete timer_;
