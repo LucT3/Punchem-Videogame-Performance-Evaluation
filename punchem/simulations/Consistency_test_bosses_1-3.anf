@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <scave:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:scave="http://www.omnetpp.org/omnetpp/scave">
   <inputs>
-    <inputs name="/punchem/simulations/results/Example_GameMode_Easy-05-*.vec"/>
-    <inputs name="/punchem/simulations/results/Example_GameMode_Easy-05-*.sca"/>
+    <inputs name="/punchem/simulations/results/Consistency_test_bosses_1-3-*.vec"/>
+    <inputs name="/punchem/simulations/results/Consistency_test_bosses_1-3-*.sca"/>
   </inputs>
   <datasets/>
   <chartSheets/>
