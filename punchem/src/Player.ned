@@ -32,9 +32,11 @@ simple Player
         @signal [signal_minion_jobs_queue_number];
         @statistic [minion_jobs_queue_number_stat] (source="signal_minion_jobs_queue_number"; record = vector);
         
+        //to measure the minion response time
         @signal [signal_minion_response_time];
         @statistic [minion_response_time_stat] (source="signal_minion_response_time"; record = mean, vector);
         
+        //to measure the minion waiting time
         @signal [signal_minion_waiting_time];
         @statistic [minion_waiting_time_stat] (source="signal_minion_waiting_time"; record = mean, vector);
         
@@ -43,6 +45,11 @@ simple Player
         
         @signal [signal_minion_recovered];
         @statistic [minion_recovered_stat] (source = "signal_minion_recovered" ; record = count, mean, vector);
+        
+        //to measure the throughput (in terms of minions defeated per unit of time)
+        @signal[signal_minion_throughput](type="long");
+        @statistic [minion_throughput] (source = "signal_minion_throughput"; record = vector, mean, last);
+        
         
         
         //BOSS PARAMETERS
@@ -60,6 +67,10 @@ simple Player
         
         @signal [signal_boss_defeated];
         @statistic [boss_defeated_stat] (source = "signal_boss_defeated" ; record = count, mean, vector);
+        
+        @signal[signal_boss_throughput](type="long");
+        @statistic [boss_throughput] (source = "signal_boss_throughput"; record = vector, mean, last);
+       	
         
              
 	gates:

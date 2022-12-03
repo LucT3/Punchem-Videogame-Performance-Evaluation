@@ -48,8 +48,8 @@ class Player : public cSimpleModule
     Opponent *current_opponent = nullptr;
     simtime_t current_opponent_simTime;
     simtime_t current_opponent_lifetime;
-    cMessage *minion = nullptr; //timer for boss messages
-    cMessage *boss = nullptr; //timer for minion messages
+    cMessage *minion = nullptr; //timer for minion messages
+    cMessage *boss = nullptr; //timer for boss messages
 
 
 
@@ -65,12 +65,14 @@ class Player : public cSimpleModule
     simsignal_t signal_minion_waiting_time = 0;
     simsignal_t signal_minion_defeated = 0;
     simsignal_t signal_minion_recovered = 0;
+    simsignal_t signal_minion_throughput;
 
     simsignal_t signal_boss_jobs_number = 0;
     simsignal_t signal_boss_jobs_queue_number = 0;
     simsignal_t signal_boss_response_time = 0;
     simsignal_t signal_boss_waiting_time = 0;
     simsignal_t signal_boss_defeated = 0;
+    simsignal_t signal_boss_throughput;
 
 
     //functions

@@ -1,0 +1,55 @@
+version 2
+run Example_GameMode_Easy-10-20221129-09:37:56-10155
+attr configname Example_GameMode_Easy
+attr datetime 20221129-09:37:56
+attr experiment Example_GameMode_Easy
+attr inifile omnetpp.ini
+attr iterationvars $0=15
+attr iterationvarsf 15-
+attr measurement $0=15
+attr network Network
+attr processid 10155
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 10
+attr seedset 0
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+param *.boss.arrival_mean 15
+param *.boss.service_mean 5
+param *.player.recover_rate_x 100
+
+scalar Network.player boss_throughput:mean 0.08
+attr source signal_boss_throughput
+scalar Network.player boss_throughput:last 0.08
+attr source signal_boss_throughput
+scalar Network.player boss_defeated_stat:count 81
+attr source signal_boss_defeated
+scalar Network.player boss_defeated_stat:mean 40
+attr source signal_boss_defeated
+scalar Network.player boss_waiting_time_stat:mean 1.3847004385008
+attr source signal_boss_waiting_time
+scalar Network.player boss_response_time_stat:mean 5.5787304034121
+attr source signal_boss_response_time
+scalar Network.player minion_throughput:mean 0.493
+attr source signal_minion_throughput
+scalar Network.player minion_throughput:last 0.493
+attr source signal_minion_throughput
+scalar Network.player minion_recovered_stat:count 48
+attr source signal_minion_recovered
+scalar Network.player minion_recovered_stat:mean 23.5
+attr source signal_minion_recovered
+scalar Network.player minion_defeated_stat:count 494
+attr source signal_minion_defeated
+scalar Network.player minion_defeated_stat:mean 246.5
+attr source signal_minion_defeated
+scalar Network.player minion_waiting_time_stat:mean 14.302537898681
+attr source signal_minion_waiting_time
+scalar Network.player minion_response_time_stat:mean 15.17911681394
+attr source signal_minion_response_time
+

@@ -38,7 +38,7 @@ void Player::initialize()
     signal_minion_waiting_time = registerSignal("signal_minion_waiting_time");
     signal_minion_recovered = registerSignal("signal_minion_recovered");
     signal_minion_defeated = registerSignal("signal_minion_defeated");
-
+    signal_minion_throughput = registerSignal("signal_minion_throughput");
 
     //record initial state
     emit(signal_minion_jobs_number,0);
@@ -53,6 +53,7 @@ void Player::initialize()
     signal_boss_response_time = registerSignal("signal_boss_response_time");
     signal_boss_waiting_time = registerSignal("signal_boss_waiting_time");
     signal_boss_defeated = registerSignal("signal_boss_defeated");
+    signal_boss_throughput = registerSignal("signal_boss_throughput");
 
     //record initial state
     emit(signal_boss_jobs_number,0);
@@ -238,7 +239,7 @@ void Player::recoverMinion(){
     current_opponent_lifetime = msg->getService_time();
 
 
-    //emit signals (signals for recovering)
+    //emit signals (statistics for recovering part)
     counter_minion_recovered = counter_minion_recovered + 1;
     emit(signal_minion_recovered,counter_minion_recovered);
 
@@ -259,12 +260,12 @@ void Player::recoverMinion(){
 simtime_t Player::compute_life_recovered(){
 
     //1)compute the minion actual life
-    simtime_t simTime_gap = simTime() - current_opponent_simTime;
-    simtime_t actual_life = current_opponent_lifetime - simTime_gap;
+    simtime_t simTime_gap = simTime() - current_opponent_simTime; //difference between the current simTime and the fight start simTime
+    simtime_t actual_life = current_opponent_lifetime - simTime_gap; //minion actual life (when it stops to fight)
     EV << "PLAYER - compute_life_recovered() - original life : " << current_opponent_lifetime << ", actual life: " << actual_life << endl;
 
     //2)compute the remaining life percentage (based on the chosen scenario (1)calculated recover rate, 2)no recover rate, 3)pre-defined recover rate
-    double current_opponent_life_percentage = 0;
+    double current_opponent_life_percentage = 0; //minion actual life percentage
     if(actual_life > 0){
         current_opponent_life_percentage = (actual_life / current_opponent_lifetime) * 100;
     }
@@ -291,7 +292,7 @@ simtime_t Player::compute_life_recovered(){
     EV << "PLAYER - compute_life_recovered() - percentage to recover : " << current_rate_x << "%" << endl;
 
     //4)update the actual life
-    simtime_t recovered_life = (actual_life / 100) * current_rate_x;
+    simtime_t recovered_life = (actual_life / 100) * current_rate_x; //life to add to the minion actual life
     actual_life = actual_life + recovered_life;
     EV << "PLAYER - compute_life_recovered() - MINION LIFE RECOVERED : " << actual_life << "  Life added : " << recovered_life << "  Minion id : " << current_opponent->message->getId() << endl;
 
@@ -385,6 +386,9 @@ unsigned int Player::get_number_of_bosses(){
 void Player::finish(){
     EV << "PLAYER - finish() - GAME OVER! " << endl;
 
+    //compute final statistics (defeated minions and bosses per unit of time (seconds))
+    emit(signal_minion_throughput, (double) counter_minion_defeated /simTime());
+    emit(signal_boss_throughput, (double)counter_boss_defeated / simTime());
 
     //delete minion queue
     while (!minion_queue.empty()){
