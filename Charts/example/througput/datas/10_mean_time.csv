@@ -1,0 +1,11 @@
+run,repetition,module,name,rowtype,data...
+Example_GameMode_Easy-5-20221129-08:20:36-5443,0,Network.player,boss_throughput:vector,TIME,1000
+Example_GameMode_Easy-5-20221129-08:20:36-5443,0,Network.player,boss_throughput:vector,VALUE,0.107999999999999984
+Example_GameMode_Easy-8-20221129-08:20:36-5459,3,Network.player,boss_throughput:vector,TIME,1000
+Example_GameMode_Easy-8-20221129-08:20:36-5459,3,Network.player,boss_throughput:vector,VALUE,0.089999999999999996
+Example_GameMode_Easy-7-20221129-08:20:36-5454,2,Network.player,boss_throughput:vector,TIME,1000
+Example_GameMode_Easy-7-20221129-08:20:36-5454,2,Network.player,boss_throughput:vector,VALUE,0.110999999999999986
+Example_GameMode_Easy-9-20221129-08:20:37-5464,4,Network.player,boss_throughput:vector,TIME,1000
+Example_GameMode_Easy-9-20221129-08:20:37-5464,4,Network.player,boss_throughput:vector,VALUE,0.091999999999999998
+Example_GameMode_Easy-6-20221129-08:20:36-5449,1,Network.player,boss_throughput:vector,TIME,1000
+Example_GameMode_Easy-6-20221129-08:20:36-5449,1,Network.player,boss_throughput:vector,VALUE,0.086999999999999993
