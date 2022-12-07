@@ -1,0 +1,54 @@
+version 2
+run Consistency_test_bosses_defeated-97-20221207-16:14:18-7286
+attr configname Consistency_test_bosses_defeated
+attr datetime 20221207-16:14:18
+attr experiment Consistency_test_bosses_defeated
+attr inifile omnetpp.ini
+attr iterationvars $0=2
+attr iterationvarsf 2-
+attr measurement $0=2
+attr network Network
+attr processid 7286
+attr repetition 97
+attr replication #97
+attr resultdir results
+attr runnumber 97
+attr seedset 97
+param *.boss.arrival_mean 1
+param *.boss.service_mean 2
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param *.minion.arrival_mean 10
+param *.minion.service_mean 1
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+scalar Network.player boss_throughput:mean 0.542
+attr source signal_boss_throughput
+scalar Network.player boss_throughput:last 0.542
+attr source signal_boss_throughput
+scalar Network.player boss_defeated_stat:count 543
+attr source signal_boss_defeated
+scalar Network.player boss_defeated_stat:mean 271
+attr source signal_boss_defeated
+scalar Network.player boss_waiting_time_stat:mean 231.27045429483
+attr source signal_boss_waiting_time
+scalar Network.player boss_response_time_stat:mean 232.67491931412
+attr source signal_boss_response_time
+scalar Network.player minion_throughput:mean 0.002
+attr source signal_minion_throughput
+scalar Network.player minion_throughput:last 0.002
+attr source signal_minion_throughput
+scalar Network.player minion_recovered_stat:count 6
+attr source signal_minion_recovered
+scalar Network.player minion_recovered_stat:mean 2.5
+attr source signal_minion_recovered
+scalar Network.player minion_defeated_stat:count 3
+attr source signal_minion_defeated
+scalar Network.player minion_defeated_stat:mean 1
+attr source signal_minion_defeated
+scalar Network.player minion_waiting_time_stat:mean 0.49766193123529
+attr source signal_minion_waiting_time
+scalar Network.player minion_response_time_stat:mean 1.2567697025425
+attr source signal_minion_response_time
+

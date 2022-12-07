@@ -1,0 +1,66 @@
+file 125097 1670426050                                          
+version 2
+run Consistency_test_bosses_defeated-54-20221207-16:14:09-7071
+attr configname Consistency_test_bosses_defeated
+attr datetime 20221207-16:14:09
+attr experiment Consistency_test_bosses_defeated
+attr inifile omnetpp.ini
+attr iterationvars $0=2
+attr iterationvarsf 2-
+attr measurement $0=2
+attr network Network
+attr processid 7071
+attr repetition 54
+attr replication #54
+attr resultdir results
+attr runnumber 54
+attr seedset 54
+param *.boss.arrival_mean 1
+param *.boss.service_mean 2
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param *.minion.arrival_mean 10
+param *.minion.service_mean 1
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 3 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 4 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 5 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 6 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 7 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 8 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 9 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 10 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 11 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 12 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1951 2052 0 2687 0 991.811286395106 79 0 76 2928 149228
+1	4003 2094 0 2687 0 991.811286395106 81 0 75 2850 143450
+2	6097 29 0 4 0 0.406846591987 2 0 1 1 1
+3	6126 51 0 24 0 5.762022113706 3 0 2 3 5
+4	6177 28334 0 2709 0 998.875690198199 1043 0 576 311925 121706733
+5	34511 41062 0 2709 0 998.875690198199 1510 0 575 456741 178963275
+6	75573 12691 0 2707 0 998.515158384512 468 0 467 109278 34058310
+7	88264 90 2 23 0.362377635988 5.754144198806 3 0 0.027170534606 0.036430290308 0.00082398102643657
+8	88354 18301 4 2707 0.406846591987 998.515158384512 468 0 576.51588701697 142092.15855629 55993297.485772
+9	106655 18334 5 2707 0.434017126593 998.515158384512 467 0.027170534606 576.95398071802 142509.29063603 56254994.030622
+10	124989 69 6 24 0.525384897687 5.762022113706 2 0.017137670602 0.1185383057 0.135675976302 0.014345029671889
+11	125058 19 2710 2710 1000 1000 1 0.002 0.002 0.002 4e-06
+12	125077 19 2710 2710 1000 1000 1 0.467 0.467 0.467 0.218089
+

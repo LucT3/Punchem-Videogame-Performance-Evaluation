@@ -1,0 +1,60 @@
+file 105615 1670426075                                          
+version 2
+run Consistency_test_bosses_defeated-177-20221207-16:14:35-7687
+attr configname Consistency_test_bosses_defeated
+attr datetime 20221207-16:14:35
+attr experiment Consistency_test_bosses_defeated
+attr inifile omnetpp.ini
+attr iterationvars $0=3
+attr iterationvarsf 3-
+attr measurement $0=3
+attr network Network
+attr processid 7687
+attr repetition 77
+attr replication #77
+attr resultdir results
+attr runnumber 177
+attr seedset 77
+param *.boss.arrival_mean 1
+param *.boss.service_mean 3
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param *.minion.arrival_mean 10
+param *.minion.service_mean 1
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 3 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 4 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 5 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 6 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 7 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 8 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 9 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 10 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1751 3418 0 2537 0 993.829154394953 130 0 129 8385 723905
+1	5169 3416 0 2537 0 993.829154394953 130 0 128 8256 707264
+2	8585 8 0 0 0 0 1 0 0 0 0
+3	8593 8 0 0 0 0 1 0 0 0 0
+4	8601 26646 0 2551 0 997.395139112546 982 0 650 304839 130513657
+5	35247 35554 0 2551 0 997.395139112546 1313 0 649 396791 168479395
+6	70801 8908 0 2533 0 991.885031772081 332 0 331 54946 12143066
+7	79709 12937 2 2533 1.706606251007 991.885031772081 332 0 638.76674315403 96111.435103548 40754482.0525
+8	92646 12935 5 2533 3.52497968866 991.885031772081 331 0.913704067406 641.62249907156 96462.656155523 40957302.26519
+9	105581 14 2552 2552 1000 1000 1 0 0 0 0
+10	105595 19 2552 2552 1000 1000 1 0.331 0.331 0.331 0.109561
+

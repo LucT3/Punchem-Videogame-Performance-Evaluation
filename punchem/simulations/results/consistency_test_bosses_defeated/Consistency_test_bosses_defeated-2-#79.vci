@@ -1,0 +1,60 @@
+file 126242 1670426055                                          
+version 2
+run Consistency_test_bosses_defeated-79-20221207-16:14:15-7196
+attr configname Consistency_test_bosses_defeated
+attr datetime 20221207-16:14:15
+attr experiment Consistency_test_bosses_defeated
+attr inifile omnetpp.ini
+attr iterationvars $0=2
+attr iterationvarsf 2-
+attr measurement $0=2
+attr network Network
+attr processid 7196
+attr repetition 79
+attr replication #79
+attr resultdir results
+attr runnumber 79
+attr seedset 79
+param *.boss.arrival_mean 1
+param *.boss.service_mean 2
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param *.minion.arrival_mean 10
+param *.minion.service_mean 1
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 3 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 4 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 5 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 6 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 7 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 8 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 9 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 10 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1749 2597 0 2685 0 996.09562557909 99 0 98 4851 318549
+1	4346 2596 0 2685 0 996.09562557909 99 0 97 4753 308945
+2	6942 8 0 0 0 0 1 0 0 0 0
+3	6950 8 0 0 0 0 1 0 0 0 0
+4	6958 27299 0 2691 0 998.540856665604 1006 0 520 271551 94651467
+5	34257 40544 0 2691 0 998.540856665604 1491 0 519 406152 141484520
+6	74801 13219 0 2687 0 998.185308441493 486 0 485 117855 38145735
+7	88020 19107 2 2687 0.883649775529 998.185308441493 486 0 534.37617263869 136092.33216575 48813858.036511
+8	107127 19081 39 2687 13.815573033089 998.185308441493 485 12.93192325756 534.83554348607 136555.25765178 49081372.385756
+9	126208 14 2692 2692 1000 1000 1 0 0 0 0
+10	126222 19 2692 2692 1000 1000 1 0.485 0.485 0.485 0.235225
+
