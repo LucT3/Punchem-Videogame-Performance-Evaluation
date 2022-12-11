@@ -1,0 +1,109 @@
+version 2
+run Constant_test_recovery-0-20221211-11:38:27-9686
+attr configname Constant_test_recovery
+attr datetime 20221211-11:38:27
+attr experiment Constant_test_recovery
+attr inifile omnetpp.ini
+attr iterationvars $0=0
+attr iterationvarsf 0-
+attr measurement $0=0
+attr network Network
+attr processid 9686
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.minion.arrival_mean 0.6
+param *.minion.service_mean 3
+param *.boss.arrival_mean 5
+param *.boss.service_mean 4
+param *.player.recover_rate_x 0
+param *.minion.arrival_distribution 1
+param *.minion.service_distribution 1
+param *.boss.service_distribution 1
+param *.boss.arrival_distribution 1
+
+scalar Network.player boss_throughput:mean 0.1
+attr source signal_boss_throughput
+scalar Network.player boss_throughput:last 0.1
+attr source signal_boss_throughput
+scalar Network.player boss_defeated_stat:count 2
+attr source signal_boss_defeated
+scalar Network.player boss_defeated_stat:mean 0.5
+attr source signal_boss_defeated
+scalar Network.player boss_waiting_time_stat:mean 0
+attr source signal_boss_waiting_time
+scalar Network.player boss_response_time_stat:mean 4
+attr source signal_boss_response_time
+scalar Network.player minion_throughput:mean 0.1
+attr source signal_minion_throughput
+scalar Network.player minion_throughput:last 0.1
+attr source signal_minion_throughput
+scalar Network.player minion_recovered_stat:count 3
+attr source signal_minion_recovered
+scalar Network.player minion_recovered_stat:mean 1
+attr source signal_minion_recovered
+scalar Network.player minion_defeated_stat:count 2
+attr source signal_minion_defeated
+scalar Network.player minion_defeated_stat:mean 0.5
+attr source signal_minion_defeated
+scalar Network.player minion_waiting_time_stat:mean 3
+attr source signal_minion_waiting_time
+scalar Network.player minion_response_time_stat:mean 3
+attr source signal_minion_response_time
+
+run Constant_test_recovery-0-20221211-11:38:06-9637
+attr configname Constant_test_recovery
+attr datetime 20221211-11:38:06
+attr experiment Constant_test_recovery
+attr inifile omnetpp.ini
+attr iterationvars $0=0
+attr iterationvarsf 0-
+attr measurement $0=0
+attr network Network
+attr processid 9637
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.minion.arrival_mean 0.5
+param *.minion.service_mean 3
+param *.boss.arrival_mean 5
+param *.boss.service_mean 4
+param *.player.recover_rate_x 0
+param *.minion.arrival_distribution 1
+param *.minion.service_distribution 1
+param *.boss.service_distribution 1
+param *.boss.arrival_distribution 1
+
+scalar Network.player boss_throughput:mean 0
+attr source signal_boss_throughput
+scalar Network.player boss_throughput:last 0
+attr source signal_boss_throughput
+scalar Network.player boss_defeated_stat:count 1
+attr source signal_boss_defeated
+scalar Network.player boss_defeated_stat:mean 0
+attr source signal_boss_defeated
+scalar Network.player boss_waiting_time_stat:mean 0
+attr source signal_boss_waiting_time
+scalar Network.player boss_response_time_stat:mean -nan
+attr source signal_boss_response_time
+scalar Network.player minion_throughput:mean 0.2
+attr source signal_minion_throughput
+scalar Network.player minion_throughput:last 0.2
+attr source signal_minion_throughput
+scalar Network.player minion_recovered_stat:count 2
+attr source signal_minion_recovered
+scalar Network.player minion_recovered_stat:mean 0.5
+attr source signal_minion_recovered
+scalar Network.player minion_defeated_stat:count 2
+attr source signal_minion_defeated
+scalar Network.player minion_defeated_stat:mean 0.5
+attr source signal_minion_defeated
+scalar Network.player minion_waiting_time_stat:mean 1.25
+attr source signal_minion_waiting_time
+scalar Network.player minion_response_time_stat:mean 3
+attr source signal_minion_response_time
+

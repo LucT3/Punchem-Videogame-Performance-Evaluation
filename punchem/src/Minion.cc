@@ -44,18 +44,25 @@ void Minion::handleMessage(cMessage *msg)
 void Minion::wait_new_arrival(){
     simtime_t arrival_time;
 
-    // exponential distribution
-    if (arrival_distribution == 0) {
-        arrival_time = exponential(arrival_mean, arrival_rng);
-    }
-    // constant distribution
-    else {
-        arrival_time = arrival_mean;
-    }
+    //to handle the degeneracy test
+    if (arrival_mean != 0 && service_mean != 0){
+        // exponential distribution
+        if (arrival_distribution == 0) {
+            arrival_time = exponential(arrival_mean, arrival_rng);
+        }
+        // constant distribution
+        else {
+            arrival_time = arrival_mean;
+        }
 
-    scheduleAt(simTime() + arrival_time, timer_);
+        scheduleAt(simTime() + arrival_time, timer_);
 
-    EV << "MINION - new opponent arrives at: " << simTime()+arrival_time << endl;
+        EV << "MINION - new opponent arrives at: " << simTime()+arrival_time << endl;
+    }
+    else{
+        EV << "MINION - GAME MODE WITHOUT MINIONS "<< endl;
+        //endSimulation();
+    }
 }
 
 //generate new opponent and set the service time (opponent life)

@@ -1,0 +1,80 @@
+version 2
+run Degeneracy_test_bosses-3-20221211-15:37:15-12015
+attr configname Degeneracy_test_bosses
+attr datetime 20221211-15:37:15
+attr experiment Degeneracy_test_bosses
+attr inifile omnetpp.ini
+attr iterationvars "$0=1, $1=1"
+attr iterationvarsf 1,1-
+attr measurement "$0=1, $1=1"
+attr network Network
+attr processid 12015
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 3
+attr seedset 0
+param *.boss.arrival_mean 1
+param *.boss.service_mean 1
+param *.minion.arrival_distribution 1
+param *.minion.service_distribution 1
+param *.boss.arrival_distribution 1
+param *.boss.service_distribution 1
+param *.boss.arrival_mean 0
+param *.boss.service_mean 0
+param *.minion.arrival_mean 0
+param *.minion.service_mean 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 3 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 4 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 5 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 6 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 7 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 8 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+0	0	0	0
+1	0	0	0
+2	0	0	0
+3	0	0	0
+4	0	0	0
+4	2	2	1
+4	4	3	2
+5	0	0	0
+5	2	2	0
+5	4	3	1
+5	5	3	1
+6	0	0	0
+6	5	3	1
+7	2	2	0
+7	5	3	0
+8	5	3	1
+4	7	4	2
+5	7	4	1
+5	8	4	1
+6	8	4	2
+7	8	4	0
+8	8	4	1
+4	10	5	2
+5	10	5	1
+5	11	5	1
+6	11	5	3
+7	11	5	0
+8	11	5	1
+vector 9 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 10 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+9	12	5	0
+10	12	5	0.6
+

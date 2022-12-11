@@ -44,7 +44,7 @@ void Boss::handleMessage(cMessage *msg)
 void Boss::wait_new_arrival(){
     simtime_t arrival_time;
     //to handle the degeneracy test
-    if (arrival_mean != 0 && service_mean != 0){
+    if (arrival_mean != 0 && service_mean != 0){ //if no bosses arrives or arrive with 0 life is intended as GAME MODE WITHOUT BOSSES
         // exponential distribution
         if (arrival_distribution == 0) {
             arrival_time = exponential(arrival_mean, arrival_rng);
@@ -59,8 +59,8 @@ void Boss::wait_new_arrival(){
         EV << "BOSS - new opponent arrives at: " << simTime()+arrival_time << endl;
     }
     else{
-        EV << "BOSS - No bosses, not possible to play" << endl;
-        endSimulation();
+        EV << "BOSS - GAME MODE WITHOUT BOSSES " << endl;
+        //endSimulation();
     }
 }
 
