@@ -1,0 +1,55 @@
+version 2
+run Continuity_test_mean_response_time-266-20221215-22:14:05-14705
+attr configname Continuity_test_mean_response_time
+attr datetime 20221215-22:14:05
+attr experiment Continuity_test_mean_response_time
+attr inifile omnetpp.ini
+attr iterationvars $0=5.2
+attr iterationvarsf 5.2-
+attr measurement $0=5.2
+attr network Network
+attr processid 14705
+attr repetition 66
+attr replication #66
+attr resultdir results
+attr runnumber 266
+attr seedset 66
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 10
+param *.boss.service_mean 5.2
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+scalar Network.player boss_throughput:mean 0.089
+attr source signal_boss_throughput
+scalar Network.player boss_throughput:last 0.089
+attr source signal_boss_throughput
+scalar Network.player boss_defeated_stat:count 179
+attr source signal_boss_defeated
+scalar Network.player boss_defeated_stat:mean 89
+attr source signal_boss_defeated
+scalar Network.player boss_waiting_time_stat:mean 3.2874884448941
+attr source signal_boss_waiting_time
+scalar Network.player boss_response_time_stat:mean 8.5299893913405
+attr source signal_boss_response_time
+scalar Network.player minion_throughput:mean 0.475
+attr source signal_minion_throughput
+scalar Network.player minion_throughput:last 0.475
+attr source signal_minion_throughput
+scalar Network.player minion_recovered_stat:count 104
+attr source signal_minion_recovered
+scalar Network.player minion_recovered_stat:mean 51.5
+attr source signal_minion_recovered
+scalar Network.player minion_defeated_stat:count 951
+attr source signal_minion_defeated
+scalar Network.player minion_defeated_stat:mean 475
+attr source signal_minion_defeated
+scalar Network.player minion_waiting_time_stat:mean 86.447663300967
+attr source signal_minion_waiting_time
+scalar Network.player minion_response_time_stat:mean 88.506566943928
+attr source signal_minion_response_time
+

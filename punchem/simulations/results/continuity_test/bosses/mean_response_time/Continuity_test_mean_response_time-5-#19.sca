@@ -1,0 +1,55 @@
+version 2
+run Continuity_test_mean_response_time-19-20221215-22:13:14-13466
+attr configname Continuity_test_mean_response_time
+attr datetime 20221215-22:13:14
+attr experiment Continuity_test_mean_response_time
+attr inifile omnetpp.ini
+attr iterationvars $0=5
+attr iterationvarsf 5-
+attr measurement $0=5
+attr network Network
+attr processid 13466
+attr repetition 19
+attr replication #19
+attr resultdir results
+attr runnumber 19
+attr seedset 19
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 10
+param *.boss.service_mean 5
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+scalar Network.player boss_throughput:mean 0.094
+attr source signal_boss_throughput
+scalar Network.player boss_throughput:last 0.094
+attr source signal_boss_throughput
+scalar Network.player boss_defeated_stat:count 189
+attr source signal_boss_defeated
+scalar Network.player boss_defeated_stat:mean 94
+attr source signal_boss_defeated
+scalar Network.player boss_waiting_time_stat:mean 3.3022589627757
+attr source signal_boss_waiting_time
+scalar Network.player boss_response_time_stat:mean 8.5474887265401
+attr source signal_boss_response_time
+scalar Network.player minion_throughput:mean 0.4345
+attr source signal_minion_throughput
+scalar Network.player minion_throughput:last 0.4345
+attr source signal_minion_throughput
+scalar Network.player minion_recovered_stat:count 107
+attr source signal_minion_recovered
+scalar Network.player minion_recovered_stat:mean 53
+attr source signal_minion_recovered
+scalar Network.player minion_defeated_stat:count 870
+attr source signal_minion_defeated
+scalar Network.player minion_defeated_stat:mean 434.5
+attr source signal_minion_defeated
+scalar Network.player minion_waiting_time_stat:mean 105.51624814685
+attr source signal_minion_waiting_time
+scalar Network.player minion_response_time_stat:mean 106.3977334172
+attr source signal_minion_response_time
+

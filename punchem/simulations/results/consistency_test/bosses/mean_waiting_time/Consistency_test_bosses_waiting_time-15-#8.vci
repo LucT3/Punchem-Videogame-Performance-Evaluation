@@ -1,0 +1,60 @@
+file 37682 1671101037                                           
+version 2
+run Consistency_test_bosses_waiting_time-28-20221215-11:43:57-6298
+attr configname Consistency_test_bosses_waiting_time
+attr datetime 20221215-11:43:57
+attr experiment Consistency_test_bosses_waiting_time
+attr inifile omnetpp.ini
+attr iterationvars $0=15
+attr iterationvarsf 15-
+attr measurement $0=15
+attr network Network
+attr processid 6298
+attr repetition 8
+attr replication #8
+attr resultdir results
+attr runnumber 28
+attr seedset 8
+param *.boss.arrival_mean 10
+param *.boss.service_mean 15
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param *.minion.arrival_mean 10
+param *.minion.service_mean 1
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 3 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 4 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 5 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 6 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 7 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 8 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 9 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 10 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1763 5332 0 875 0 1990.911080849943 200 0 199 19900 2646700
+1	7095 5330 0 875 0 1990.911080849943 200 0 198 19701 2607099
+2	12425 8 0 0 0 0 1 0 0 0 0
+3	12433 8 0 0 0 0 1 0 0 0 0
+4	12441 4628 0 873 0 1990.015633480372 179 0 63 6374 300426
+5	17069 7807 0 876 0 1992.399804701661 301 0 62 10852 518732
+6	24876 3221 0 876 0 1992.399804701661 123 0 122 7503 612745
+7	28097 4788 2 876 0.393248654189 1992.399804701661 123 0 743.53186655052 51728.611872887 28102320.388398
+8	32885 4765 5 876 9.582108566968 1992.399804701661 122 6.356478770559 753.07530117581 52977.650086626 29156524.487121
+9	37650 13 877 877 2000 2000 1 0 0 0 0
+10	37663 18 877 877 2000 2000 1 0.061 0.061 0.061 0.003721
+
