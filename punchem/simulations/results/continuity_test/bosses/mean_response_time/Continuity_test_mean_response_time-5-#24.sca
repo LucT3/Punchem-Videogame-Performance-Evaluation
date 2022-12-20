@@ -1,14 +1,14 @@
 version 2
-run Continuity_test_mean_response_time-24-20221215-22:13:15-13492
+run Continuity_test_mean_response_time-24-20221216-15:30:45-5272
 attr configname Continuity_test_mean_response_time
-attr datetime 20221215-22:13:15
+attr datetime 20221216-15:30:45
 attr experiment Continuity_test_mean_response_time
 attr inifile omnetpp.ini
 attr iterationvars $0=5
 attr iterationvarsf 5-
 attr measurement $0=5
 attr network Network
-attr processid 13492
+attr processid 5272
 attr repetition 24
 attr replication #24
 attr resultdir results

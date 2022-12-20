@@ -1,0 +1,48 @@
+file 42965 1671552066                                           
+version 2
+run warm_up_time-16-20221220-17:01:06-18582
+attr configname warm_up_time
+attr datetime 20221220-17:01:06
+attr experiment warm_up_time
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network
+attr processid 18582
+attr repetition 16
+attr replication #16
+attr resultdir results
+attr runnumber 16
+attr seedset 16
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+param *.minion.arrival_mean 0
+param *.minion.service_mean 0
+param *.boss.arrival_mean 10
+param *.boss.service_mean 3
+
+vector 0 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 1 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 2 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 3 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 4 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 5 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 6 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1296 6609 135 858 350.52846812913 2480.317570551618 242 45 286 40051 7809461
+1	7905 12335 135 858 350.52846812913 2480.317570551618 483 0 5 226 402
+2	20240 9330 135 858 350.52846812913 2480.317570551618 242 0.025342457135 17.597526939533 1013.894832743 7598.3889312251
+3	29570 6155 137 857 355.713550395941 2480.089419169899 241 1 6 354 668
+4	35725 7208 137 857 355.713550395941 2480.089419169899 241 0 11.781601192069 304.53169313997 1978.4872456194
+5	42933 13 859 859 2500 2500 1 0 0 0 0
+6	42946 18 859 859 2500 2500 1 0.1144 0.1144 0.1144 0.01308736
+

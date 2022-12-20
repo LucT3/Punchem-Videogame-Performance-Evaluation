@@ -1,18 +1,18 @@
 version 2
-run Continuity_test_mean_response_time-201-20221215-22:13:52-14379
+run Continuity_test_mean_response_time-101-20221216-15:31:01-5665
 attr configname Continuity_test_mean_response_time
-attr datetime 20221215-22:13:52
+attr datetime 20221216-15:31:01
 attr experiment Continuity_test_mean_response_time
 attr inifile omnetpp.ini
 attr iterationvars $0=5.2
 attr iterationvarsf 5.2-
 attr measurement $0=5.2
 attr network Network
-attr processid 14379
+attr processid 5665
 attr repetition 1
 attr replication #1
 attr resultdir results
-attr runnumber 201
+attr runnumber 101
 attr seedset 1
 param *.minion.arrival_mean 2
 param *.minion.service_mean 1

@@ -1,0 +1,60 @@
+file 41618 1671551087                                           
+version 2
+run warm_up_time-0-20221220-16:44:47-17830
+attr configname warm_up_time
+attr datetime 20221220-16:44:47
+attr experiment warm_up_time
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network
+attr processid 17830
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+param *.minion.arrival_mean 0
+param *.minion.service_mean 0
+param *.boss.arrival_mean 10
+param *.boss.service_mean 3
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 3 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 4 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 5 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 6 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 7 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 8 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 9 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 10 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1682 8 0 0 0 0 1 0 0 0 0
+1	1690 8 0 0 0 0 1 0 0 0 0
+2	1698 8 0 0 0 0 1 0 0 0 0
+3	1706 8 0 0 0 0 1 0 0 0 0
+4	1714 6038 0 713 0 2497.819072168036 240 0 4 306 470
+5	7752 11966 0 713 0 2497.819072168036 475 0 3 128 180
+6	19718 6298 0 705 0 2456.737800307723 236 0 235 27730 4353610
+7	26016 6600 2 707 5.726919896272 2474.46481960721 236 0 10.768517429896 143.10967762633 724.98438743194
+8	32616 8970 7 705 8.12776706895 2456.737800307723 235 0.064362736418 13.907255794847 779.62586332853 4471.9676417204
+9	41586 13 714 714 2500 2500 1 0 0 0 0
+10	41599 18 714 714 2500 2500 1 0.094 0.094 0.094 0.008836
+

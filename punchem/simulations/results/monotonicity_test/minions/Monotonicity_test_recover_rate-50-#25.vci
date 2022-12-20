@@ -1,0 +1,67 @@
+file 365199 1671470878                                          
+version 2
+run Monotonicity_test_recover_rate-225-20221219-18:27:58-15603
+attr configname Monotonicity_test_recover_rate
+attr datetime 20221219-18:27:58
+attr experiment Monotonicity_test_recover_rate
+attr inifile omnetpp.ini
+attr iterationvars $0=50
+attr iterationvarsf 50-
+attr measurement $0=50
+attr network Network
+attr processid 15603
+attr repetition 25
+attr replication #25
+attr resultdir results
+attr runnumber 225
+attr seedset 25
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1.5
+param *.boss.arrival_mean 2.5
+param *.boss.service_mean 0.5
+param *.player.recover_rate_x 50
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 3 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 4 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 5 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 6 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 7 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 8 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 9 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 10 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 11 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 12 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1990 27438 0 5352 0 1999.092159803052 1020 0 75 29417 1335667
+1	29428 52840 0 5354 0 1999.776557332008 1966 0 74 54168 2428684
+2	82268 17867 0 5337 0 1994.13701312331 640 0 639 204480 87176640
+3	100135 26504 0 5354 0 1999.776557332008 947 0 946 447931 282644461
+4	126639 20637 0 5343 0 1995.127804251614 791 0 4 954 1334
+5	147276 41234 0 5347 0 1995.890555123657 1581 0 3 328 432
+6	188510 22077 0 5347 0 1995.890555123657 791 0 790 312445 164658515
+7	210587 62761 2 5354 1.567916722186 1999.776557332008 1586 0 91.114853963656 50414.355584437 2707693.821765
+8	273348 22418 4 5344 2.276278548137 1995.46824454778 790 0 3.236931279303 74.911360702845 82.29838581765
+9	295766 30781 5 5347 2.559193379841 1995.890555123657 790 0.000457218052 4.188887988423 461.19546381324 528.82368996416
+10	326547 38613 6 5354 3.064526663557 1999.776557332008 946 0.166699438381 93.05179563313 31737.1527703 1738015.5393112
+11	365160 19 5355 5355 2000 2000 1 0.473 0.473 0.473 0.223729
+12	365179 19 5355 5355 2000 2000 1 0.395 0.395 0.395 0.156025
+
