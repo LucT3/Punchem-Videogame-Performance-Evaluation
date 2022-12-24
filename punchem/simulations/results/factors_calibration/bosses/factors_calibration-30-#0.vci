@@ -1,0 +1,55 @@
+file 84936 1671706751                                           
+version 2
+run factors_calibration-9-20221222-11:59:11-7838
+attr configname factors_calibration
+attr datetime 20221222-11:59:11
+attr experiment factors_calibration
+attr inifile omnetpp.ini
+attr iterationvars $0=30
+attr iterationvarsf 30-
+attr measurement $0=30
+attr network Network
+attr processid 7838
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 9
+attr seedset 0
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+param *.boss.arrival_mean 10
+param *.boss.service_mean 30
+param *.player.recover_rate_x 100
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 5 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 6 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1558 30553 438 3051 350.426549772407 2495.650441249309 1068 170 1237 751338 630081730
+1	32111 30552 438 3051 350.426549772407 2495.650441249309 1068 169 1236 750270 628580122
+2	62663 5510 444 3053 354.240523356049 2497.819072168036 199 26 141 16830 1656276
+3	68173 7803 444 3053 354.240523356049 2497.819072168036 282 25 140 23692 2326040
+4	75976 2261 449 3039 358.372152600745 2488.129335134577 83 16 98 4731 317309
+5	78237 3328 449 3039 358.372152600745 2488.129335134577 83 227.78297357979 1644.922014902 76764.169687239 88803781.837258
+6	81565 3332 449 3039 358.372152600745 2488.129335134577 83 224.67923392358 1630.8638896829 76015.146970971 87294145.960343
+7	84897 19 3054 3054 2500 2500 1 0.0004 0.0004 0.0004 1.6e-07
+8	84916 19 3054 3054 2500 2500 1 0.0392 0.0392 0.0392 0.00153664
+

@@ -1,0 +1,67 @@
+file 246244 1671706750                                          
+version 2
+run factors_calibration-2-20221222-11:59:10-7803
+attr configname factors_calibration
+attr datetime 20221222-11:59:10
+attr experiment factors_calibration
+attr inifile omnetpp.ini
+attr iterationvars $0=5
+attr iterationvarsf 5-
+attr measurement $0=5
+attr network Network
+attr processid 7803
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 2
+attr seedset 0
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+param *.boss.arrival_mean 10
+param *.boss.service_mean 5
+param *.player.recover_rate_x 100
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 5 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 6 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 7 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 8 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 9 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 10 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 11 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 12 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1941 29049 625 4411 350.426549772407 2495.650441249309 1068 1 88 28833 1308895
+1	30990 57893 625 4411 350.426549772407 2495.650441249309 2128 0 87 55454 2503830
+2	88883 5496 626 4350 351.227008624824 2457.047210708518 196 40 235 26950 4333070
+3	94379 10416 626 4413 351.227008624824 2497.819072168036 395 0 4 262 542
+4	104795 7732 626 4350 351.227008624824 2457.047210708518 196 0.107271227364 28.946370899801 1444.1853408112 19267.862306182
+5	112527 45972 626 4376 351.227008624824 2472.415667231126 1167 0 149.5007438135 56182.125149341 4779950.1979221
+6	158499 30466 627 4377 351.663870119308 2472.521829464785 1060 165 1224 736170 610521310
+7	188965 42607 627 4377 351.663870119308 2472.521829464785 1060 0.001013793608 149.51248162722 52258.944477372 4485732.4796317
+8	231572 5252 636 4413 354.240523356049 2497.819072168036 199 1 5 333 745
+9	236824 2984 636 4345 354.240523356049 2454.329190754734 107 25 131 8346 753066
+10	239808 6396 636 4379 354.240523356049 2474.46481960721 196 0 24.366072970046 531.10456583062 6594.1179692606
+11	246204 20 4414 4414 2500 2500 1 0.4896 0.4896 0.4896 0.23970816
+12	246224 19 4414 4414 2500 2500 1 0.094 0.094 0.094 0.008836
+
