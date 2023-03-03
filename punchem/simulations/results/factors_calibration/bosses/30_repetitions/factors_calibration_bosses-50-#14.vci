@@ -1,0 +1,55 @@
+file 75680 1677857819                                           
+version 2
+run factors_calibration_bosses-314-20230303-16:36:59-9223
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:59
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=50
+attr iterationvarsf 50-
+attr measurement $0=50
+attr network Network
+attr processid 9223
+attr repetition 14
+attr replication #14
+attr resultdir results
+attr runnumber 314
+attr seedset 14
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 50
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 5 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 6 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1586 30944 365 2779 353.245376434542 2494.716974460516 1084 164 1247 764762 645686226
+1	32530 30943 365 2779 353.245376434542 2494.716974460516 1084 163 1246 763678 644157786
+2	63473 2708 369 2745 357.206506079018 2464.141668652333 99 12 62 3874 173614
+3	66181 4076 369 2777 357.206506079018 2489.336922729604 149 11 61 5835 262105
+4	70257 1363 396 2777 379.754844643709 2489.336922729604 50 5 54 1475 53925
+5	71620 2008 396 2777 379.754844643709 2489.336922729604 50 264.72169561079 1302.5891315226 40724.433640443 36770560.764623
+6	73628 2013 396 2777 379.754844643709 2489.336922729604 50 199.05324395766 1274.4769305993 39624.606797346 35065481.467908
+7	75641 19 2780 2780 2500 2500 1 0.0004 0.0004 0.0004 1.6e-07
+8	75660 19 2780 2780 2500 2500 1 0.0216 0.0216 0.0216 0.00046656
+

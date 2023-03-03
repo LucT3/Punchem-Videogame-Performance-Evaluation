@@ -1,0 +1,55 @@
+file 80539 1677857816                                           
+version 2
+run factors_calibration_bosses-291-20230303-16:36:56-9108
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:56
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=30
+attr iterationvarsf 30-
+attr measurement $0=30
+attr network Network
+attr processid 9108
+attr repetition 21
+attr replication #21
+attr resultdir results
+attr runnumber 291
+attr seedset 21
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 30
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 5 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 6 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1586 31515 462 2933 351.837372556035 2499.780701823817 1102 139 1240 759829 635424771
+1	33101 31514 462 2933 351.837372556035 2499.780701823817 1102 138 1239 758727 633906215
+2	64615 2162 495 2921 384.753296013685 2491.517959652948 79 5 83 3476 194024
+3	66777 4757 495 2921 384.753296013685 2491.517959652948 174 7 27 3186 62506
+4	71534 3188 495 2921 384.753296013685 2491.517959652948 79 213.35356488623 659.82981935503 31800.401648097 14081844.717564
+5	74722 3184 495 2921 384.753296013685 2491.517959652948 79 194.81715640858 652.10739861635 30098.289251047 12712856.872461
+6	77906 2596 555 2920 437.655607876823 2490.842751616098 95 8 28 1836 37738
+7	80502 17 2934 2934 2500 2500 1 0.02 0.02 0.02 0.0004
+8	80519 19 2934 2934 2500 2500 1 0.0332 0.0332 0.0332 0.00110224
+

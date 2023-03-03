@@ -1,0 +1,55 @@
+file 76353 1677857819                                           
+version 2
+run factors_calibration_bosses-315-20230303-16:36:59-9228
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:59
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=50
+attr iterationvarsf 50-
+attr measurement $0=50
+attr network Network
+attr processid 9228
+attr repetition 15
+attr replication #15
+attr resultdir results
+attr runnumber 315
+attr seedset 15
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 50
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 5 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 6 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1586 32077 361 2857 353.808356634325 2499.303353359801 1122 154 1275 801669 690498061
+1	33663 32076 361 2857 353.808356634325 2499.303353359801 1122 153 1274 800547 688895845
+2	65739 3009 395 2793 390.19208526962 2439.323409864084 110 11 86 4922 274584
+3	68748 3931 395 2793 390.19208526962 2439.323409864084 144 10 85 6014 321650
+4	72679 922 428 2615 418.883362471054 2301.175122264017 34 12 45 969 30889
+5	73601 1357 428 2615 418.883362471054 2301.175122264017 34 213.95849883601 1350.7413734827 23825.6798569 20577826.840074
+6	74958 1362 428 2615 418.883362471054 2301.175122264017 34 198.51658447852 1340.0613340862 23068.6297775 19483173.961293
+7	76320 14 2858 2858 2500 2500 1 0 0 0 0
+8	76334 18 2858 2858 2500 2500 1 0.018 0.018 0.018 0.000324
+

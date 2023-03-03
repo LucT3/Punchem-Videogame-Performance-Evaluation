@@ -1,0 +1,55 @@
+file 85988 1677857810                                           
+version 2
+run factors_calibration_bosses-226-20230303-16:36:50-8782
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:50
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=20
+attr iterationvarsf 20-
+attr measurement $0=20
+attr network Network
+attr processid 8782
+attr repetition 16
+attr replication #16
+attr resultdir results
+attr runnumber 226
+attr seedset 16
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 20
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 5 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 6 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1586 31751 397 2982 350.033756330733 2499.891488434348 1111 168 1278 803253 695029379
+1	33337 31750 397 2982 350.033756330733 2499.891488434348 1111 167 1277 802142 693423984
+2	65087 2782 420 2922 366.242328107235 2443.249928462738 101 15 115 6565 512575
+3	67869 6354 420 2930 366.242328107235 2458.382625969776 233 6 40 5749 160883
+4	74223 4070 420 2922 366.242328107235 2443.249928462738 101 91.282346968017 679.9675095449 41623.656251328 20679340.413651
+5	78293 4060 420 2922 366.242328107235 2443.249928462738 101 87.27369094734 666.36463677719 40035.499557853 19272750.050355
+6	82353 3597 426 2930 369.138949755894 2458.382625969776 132 7 41 3363 96475
+7	85950 19 2983 2983 2500 2500 1 0.0004 0.0004 0.0004 1.6e-07
+8	85969 18 2983 2983 2500 2500 1 0.046 0.046 0.046 0.002116
+

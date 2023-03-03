@@ -1,0 +1,54 @@
+file 45840 1677780572                                           
+version 2
+run factors_calibration_range_test-222-20230302-19:09:32-12825
+attr configname factors_calibration_range_test
+attr datetime 20230302-19:09:32
+attr experiment factors_calibration_range_test
+attr inifile omnetpp.ini
+attr iterationvars "$0=20, $1=5"
+attr iterationvarsf 20,5-
+attr measurement "$0=20, $1=5"
+attr network Network
+attr processid 12825
+attr repetition 2
+attr replication #2
+attr resultdir results
+attr runnumber 222
+attr seedset 2
+param *.boss.arrival_mean 20
+param *.boss.service_mean 20
+param *.minion.arrival_mean 5
+param *.minion.service_mean 5
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 5 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 6 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1581 11957 233 1446 353.149270181719 2499.113961736089 430 55 484 115885 37856555
+1	13538 11956 233 1446 353.149270181719 2499.113961736089 430 54 483 115455 37625215
+2	25494 3410 241 1436 368.958402505989 2486.574186514758 127 6 34 2179 42079
+3	28904 6110 241 1444 368.958402505989 2495.457828463776 228 5 33 3623 65335
+4	35014 2742 250 1444 380.265151819218 2495.457828463776 101 17 117 6767 539239
+5	37756 4022 250 1444 380.265151819218 2495.457828463776 101 125.83942444784 466.90169962204 29533.878009728 9235066.3970792
+6	41778 4023 250 1444 380.265151819218 2495.457828463776 101 114.97911851731 444.18120464929 27623.362202072 8148274.9724665
+7	45801 19 1447 1447 2500 2500 1 0.0084 0.0084 0.0084 7.056e-05
+8	45820 19 1447 1447 2500 2500 1 0.0468 0.0468 0.0468 0.00219024
+

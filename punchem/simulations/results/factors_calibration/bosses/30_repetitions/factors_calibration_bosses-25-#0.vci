@@ -1,0 +1,55 @@
+file 81742 1677857811                                           
+version 2
+run factors_calibration_bosses-240-20230303-16:36:51-8852
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:51
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=25
+attr iterationvarsf 25-
+attr measurement $0=25
+attr network Network
+attr processid 8852
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 240
+attr seedset 0
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 25
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 5 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 6 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1583 30503 440 2883 350.426549772407 2495.650441249309 1068 135 1202 713958 578796370
+1	32086 30502 440 2883 350.426549772407 2495.650441249309 1068 134 1201 712890 577369522
+2	62588 2749 445 2884 358.0313140827 2499.135067398859 100 19 118 6850 552550
+3	65337 5517 445 2884 358.0313140827 2499.135067398859 205 1 22 2708 43156
+4	70854 4012 445 2884 358.0313140827 2499.135067398859 100 34.700369219487 560.33876071669 29380.60551194 10940446.343992
+5	74866 4021 445 2884 358.0313140827 2499.135067398859 100 19.609831314291 528.82935830048 27335.974207662 9719266.9036712
+6	78887 2816 453 2861 365.058342191057 2480.218280446483 105 2 23 1474 24516
+7	81703 19 2885 2885 2500 2500 1 0.0144 0.0144 0.0144 0.00020736
+8	81722 19 2885 2885 2500 2500 1 0.0472 0.0472 0.0472 0.00222784
+

@@ -1,0 +1,55 @@
+file 76600 1677857813                                           
+version 2
+run factors_calibration_bosses-258-20230303-16:36:53-8943
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:53
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=25
+attr iterationvarsf 25-
+attr measurement $0=25
+attr network Network
+attr processid 8943
+attr repetition 18
+attr replication #18
+attr resultdir results
+attr runnumber 258
+attr seedset 18
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 25
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 5 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 6 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1586 29618 482 2836 351.700283444001 2499.013385499206 1037 140 1176 682346 541913386
+1	31204 29617 482 2836 351.700283444001 2499.013385499206 1037 139 1175 681309 540549731
+2	60821 2789 488 2831 352.65760743913 2494.636027121347 103 4 34 1939 46087
+3	63610 4819 488 2834 352.65760743913 2495.30855901991 179 3 33 3186 74238
+4	68429 2059 509 2834 364.993776578412 2495.30855901991 76 12 87 3762 222794
+5	70488 3038 509 2834 364.993776578412 2495.30855901991 76 79.690355009943 844.21814265115 29116.799019357 15399241.302138
+6	73526 3035 509 2834 364.993776578412 2495.30855901991 76 66.212926815751 826.97019566437 27704.497833008 14419873.705494
+7	76561 19 2837 2837 2500 2500 1 0.0212 0.0212 0.0212 0.00044944
+8	76580 19 2837 2837 2500 2500 1 0.0348 0.0348 0.0348 0.00121104
+

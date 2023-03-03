@@ -1,0 +1,55 @@
+version 2
+run factors_calibration_bosses-216-20230303-16:36:49-8732
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:49
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=20
+attr iterationvarsf 20-
+attr measurement $0=20
+attr network Network
+attr processid 8732
+attr repetition 6
+attr replication #6
+attr resultdir results
+attr runnumber 216
+attr seedset 6
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 20
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+scalar Network.player boss_throughput:mean 0.0428
+attr source signal_boss_throughput
+scalar Network.player boss_throughput:last 0.0428
+attr source signal_boss_throughput
+scalar Network.player boss_defeated_stat:count 96
+attr source signal_boss_defeated
+scalar Network.player boss_defeated_stat:mean 59.5
+attr source signal_boss_defeated
+scalar Network.player boss_waiting_time_stat:mean 100.54912165404
+attr source signal_boss_waiting_time
+scalar Network.player boss_response_time_stat:mean 120.82257180114
+attr source signal_boss_response_time
+scalar Network.player minion_throughput:mean 0.1
+attr source signal_minion_throughput
+scalar Network.player minion_throughput:last 0.1
+attr source signal_minion_throughput
+scalar Network.player minion_recovered_stat:count 12
+attr source signal_minion_recovered
+scalar Network.player minion_recovered_stat:mean 7.5
+attr source signal_minion_recovered
+scalar Network.player minion_defeated_stat:count 238
+attr source signal_minion_defeated
+scalar Network.player minion_defeated_stat:mean 131.5
+attr source signal_minion_defeated
+scalar Network.player minion_waiting_time_stat:mean 1289.1575330131
+attr source signal_minion_waiting_time
+scalar Network.player minion_response_time_stat:mean 1291.2393827357
+attr source signal_minion_response_time
+

@@ -1,0 +1,55 @@
+file 70728 1677857817                                           
+version 2
+run factors_calibration_bosses-301-20230303-16:36:57-9158
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:57
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=50
+attr iterationvarsf 50-
+attr measurement $0=50
+attr network Network
+attr processid 9158
+attr repetition 1
+attr replication #1
+attr resultdir results
+attr runnumber 301
+attr seedset 1
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 50
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 5 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 6 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1583 28908 443 2714 353.947414058741 2498.188084121812 1015 135 1149 651630 505486240
+1	30491 28907 443 2714 353.947414058741 2498.188084121812 1015 134 1148 650615 504183995
+2	59398 2744 457 2710 369.375255317272 2496.852317827315 100 14 70 3958 181148
+3	62142 3918 457 2710 369.375255317272 2496.852317827315 143 13 69 5379 235419
+4	66060 1170 526 2644 431.587328125516 2430.945319379447 43 6 48 1161 37969
+5	67230 1726 526 2644 431.587328125516 2430.945319379447 43 279.4557879523 1380.835073393 34212.854071752 30958708.629114
+6	68956 1733 526 2644 431.587328125516 2430.945319379447 43 278.60397040628 1356.1373759923 33290.177668538 29462419.464476
+7	70689 19 2715 2715 2500 2500 1 0.0176 0.0176 0.0176 0.00030976
+8	70708 19 2715 2715 2500 2500 1 0.0192 0.0192 0.0192 0.00036864
+

@@ -1,0 +1,55 @@
+file 77316 1677857811                                           
+version 2
+run factors_calibration_bosses-241-20230303-16:36:51-8857
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:51
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=25
+attr iterationvarsf 25-
+attr measurement $0=25
+attr network Network
+attr processid 8857
+attr repetition 1
+attr replication #1
+attr resultdir results
+attr runnumber 241
+attr seedset 1
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 25
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 5 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 6 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1583 28914 448 2769 353.947414058741 2498.188084121812 1015 133 1147 649600 502883780
+1	30497 28913 448 2769 353.947414058741 2498.188084121812 1015 132 1146 648585 501585595
+2	59410 2691 462 2764 369.375255317272 2496.852317827315 100 4 19 1005 11435
+3	62101 5164 462 2765 369.375255317272 2497.87185194966 193 3 18 1719 17839
+4	67265 2540 511 2765 411.958050534774 2497.87185194966 93 9 101 5115 348347
+5	69805 3730 511 2765 411.958050534774 2497.87185194966 93 84.142776454237 329.80461664325 18586.204309375 4063417.5853067
+6	73535 3742 511 2765 411.958050534774 2497.87185194966 93 72.577954313145 314.03843297445 16480.242376375 3291630.85523
+7	77277 19 2770 2770 2500 2500 1 0.0184 0.0184 0.0184 0.00033856
+8	77296 19 2770 2770 2500 2500 1 0.0404 0.0404 0.0404 0.00163216
+

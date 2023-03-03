@@ -1,0 +1,55 @@
+file 76345 1677857818                                           
+version 2
+run factors_calibration_bosses-304-20230303-16:36:57-9173
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:57
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=50
+attr iterationvarsf 50-
+attr measurement $0=50
+attr network Network
+attr processid 9173
+attr repetition 4
+attr replication #4
+attr resultdir results
+attr runnumber 304
+attr seedset 4
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 50
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 5 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 6 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1583 31699 427 2896 350.538680141598 2498.743920088481 1109 167 1275 799589 690165079
+1	33282 31698 427 2896 350.538680141598 2498.743920088481 1109 166 1274 798480 688567010
+2	64980 2883 429 2894 356.5813254123 2497.177872175454 106 4 68 3825 171063
+3	67863 4005 429 2894 356.5813254123 2497.177872175454 147 3 67 5163 224533
+4	71868 1127 460 2888 390.414305625655 2488.202430189297 41 13 53 1353 50389
+5	72995 1655 460 2888 390.414305625655 2488.202430189297 41 122.6420328203 1364.7128934641 31262.305559046 28140984.424401
+6	74650 1656 460 2888 390.414305625655 2488.202430189297 41 56.924315546227 1349.0811177244 30308.408373441 26689211.378592
+7	76306 19 2897 2897 2500 2500 1 0.0068 0.0068 0.0068 4.624e-05
+8	76325 19 2897 2897 2500 2500 1 0.0212 0.0212 0.0212 0.00044944
+

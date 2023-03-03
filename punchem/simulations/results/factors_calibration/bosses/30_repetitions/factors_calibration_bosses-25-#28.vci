@@ -1,0 +1,55 @@
+file 83244 1677857814                                           
+version 2
+run factors_calibration_bosses-268-20230303-16:36:54-8993
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:54
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=25
+attr iterationvarsf 25-
+attr measurement $0=25
+attr network Network
+attr processid 8993
+attr repetition 28
+attr replication #28
+attr resultdir results
+attr runnumber 268
+attr seedset 28
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 25
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 5 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 6 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1586 32167 498 3028 352.748991873875 2499.421273409798 1124 131 1254 778370 657357350
+1	33753 32166 498 3028 352.748991873875 2499.421273409798 1124 130 1253 777246 655801734
+2	65919 2420 499 3014 353.358311000258 2482.972669987505 88 16 103 5236 368324
+3	68339 5083 499 3026 353.358311000258 2495.979355742821 186 7 37 4097 104229
+4	73422 3553 499 3014 353.358311000258 2482.972669987505 88 96.130117333565 771.41237940967 42760.523373548 23900778.741426
+5	76975 3555 499 3014 353.358311000258 2482.972669987505 88 91.420997544159 762.21586886977 41183.465122955 22365199.700783
+6	80530 2675 541 3026 378.709152250134 2495.979355742821 98 8 38 2219 57547
+7	83205 19 3029 3029 2500 2500 1 0.0228 0.0228 0.0228 0.00051984
+8	83224 19 3029 3029 2500 2500 1 0.0412 0.0412 0.0412 0.00169744
+

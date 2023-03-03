@@ -1,0 +1,55 @@
+file 74500 1677857817                                           
+version 2
+run factors_calibration_bosses-303-20230303-16:36:57-9168
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:57
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=50
+attr iterationvarsf 50-
+attr measurement $0=50
+attr network Network
+attr processid 9168
+attr repetition 3
+attr replication #3
+attr resultdir results
+attr runnumber 303
+attr seedset 3
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 50
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 5 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 6 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1583 31208 413 2821 350.124744382128 2490.71140145422 1092 174 1265 785694 673820966
+1	32791 31207 413 2821 350.124744382128 2490.71140145422 1092 173 1264 784602 672250670
+2	63998 1085 422 2733 363.947956397415 2419.930626884578 40 8 47 1100 35580
+3	65083 3629 422 2773 363.947956397415 2458.010288498061 133 11 65 5063 226471
+4	68712 1604 422 2733 363.947956397415 2419.930626884578 40 193.95070985988 1487.9031775958 33200.228302536 34077126.987208
+5	70316 1603 422 2733 363.947956397415 2419.930626884578 40 186.53708895546 1455.7669293994 32379.316534087 32636379.775701
+6	71919 2542 441 2773 380.659473743649 2458.010288498061 93 12 66 3658 166966
+7	74461 19 2822 2822 2500 2500 1 0.0024 0.0024 0.0024 5.76e-06
+8	74480 19 2822 2822 2500 2500 1 0.0188 0.0188 0.0188 0.00035344
+

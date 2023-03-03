@@ -1,0 +1,55 @@
+file 72308 1677857820                                           
+version 2
+run factors_calibration_bosses-324-20230303-16:37:00-9273
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:37:00
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=50
+attr iterationvarsf 50-
+attr measurement $0=50
+attr network Network
+attr processid 9273
+attr repetition 24
+attr replication #24
+attr resultdir results
+attr runnumber 324
+attr seedset 24
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 50
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 5 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 6 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1586 30123 404 2730 350.002565783551 2497.125630665819 1056 164 1219 730224 603081776
+1	31709 30122 404 2730 350.002565783551 2497.125630665819 1056 163 1218 729168 601622384
+2	61831 1143 409 2718 356.182197717188 2490.986133395377 42 5 46 1071 33481
+3	62974 3533 409 2722 356.182197717188 2491.203118857694 129 16 61 5215 238103
+4	66507 1688 409 2718 356.182197717188 2490.986133395377 42 298.05239236039 1454.6992394631 42491.690946816 48324065.980111
+5	68195 1690 409 2718 356.182197717188 2490.986133395377 42 294.99328759944 1429.5190616308 41488.353680409 46126303.20538
+6	69885 2385 429 2722 372.134798287112 2491.203118857694 87 17 62 3572 164126
+7	72270 18 2731 2731 2500 2500 1 0.004 0.004 0.004 1.6e-05
+8	72288 19 2731 2731 2500 2500 1 0.0184 0.0184 0.0184 0.00033856
+

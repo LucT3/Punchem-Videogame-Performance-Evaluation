@@ -1,0 +1,55 @@
+file 76638 1677857818                                           
+version 2
+run factors_calibration_bosses-309-20230303-16:36:58-9198
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:58
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=50
+attr iterationvarsf 50-
+attr measurement $0=50
+attr network Network
+attr processid 9198
+attr repetition 9
+attr replication #9
+attr resultdir results
+attr runnumber 309
+attr seedset 9
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 50
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 5 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 6 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1583 31838 434 2926 350.942645237481 2499.336955685138 1113 131 1243 764631 640197229
+1	33421 31837 434 2926 350.942645237481 2499.336955685138 1113 130 1242 763518 638669080
+2	65258 1022 443 2920 366.144833164071 2492.020763972835 38 6 43 931 27379
+3	66280 4154 443 2920 366.144833164071 2492.020763972835 153 4 82 6563 369411
+4	70434 1517 443 2920 366.144833164071 2492.020763972835 38 101.96809500078 1534.6324197987 32089.892703631 36836356.205138
+5	71951 1517 443 2920 366.144833164071 2492.020763972835 38 91.675644324694 1534.2969437317 31378.585220954 35582293.319004
+6	73468 3131 445 2905 366.90674060042 2481.626538504285 115 5 83 5052 284900
+7	76599 19 2927 2927 2500 2500 1 0.0196 0.0196 0.0196 0.00038416
+8	76618 19 2927 2927 2500 2500 1 0.0172 0.0172 0.0172 0.00029584
+

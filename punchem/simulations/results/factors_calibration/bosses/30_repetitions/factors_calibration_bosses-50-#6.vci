@@ -1,0 +1,55 @@
+file 74014 1677857818                                           
+version 2
+run factors_calibration_bosses-306-20230303-16:36:58-9183
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:58
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=50
+attr iterationvarsf 50-
+attr measurement $0=50
+attr network Network
+attr processid 9183
+attr repetition 6
+attr replication #6
+attr resultdir results
+attr runnumber 306
+attr seedset 6
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 50
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 1 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 2 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 3 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 4 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 5 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 6 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1583 2568 337 2712 350.911095348185 2499.404620087199 94 17 65 4236 210156
+1	4151 3810 337 2712 350.911095348185 2499.404620087199 139 16 64 6324 315356
+2	7961 30572 339 2710 353.620728237707 2498.892267154484 1072 145 1216 729496 599082376
+3	38533 30571 339 2710 353.620728237707 2498.892267154484 1072 144 1215 728424 597624456
+4	69104 1238 354 2700 373.360918978723 2486.705344980775 45 6 50 1260 42870
+5	70342 1819 354 2700 373.360918978723 2486.705344980775 45 273.74771431553 1548.2259088094 51558.346290796 65923647.682902
+6	72161 1821 354 2700 373.360918978723 2486.705344980775 45 242.6088372443 1527.0166597718 50622.74645695 63658961.732585
+7	73982 14 2713 2713 2500 2500 1 0 0 0 0
+8	73996 17 2713 2713 2500 2500 1 0.02 0.02 0.02 0.0004
+

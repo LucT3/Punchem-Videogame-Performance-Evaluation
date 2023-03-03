@@ -1,0 +1,55 @@
+file 77734 1677857816                                           
+version 2
+run factors_calibration_bosses-294-20230303-16:36:56-9123
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:56
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=30
+attr iterationvarsf 30-
+attr measurement $0=30
+attr network Network
+attr processid 9123
+attr repetition 24
+attr replication #24
+attr resultdir results
+attr runnumber 294
+attr seedset 24
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 30
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 5 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 6 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1586 30127 408 2774 350.002565783551 2497.125630665819 1056 164 1219 730224 603081776
+1	31713 30126 408 2774 350.002565783551 2497.125630665819 1056 163 1218 729168 601622384
+2	61839 2244 411 2746 350.680684953601 2482.002039891201 82 9 90 4059 246861
+3	64083 4630 411 2766 350.680684953601 2491.203118857694 169 11 24 2995 54439
+4	68713 3302 411 2746 350.680684953601 2482.002039891201 82 211.73177906254 570.12221898435 36120.034567482 16486042.523249
+5	72015 3297 411 2746 350.680684953601 2482.002039891201 82 205.28718892496 539.06705986193 34270.143720688 14851410.89152
+6	75312 2385 434 2766 372.134798287112 2491.203118857694 87 12 25 1622 30944
+7	77697 18 2775 2775 2500 2500 1 0.004 0.004 0.004 1.6e-05
+8	77715 18 2775 2775 2500 2500 1 0.036 0.036 0.036 0.001296
+

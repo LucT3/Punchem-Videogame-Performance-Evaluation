@@ -1,0 +1,55 @@
+file 81174 1677857812                                           
+version 2
+run factors_calibration_bosses-251-20230303-16:36:52-8907
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:52
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=25
+attr iterationvarsf 25-
+attr measurement $0=25
+attr network Network
+attr processid 8907
+attr repetition 11
+attr replication #11
+attr resultdir results
+attr runnumber 251
+attr seedset 11
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 25
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 1 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 2 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 3 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 4 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 5 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 6 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1586 3359 404 2850 350.810908640399 2493.644976029564 123 6 45 3045 88497
+1	4945 5874 404 2850 350.810908640399 2493.644976029564 215 5 44 5224 150180
+2	10819 30199 406 2858 351.534157359298 2498.19833765216 1059 155 1213 724356 594430114
+3	41018 30198 406 2858 351.534157359298 2498.19833765216 1059 154 1212 723297 592982461
+4	71216 2517 427 2844 365.311520087039 2486.688685816262 92 9 100 5014 338146
+5	73733 3703 427 2844 365.311520087039 2486.688685816262 92 178.4853597922 736.10088254328 40882.154139786 21054678.623133
+6	77436 3702 427 2844 365.311520087039 2486.688685816262 92 97.951968188851 713.77095945165 39173.715761127 19593733.637262
+7	81138 18 2859 2859 2500 2500 1 0.008 0.008 0.008 6.4e-05
+8	81156 17 2859 2859 2500 2500 1 0.04 0.04 0.04 0.0016
+

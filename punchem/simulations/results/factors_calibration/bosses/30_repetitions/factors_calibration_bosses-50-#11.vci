@@ -1,0 +1,55 @@
+file 74432 1677857818                                           
+version 2
+run factors_calibration_bosses-311-20230303-16:36:58-9208
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:58
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=50
+attr iterationvarsf 50-
+attr measurement $0=50
+attr network Network
+attr processid 9208
+attr repetition 11
+attr replication #11
+attr resultdir results
+attr runnumber 311
+attr seedset 11
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 50
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 1 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 2 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 3 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 4 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 5 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 6 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1586 3361 399 2795 350.810908640399 2493.644976029564 123 11 91 6413 392485
+1	4947 4518 399 2795 350.810908640399 2493.644976029564 165 10 90 8530 512784
+2	9465 30192 401 2803 351.534157359298 2498.19833765216 1059 155 1213 724356 594430114
+3	39657 30191 401 2803 351.534157359298 2498.19833765216 1059 154 1212 723297 592982461
+4	69848 1151 522 2789 435.737706800843 2488.517860798921 42 4 45 1029 31381
+5	70999 1695 522 2789 435.737706800843 2488.517860798921 42 355.93223549001 1667.8900007697 40237.451210123 42605179.436914
+6	72694 1701 522 2789 435.737706800843 2488.517860798921 42 350.20409535654 1627.5210538056 39456.25987444 41249692.015171
+7	74395 18 2804 2804 2500 2500 1 0.008 0.008 0.008 6.4e-05
+8	74413 18 2804 2804 2500 2500 1 0.018 0.018 0.018 0.000324
+

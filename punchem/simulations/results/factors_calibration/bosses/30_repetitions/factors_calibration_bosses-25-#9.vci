@@ -1,0 +1,55 @@
+file 83251 1677857812                                           
+version 2
+run factors_calibration_bosses-249-20230303-16:36:52-8897
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:52
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=25
+attr iterationvarsf 25-
+attr measurement $0=25
+attr network Network
+attr processid 8897
+attr repetition 9
+attr replication #9
+attr resultdir results
+attr runnumber 249
+attr seedset 9
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 25
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 5 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 6 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1583 31804 482 3022 350.942645237481 2499.336955685138 1113 87 1199 715659 575064469
+1	33387 31802 482 3022 350.942645237481 2499.336955685138 1113 86 1198 714546 573634264
+2	65189 3118 492 3002 366.90674060042 2481.626538504285 115 2 33 2210 50304
+3	68307 5494 492 3023 366.90674060042 2499.505302627938 202 1 32 3784 84284
+4	73801 2390 495 3023 371.375298603913 2499.505302627938 87 10 96 4611 299251
+5	76191 3514 495 3023 371.375298603913 2499.505302627938 87 21.421979897181 580.78234183827 33218.303167002 14567215.44869
+6	79705 3507 495 3023 371.375298603913 2499.505302627938 87 4.468558003493 561.71763530038 31525.957895065 13257431.530384
+7	83212 19 3024 3024 2500 2500 1 0.0372 0.0372 0.0372 0.00138384
+8	83231 19 3024 3024 2500 2500 1 0.0384 0.0384 0.0384 0.00147456
+

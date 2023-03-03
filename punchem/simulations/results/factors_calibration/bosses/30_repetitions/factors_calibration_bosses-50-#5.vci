@@ -1,0 +1,55 @@
+file 67966 1677857818                                           
+version 2
+run factors_calibration_bosses-305-20230303-16:36:58-9178
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:58
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=50
+attr iterationvarsf 50-
+attr measurement $0=50
+attr network Network
+attr processid 9178
+attr repetition 5
+attr replication #5
+attr resultdir results
+attr runnumber 305
+attr seedset 5
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 50
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 5 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 6 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1583 27749 392 2582 350.874370368594 2499.225221535011 975 173 1147 643500 501948200
+1	29332 27748 392 2582 350.874370368594 2499.225221535011 975 172 1146 642525 500662175
+2	57080 2753 416 2544 381.910508285344 2471.034788360199 101 15 75 4427 231207
+3	59833 3831 416 2544 381.910508285344 2471.034788360199 141 14 74 5968 307902
+4	63664 1074 437 2498 402.051321938288 2437.506466906183 40 6 45 1020 31340
+5	64738 1597 437 2498 402.051321938288 2437.506466906183 40 279.97708730054 1561.3956277008 36027.053364311 43175488.113401
+6	66335 1593 437 2498 402.051321938288 2437.506466906183 40 249.69142517323 1549.0189618786 35238.026213218 41658740.157944
+7	67928 19 2583 2583 2500 2500 1 0.0004 0.0004 0.0004 1.6e-07
+8	67947 18 2583 2583 2500 2500 1 0.018 0.018 0.018 0.000324
+

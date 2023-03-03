@@ -1,0 +1,55 @@
+file 72463 1677857819                                           
+version 2
+run factors_calibration_bosses-318-20230303-16:36:59-9243
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:59
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=50
+attr iterationvarsf 50-
+attr measurement $0=50
+attr network Network
+attr processid 9243
+attr repetition 18
+attr replication #18
+attr resultdir results
+attr runnumber 318
+attr seedset 18
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 50
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 5 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 6 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1586 29641 425 2747 351.700283444001 2499.013385499206 1037 192 1228 736270 615681418
+1	31227 29640 425 2747 351.700283444001 2499.013385499206 1037 191 1227 735233 614209915
+2	60867 2808 431 2743 352.65760743913 2494.636027121347 103 11 69 4280 207716
+3	63675 4012 431 2743 352.65760743913 2494.636027121347 147 10 68 6053 291669
+4	67687 1201 534 2643 444.881567486717 2382.111026435486 44 7 50 1254 42834
+5	68888 1768 534 2643 444.881567486717 2382.111026435486 44 295.46355220817 1381.6181413805 37940.719027557 38101325.020016
+6	70656 1770 534 2643 444.881567486717 2382.111026435486 44 279.42335074529 1357.4396940768 37064.32590104 36607384.484851
+7	72426 19 2748 2748 2500 2500 1 0.0004 0.0004 0.0004 1.6e-07
+8	72445 17 2748 2748 2500 2500 1 0.02 0.02 0.02 0.0004
+

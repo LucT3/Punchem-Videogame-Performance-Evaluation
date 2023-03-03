@@ -1,0 +1,66 @@
+file 105523 1677780557                                          
+version 2
+run factors_calibration_range_test-68-20230302-19:09:17-12038
+attr configname factors_calibration_range_test
+attr datetime 20230302-19:09:17
+attr experiment factors_calibration_range_test
+attr inifile omnetpp.ini
+attr iterationvars "$0=10, $1=1"
+attr iterationvarsf 10,1-
+attr measurement "$0=10, $1=1"
+attr network Network
+attr processid 12038
+attr repetition 8
+attr replication #8
+attr resultdir results
+attr runnumber 68
+attr seedset 8
+param *.boss.arrival_mean 20
+param *.boss.service_mean 10
+param *.minion.arrival_mean 5
+param *.minion.service_mean 1
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 5 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 6 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 7 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 8 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 9 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 10 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 11 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 12 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1966 12062 236 1903 351.637799926793 2489.622946252299 456 1 46 4054 85270
+1	14028 24159 236 1903 351.637799926793 2489.622946252299 915 0 45 7217 155385
+2	38187 2760 239 1904 357.569301019048 2496.623961649034 101 21 121 7171 594991
+3	40947 5253 239 1906 357.569301019048 2498.862924785266 201 0 7 262 972
+4	46200 4009 239 1904 357.569301019048 2496.623961649034 101 0.329005917956 81.269851773306 2636.0465476279 118454.27237809
+5	50209 3347 239 1904 357.569301019048 2496.623961649034 101 0 70.293124793872 1474.8926527346 62112.93389437
+6	53556 17687 249 1883 373.219127833684 2465.6253789052 481 0 209.75863568671 15378.680064469 1333453.8694897
+7	71243 12840 250 1881 373.303833943709 2463.86418506489 459 51 509 128520 44044110
+8	84083 18175 250 1881 373.303833943709 2463.86418506489 459 0.007235746369 210.18043810696 15033.358631567 1289393.750819
+9	102258 2616 255 1906 375.391315048882 2498.862924785266 100 1 8 230 844
+10	104874 608 255 1885 375.391315048882 2465.658478271555 22 2 23 275 4323
+11	105482 20 1907 1907 2500 2500 1 0.2036 0.2036 0.2036 0.04145296
+12	105502 20 1907 1907 2500 2500 1 0.0484 0.0484 0.0484 0.00234256
+

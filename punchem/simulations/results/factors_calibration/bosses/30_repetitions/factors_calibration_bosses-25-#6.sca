@@ -1,0 +1,55 @@
+version 2
+run factors_calibration_bosses-246-20230303-16:36:52-8882
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:52
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=25
+attr iterationvarsf 25-
+attr measurement $0=25
+attr network Network
+attr processid 8882
+attr repetition 6
+attr replication #6
+attr resultdir results
+attr runnumber 246
+attr seedset 6
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 25
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+scalar Network.player boss_throughput:mean 0.0392
+attr source signal_boss_throughput
+scalar Network.player boss_throughput:last 0.0392
+attr source signal_boss_throughput
+scalar Network.player boss_defeated_stat:count 88
+attr source signal_boss_defeated
+scalar Network.player boss_defeated_stat:mean 54.5
+attr source signal_boss_defeated
+scalar Network.player boss_waiting_time_stat:mean 323.23723479753
+attr source signal_boss_waiting_time
+scalar Network.player boss_response_time_stat:mean 346.26740432571
+attr source signal_boss_response_time
+scalar Network.player minion_throughput:mean 0.0028
+attr source signal_minion_throughput
+scalar Network.player minion_throughput:last 0.0028
+attr source signal_minion_throughput
+scalar Network.player minion_recovered_stat:count 0
+attr source signal_minion_recovered
+scalar Network.player minion_recovered_stat:mean -nan
+attr source signal_minion_recovered
+scalar Network.player minion_defeated_stat:count 0
+attr source signal_minion_defeated
+scalar Network.player minion_defeated_stat:mean -nan
+attr source signal_minion_defeated
+scalar Network.player minion_waiting_time_stat:mean -nan
+attr source signal_minion_waiting_time
+scalar Network.player minion_response_time_stat:mean -nan
+attr source signal_minion_response_time
+

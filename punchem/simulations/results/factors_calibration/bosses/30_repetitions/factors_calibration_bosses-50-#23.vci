@@ -1,0 +1,55 @@
+file 72683 1677857819                                           
+version 2
+run factors_calibration_bosses-323-20230303-16:36:59-9268
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:59
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=50
+attr iterationvarsf 50-
+attr measurement $0=50
+attr network Network
+attr processid 9268
+attr repetition 23
+attr replication #23
+attr resultdir results
+attr runnumber 323
+attr seedset 23
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 50
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 5 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 6 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1586 30534 430 2811 351.403589453283 2494.858640492792 1070 132 1201 713155 577404635
+1	32120 30533 430 2811 351.403589453283 2494.858640492792 1070 131 1200 712085 575979395
+2	62653 2900 458 2805 370.280462470171 2493.276094709187 106 12 86 5075 290393
+3	65553 3748 458 2805 370.280462470171 2493.276094709187 137 11 85 6338 352748
+4	69301 847 467 2569 382.030739285782 2277.584567989209 31 9 39 744 20336
+5	70148 1249 467 2569 382.030739285782 2277.584567989209 31 217.64376186451 1511.1763099794 26714.324919233 27058049.896648
+6	71397 1248 467 2569 382.030739285782 2277.584567989209 31 212.6020461867 1505.972607892 26107.099936557 26021834.634876
+7	72645 18 2812 2812 2500 2500 1 0.016 0.016 0.016 0.000256
+8	72663 19 2812 2812 2500 2500 1 0.0156 0.0156 0.0156 0.00024336
+

@@ -1,0 +1,55 @@
+file 78278 1677857819                                           
+version 2
+run factors_calibration_bosses-316-20230303-16:36:59-9233
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:59
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=50
+attr iterationvarsf 50-
+attr measurement $0=50
+attr network Network
+attr processid 9233
+attr repetition 16
+attr replication #16
+attr resultdir results
+attr runnumber 316
+attr seedset 16
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 50
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 3 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 4 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 5 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 6 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1586 31744 386 2914 350.033756330733 2499.891488434348 1111 168 1278 803253 695029379
+1	33330 31743 386 2914 350.033756330733 2499.891488434348 1111 167 1277 802142 693423984
+2	65073 1198 401 2872 361.475541313979 2471.23571329571 44 4 47 1122 35706
+3	66271 4817 401 2872 361.475541313979 2471.23571329571 176 18 107 11380 853004
+4	71088 1773 401 2872 361.475541313979 2471.23571329571 44 344.56277605888 1722.0938120514 45493.131613069 54516638.150149
+5	72861 1769 401 2872 361.475541313979 2471.23571329571 44 335.55293649483 1712.7779510045 44751.586616033 53041990.1026
+6	74630 3609 415 2861 369.138949755894 2458.382625969776 132 19 108 8572 643780
+7	78239 19 2915 2915 2500 2500 1 0.0004 0.0004 0.0004 1.6e-07
+8	78258 19 2915 2915 2500 2500 1 0.0188 0.0188 0.0188 0.00035344
+

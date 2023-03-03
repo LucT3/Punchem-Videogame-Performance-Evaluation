@@ -1,0 +1,55 @@
+file 81050 1677857813                                           
+version 2
+run factors_calibration_bosses-257-20230303-16:36:53-8937
+attr configname factors_calibration_bosses
+attr datetime 20230303-16:36:53
+attr experiment factors_calibration_bosses
+attr inifile omnetpp.ini
+attr iterationvars $0=25
+attr iterationvarsf 25-
+attr measurement $0=25
+attr network Network
+attr processid 8937
+attr repetition 17
+attr replication #17
+attr resultdir results
+attr runnumber 257
+attr seedset 17
+param *.minion.arrival_mean 2
+param *.minion.service_mean 1
+param *.boss.arrival_mean 20
+param *.boss.service_mean 25
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 1 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 2 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 3 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 4 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 5 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 6 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1586 3229 422 2897 350.171511211393 2489.726720628059 118 11 47 3630 124158
+1	4815 5477 422 2904 350.171511211393 2498.624247691913 200 10 46 6034 202922
+2	10292 30930 424 2906 355.296214318353 2499.701030845476 1084 114 1197 710562 571920026
+3	41222 30929 424 2906 355.296214318353 2499.701030845476 1084 113 1196 709478 570499986
+4	72151 2248 431 2904 357.298228448698 2498.624247691913 82 11 92 4223 263425
+5	74399 3306 431 2904 357.298228448698 2498.624247691913 82 116.63177472961 863.09800229932 45317.243302615 27583237.357188
+6	77705 3306 431 2904 357.298228448698 2498.624247691913 82 84.57401950523 848.1800370479 43882.853617798 25955316.938238
+7	81011 19 2907 2907 2500 2500 1 0.0192 0.0192 0.0192 0.00036864
+8	81030 19 2907 2907 2500 2500 1 0.0368 0.0368 0.0368 0.00135424
+
