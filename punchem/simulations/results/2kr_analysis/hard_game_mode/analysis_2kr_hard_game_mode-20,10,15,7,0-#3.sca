@@ -1,0 +1,55 @@
+version 2
+run analysis_2kr_hard_game_mode-73-20230304-18:48:39-29363
+attr configname analysis_2kr_hard_game_mode
+attr datetime 20230304-18:48:39
+attr experiment analysis_2kr_hard_game_mode
+attr inifile omnetpp.ini
+attr iterationvars "$0=20, $1=10, $2=15, $3=7, $4=0"
+attr iterationvarsf 20,10,15,7,0-
+attr measurement "$0=20, $1=10, $2=15, $3=7, $4=0"
+attr network Network
+attr processid 29363
+attr repetition 3
+attr replication #3
+attr resultdir results
+attr runnumber 73
+attr seedset 3
+param *.boss.arrival_mean 20
+param *.boss.service_mean 10
+param *.minion.arrival_mean 15
+param *.minion.service_mean 7
+param *.player.recover_rate_x 0
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+scalar Network.player boss_throughput:mean 0.0448
+attr source signal_boss_throughput
+scalar Network.player boss_throughput:last 0.0448
+attr source signal_boss_throughput
+scalar Network.player boss_defeated_stat:count 93
+attr source signal_boss_defeated
+scalar Network.player boss_defeated_stat:mean 66
+attr source signal_boss_defeated
+scalar Network.player boss_waiting_time_stat:mean 12.517473745031
+attr source signal_boss_waiting_time
+scalar Network.player boss_response_time_stat:mean 21.573126317044
+attr source signal_boss_response_time
+scalar Network.player minion_throughput:mean 0.0656
+attr source signal_minion_throughput
+scalar Network.player minion_throughput:last 0.0656
+attr source signal_minion_throughput
+scalar Network.player minion_recovered_stat:count 29
+attr source signal_minion_recovered
+scalar Network.player minion_recovered_stat:mean 27
+attr source signal_minion_recovered
+scalar Network.player minion_defeated_stat:count 149
+attr source signal_minion_defeated
+scalar Network.player minion_defeated_stat:mean 90
+attr source signal_minion_defeated
+scalar Network.player minion_waiting_time_stat:mean 44.764073536679
+attr source signal_minion_waiting_time
+scalar Network.player minion_response_time_stat:mean 50.459660631919
+attr source signal_minion_response_time
+

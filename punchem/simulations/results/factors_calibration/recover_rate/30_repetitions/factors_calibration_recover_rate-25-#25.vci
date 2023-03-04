@@ -1,0 +1,67 @@
+file 121466 1677916719                                          
+version 2
+run factors_calibration_recover_rate-55-20230304-08:58:39-6547
+attr configname factors_calibration_recover_rate
+attr datetime 20230304-08:58:39
+attr experiment factors_calibration_recover_rate
+attr inifile omnetpp.ini
+attr iterationvars $0=25
+attr iterationvarsf 25-
+attr measurement $0=25
+attr network Network
+attr processid 6547
+attr repetition 25
+attr replication #25
+attr resultdir results
+attr runnumber 55
+attr seedset 25
+param *.minion.arrival_mean 5
+param *.minion.service_mean 2
+param *.boss.arrival_mean 10
+param *.boss.service_mean 3
+param *.player.recover_rate_x 25
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 1 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 2 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 3 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 4 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 5 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 6 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 7 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 8 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 9 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 10 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 11 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 12 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1987 5623 360 2230 351.217514952989 2469.774199319746 214 1 4 283 445
+1	7610 11244 360 2236 351.217514952989 2484.084236079933 428 0 3 138 186
+2	18854 2310 360 2228 351.217514952989 2469.552333080294 85 24 108 5610 421430
+3	21164 6371 360 2233 351.217514952989 2471.876195191978 214 0 16.05038747589 191.12272841613 1270.6106837694
+4	27535 5990 361 2236 355.435888287772 2484.084236079933 214 41 254 31565 5472515
+5	33525 8395 361 2236 355.435888287772 2484.084236079933 214 0.002743308314 18.712185326968 837.9912725812 6148.7528822194
+6	41920 18027 361 2249 355.435888287772 2496.446845111594 504 0 36.067485915997 3175.7114704723 52737.886836993
+7	59947 10896 367 2249 356.634146111566 2496.446845111594 415 1 14 1186 5938
+8	70843 21878 367 2249 356.634146111566 2496.446845111594 834 0 13 1552 7992
+9	92721 11793 375 2247 362.488073538099 2494.148395495556 419 77 495 119834 40402494
+10	104514 16912 375 2247 362.488073538099 2494.148395495556 419 0.018545009601 38.219554608174 3359.2662457365 54845.649674391
+11	121426 19 2250 2250 2500 2500 1 0.198 0.198 0.198 0.039204
+12	121445 20 2250 2250 2500 2500 1 0.1016 0.1016 0.1016 0.01032256
+
