@@ -2,8 +2,12 @@ NOTE 2KR ANALYSIS
 
 
 *INTRODUZIONE
-	è stata fatta sul throughput dei minion, per via del fatto che essi dipendono da tutti i fattori presi in considerazione (ad esempio i boss avendo priorità dipendono solo dal loro service e arrival time)
+	è stata fatta sul throughput e waiting dei minion, per via del fatto che essi dipendono da tutti i fattori presi in considerazione (ad esempio i boss avendo priorità dipendono solo dal loro service e arrival time)
 	
 
 *STUDIO FATTO PER EASY e HARD game mode
-	valuta i risultati
+	1)RISULTATI SU THROUGHPUT
+		
+	
+	2)RISULTATI SU WAITING TIME
+		
