@@ -1,0 +1,67 @@
+file 62349 1678524206                                           
+version 2
+run experiments_medium_game_mode1-998-20230311-09:43:26-13681
+attr configname experiments_medium_game_mode1
+attr datetime 20230311-09:43:26
+attr experiment experiments_medium_game_mode1
+attr inifile omnetpp.ini
+attr iterationvars "$0=6.5, $1=4, $2=100"
+attr iterationvarsf 6.5,4,100-
+attr measurement "$0=6.5, $1=4, $2=100"
+attr network Network
+attr processid 13681
+attr repetition 8
+attr replication #8
+attr resultdir results
+attr runnumber 998
+attr seedset 8
+param *.boss.arrival_mean 20
+param *.boss.service_mean 6.5
+param *.minion.arrival_mean 10
+param *.minion.service_mean 4
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 3 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 4 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 5 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 6 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 7 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 8 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 9 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 10 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 11 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 12 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	2024 6043 166 1109 352.394920438436 2450.208275812998 221 27 247 30277 5047419
+1	8067 11375 166 1125 352.394920438436 2499.949391704458 441 0 14 1628 11704
+2	19442 8680 166 1109 352.394920438436 2450.208275812998 221 0.338824440101 102.25567769683 6557.8571830315 326808.97226917
+3	28122 9821 166 1121 352.394920438436 2489.92153080454 265 0 98.595147242419 7169.0368129147 364837.60054967
+4	37943 5689 170 1125 355.039202252463 2499.949391704458 220 1 15 1030 7660
+5	43632 2580 178 1123 375.391315048882 2498.862924785266 100 1 6 176 452
+6	46212 5139 178 1123 375.391315048882 2498.862924785266 199 0 5 152 400
+7	51351 1205 178 1123 375.391315048882 2498.862924785266 45 11 55 1485 56595
+8	52556 3093 178 1123 375.391315048882 2498.862924785266 100 0 30.935581496053 482.02353839565 9117.4221279549
+9	55649 2681 179 1121 376.771345693052 2489.92153080454 99 24 122 7227 608421
+10	58330 3978 179 1121 376.771345693052 2489.92153080454 99 0.213853846671 47.212283680138 1197.9570290292 26174.366958435
+11	62308 20 1126 1126 2500 2500 1 0.0988 0.0988 0.0988 0.00976144
+12	62328 20 1126 1126 2500 2500 1 0.0488 0.0488 0.0488 0.00238144
+
