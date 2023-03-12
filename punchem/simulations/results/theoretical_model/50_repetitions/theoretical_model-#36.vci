@@ -1,0 +1,60 @@
+file 368354 1678619276                                          
+version 2
+run theoretical_model-36-20230312-12:07:56-10253
+attr configname theoretical_model
+attr datetime 20230312-12:07:56
+attr experiment theoretical_model
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network
+attr processid 10253
+attr repetition 36
+attr replication #36
+attr resultdir results
+attr runnumber 36
+attr seedset 36
+param *.minion.arrival_distribution 0
+param *.minion.service_distribution 0
+param *.minion.arrival_mean 0
+param *.minion.service_mean 0
+param *.boss.arrival_distribution 0
+param *.boss.service_distribution 0
+param *.boss.arrival_mean 1
+param *.boss.service_mean 0.8
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 3 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 4 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 5 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 6 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 7 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 8 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 9 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 10 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1699 8 0 0 0 0 1 0 0 0 0
+1	1707 8 0 0 0 0 1 0 0 0 0
+2	1715 8 0 0 0 0 1 0 0 0 0
+3	1723 8 0 0 0 0 1 0 0 0 0
+4	1731 52716 0 6006 0 1999.966992305988 2004 0 24 10449 95809
+5	54447 105278 0 6006 0 1999.966992305988 4004 0 23 16889 153823
+6	159725 57243 0 6004 0 1999.733941375108 2001 0 2000 2001000 2668667000
+7	216968 73027 2 6004 0.689373183775 1999.733941375108 2001 0 18.532266758099 6720.120442219 53510.386592304
+8	289995 78329 3 6004 1.054816419979 1999.733941375108 2000 0.000530827097 19.398534684643 8303.5289667863 66527.873747844
+9	368324 14 6007 6007 2000 2000 1 0 0 0 0
+10	368338 15 6007 6007 2000 2000 1 1 1 1 1
+

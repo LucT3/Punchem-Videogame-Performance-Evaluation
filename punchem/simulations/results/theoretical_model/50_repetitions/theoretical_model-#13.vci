@@ -1,0 +1,60 @@
+file 367785 1678619272                                          
+version 2
+run theoretical_model-13-20230312-12:07:52-10133
+attr configname theoretical_model
+attr datetime 20230312-12:07:52
+attr experiment theoretical_model
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network
+attr processid 10133
+attr repetition 13
+attr replication #13
+attr resultdir results
+attr runnumber 13
+attr seedset 13
+param *.minion.arrival_distribution 0
+param *.minion.service_distribution 0
+param *.minion.arrival_mean 0
+param *.minion.service_mean 0
+param *.boss.arrival_distribution 0
+param *.boss.service_distribution 0
+param *.boss.arrival_mean 1
+param *.boss.service_mean 0.8
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 3 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 4 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 5 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 6 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 7 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 8 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 9 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 10 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1699 8 0 0 0 0 1 0 0 0 0
+1	1707 8 0 0 0 0 1 0 0 0 0
+2	1715 8 0 0 0 0 1 0 0 0 0
+3	1723 8 0 0 0 0 1 0 0 0 0
+4	1731 52709 0 6019 0 1999.202516799471 2011 0 19 8793 61245
+5	54440 105109 0 6021 0 1999.678935048629 4012 0 18 13530 91134
+6	159549 57220 0 6021 0 1999.678935048629 2002 0 2001 2003001 2672671001
+7	216769 72787 2 6021 0.545042689329 1999.678935048629 2002 0 16.185508839068 5204.9825173696 30235.170879919
+8	289556 78194 3 6021 0.623228468175 1999.678935048629 2001 0.007992222919 16.964824547864 6786.0558097153 40672.638063167
+9	367750 14 6022 6022 2000 2000 1 0 0 0 0
+10	367764 20 6022 6022 2000 2000 1 1.0005 1.0005 1.0005 1.00100025
+
