@@ -1,0 +1,60 @@
+file 416740 1678784055                                          
+version 2
+run theoretical_model_minions-2-20230314-09:54:15-7764
+attr configname theoretical_model_minions
+attr datetime 20230314-09:54:15
+attr experiment theoretical_model_minions
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network
+attr processid 7764
+attr repetition 2
+attr replication #2
+attr resultdir results
+attr runnumber 2
+attr seedset 2
+param *.minion.arrival_distribution 0
+param *.minion.service_distribution 0
+param *.minion.arrival_mean 1
+param *.minion.service_mean 0.8
+param *.boss.arrival_distribution 1
+param *.boss.service_distribution 1
+param *.boss.arrival_mean 0
+param *.boss.service_mean 0
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 3 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 4 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 5 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 6 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 7 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 8 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 9 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 10 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1724 104322 0 5964 0 1999.647010098503 3977 0 20 14754 107944
+1	106046 104272 0 5964 0 1999.647010098503 3977 0 19 11236 81954
+2	210318 8 0 0 0 0 1 0 0 0 0
+3	210326 56859 0 5964 0 1999.647010098503 1989 0 1988 1977066 2620930494
+4	267185 8 0 0 0 0 1 0 0 0 0
+5	267193 8 0 0 0 0 1 0 0 0 0
+6	267201 8 0 0 0 0 1 0 0 0 0
+7	267209 71789 2 5963 2.066955050651 1999.363429605208 1988 0 15.091546848316 4866.6507376373 29844.126389014
+8	338998 77708 3 5964 2.075297726507 1999.647010098503 1988 4.9217628e-05 17.097173280913 6422.7068423741 39587.985013959
+9	416706 18 5965 5965 2000 2000 1 0.994 0.994 0.994 0.988036
+10	416724 15 5965 5965 2000 2000 1 0 0 0 0
+

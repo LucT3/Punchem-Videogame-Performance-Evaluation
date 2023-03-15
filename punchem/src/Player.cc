@@ -320,11 +320,12 @@ void Player::defeatOpponent(cMessage *msg){
         boss_queue.pop();
         EV << "PLAYER - defeatOpponent() - BOSS defeated. remaining bosses: "<< get_number_of_bosses() << endl;
         //collect statistics
+        emit(signal_boss_jobs_number, boss_queue.size());
         counter_boss_defeated = counter_boss_defeated + 1;
-        emit(signal_boss_defeated,counter_boss_defeated);
+        emit(signal_boss_defeated, counter_boss_defeated);
         EV << "PLAYER - defeatOpponent() - Total Bosses Defeated : "<< counter_boss_defeated << endl;
         if(boss_queue.size() > 0){
-            emit(signal_boss_jobs_queue_number, boss_queue.size());
+            emit(signal_boss_jobs_queue_number, boss_queue.size()-1);
         }
         else
             emit(signal_boss_jobs_queue_number,0);
@@ -335,11 +336,12 @@ void Player::defeatOpponent(cMessage *msg){
         minion_queue.pop();
         EV << "PLAYER - defeatOpponent() - MINION defeated. remaining minions:  "<< get_number_of_minions() << endl;
         //collect statistics
+        emit(signal_minion_jobs_number, minion_queue.size());
         counter_minion_defeated = counter_minion_defeated + 1;
         emit(signal_minion_defeated,counter_minion_defeated);
         EV << "PLAYER - defeatOpponent() - Total Minion Defeated : "<< counter_minion_defeated << endl;
         if(minion_queue.size() > 0){
-            emit(signal_minion_jobs_queue_number,minion_queue.size());
+            emit(signal_minion_jobs_queue_number, minion_queue.size()-1);
         }
         else
             emit(signal_minion_jobs_queue_number,0);

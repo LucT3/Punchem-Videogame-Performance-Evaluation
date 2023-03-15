@@ -1,0 +1,60 @@
+file 2428 1678701086                                            
+version 2
+run theoretical_model-0-20230313-10:51:26-20043
+attr configname theoretical_model
+attr datetime 20230313-10:51:26
+attr experiment theoretical_model
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network
+attr processid 20043
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.minion.arrival_distribution 1
+param *.minion.service_distribution 1
+param *.minion.arrival_mean 10000
+param *.minion.service_mean 10000
+param *.boss.arrival_distribution 1
+param *.boss.service_distribution 1
+param *.boss.arrival_mean 1
+param *.boss.service_mean 1.1
+
+vector 0 Network.player minion_jobs_number_stat:vector ETV
+attr source signal_minion_jobs_number
+vector 1 Network.player minion_jobs_queue_number_stat:vector ETV
+attr source signal_minion_jobs_queue_number
+vector 2 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 3 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 4 Network.player boss_jobs_number_stat:vector ETV
+attr source signal_boss_jobs_number
+vector 5 Network.player boss_jobs_queue_number_stat:vector ETV
+attr source signal_boss_jobs_queue_number
+vector 6 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 7 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 8 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 9 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 10 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1702 8 0 0 0 0 1 0 0 0 0
+1	1710 8 0 0 0 0 1 0 0 0 0
+2	1718 8 0 0 0 0 1 0 0 0 0
+3	1726 8 0 0 0 0 1 0 0 0 0
+4	1734 182 0 28 0 10 19 0 2 27 45
+5	1916 182 0 28 0 10 19 0 1 9 9
+6	2098 94 0 26 0 9.8 9 0 8 36 204
+7	2192 110 2 26 1 9.8 9 0 0.8 3.6 2.04
+8	2302 102 5 26 2.1 9.8 8 1.1 1.8 11.6 17.24
+9	2404 10 29 29 10 10 1 0 0 0 0
+10	2414 13 29 29 10 10 1 0.8 0.8 0.8 0.64
+

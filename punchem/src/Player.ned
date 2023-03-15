@@ -27,7 +27,7 @@ simple Player
         
         //MINION PARAMETERS
         @signal [signal_minion_jobs_number];
-        @statistic [minion_jobs_number_stat] (source="signal_minion_jobs_number"; record = vector);
+        @statistic [minion_jobs_number_stat] (source="signal_minion_jobs_number"; record = mean, vector);
         
         @signal [signal_minion_jobs_queue_number];
         @statistic [minion_jobs_queue_number_stat] (source="signal_minion_jobs_queue_number"; record = vector);
