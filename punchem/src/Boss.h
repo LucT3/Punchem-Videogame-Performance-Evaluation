@@ -38,8 +38,8 @@ class Boss : public cSimpleModule
     cMessage* timer_ = nullptr;
 
     //functions
-    void wait_new_arrival();
-    void generate_new_opponent();
+    void waitNewArrival();
+    void generateNewOpponent();
 
 
 

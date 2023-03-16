@@ -28,20 +28,20 @@ void Boss::initialize()
     timer_ = new cMessage("timer");
 
     //first arrival
-    wait_new_arrival();
+    waitNewArrival();
 }
 
 void Boss::handleMessage(cMessage *msg)
 {
     //generate new BOSS
-    generate_new_opponent();
+    generateNewOpponent();
 
     //wait new arrival
-    wait_new_arrival();
+    waitNewArrival();
 }
 
 //Wait for a new opponent arrival (random time), extracted from an exponential distribution
-void Boss::wait_new_arrival(){
+void Boss::waitNewArrival(){
     simtime_t arrival_time;
     //to handle the degeneracy test
     if (arrival_mean != 0 && service_mean != 0){ //if no bosses arrives or arrive with 0 life is intended as GAME MODE WITHOUT BOSSES
@@ -66,7 +66,7 @@ void Boss::wait_new_arrival(){
 
 
 //generate new opponent and set the service time (opponent life)
-void Boss::generate_new_opponent(){
+void Boss::generateNewOpponent(){
     simtime_t service_time;
 
     if (service_distribution == 0) {

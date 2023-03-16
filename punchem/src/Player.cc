@@ -32,8 +32,6 @@ void Player::initialize()
 
 
     //MINION signals
-    signal_minion_jobs_number = registerSignal("signal_minion_jobs_number");
-    signal_minion_jobs_queue_number = registerSignal("signal_minion_jobs_queue_number");
     signal_minion_response_time = registerSignal("signal_minion_response_time");
     signal_minion_waiting_time = registerSignal("signal_minion_waiting_time");
     signal_minion_recovered = registerSignal("signal_minion_recovered");
@@ -41,23 +39,17 @@ void Player::initialize()
     signal_minion_throughput = registerSignal("signal_minion_throughput");
 
     //record initial state
-    emit(signal_minion_jobs_number,0);
-    emit(signal_minion_jobs_queue_number,0);
     emit(signal_minion_recovered,0);
     emit(signal_minion_defeated,0);
 
 
     //BOSS signals
-    signal_boss_jobs_number = registerSignal("signal_boss_jobs_number");
-    signal_boss_jobs_queue_number = registerSignal("signal_boss_jobs_queue_number");
     signal_boss_response_time = registerSignal("signal_boss_response_time");
     signal_boss_waiting_time = registerSignal("signal_boss_waiting_time");
     signal_boss_defeated = registerSignal("signal_boss_defeated");
     signal_boss_throughput = registerSignal("signal_boss_throughput");
 
     //record initial state
-    emit(signal_boss_jobs_number,0);
-    emit(signal_boss_jobs_queue_number,0);
     emit(signal_boss_defeated,0);
 
 }
@@ -106,11 +98,6 @@ void Player::handleMessage(cMessage *msg)
             boss_queue.push(new_opponent);
             EV << "PLAYER - handleMessage() - ENQUEUED IN BOSS QUEUE. bosses:  "<< get_number_of_bosses() << endl;
 
-            //record signals
-            emit(signal_boss_jobs_number, boss_queue.size());
-            emit(signal_boss_jobs_queue_number, boss_queue.size()-1);
-
-
             //check if a minion is been serving and skip its process (doing the recover)
             if(current_opponent != nullptr){
                 std::string current_opponent_type = current_opponent->message->getName();
@@ -133,11 +120,6 @@ void Player::handleMessage(cMessage *msg)
             minion_queue.push(new_opponent);
             EV << "PLAYER - handleMessage() - ENQUEUED IN MINION QUEUE. minions: " << get_number_of_minions() << endl;
 
-
-            //record signals
-            emit(signal_minion_jobs_number, minion_queue.size());
-            emit(signal_minion_jobs_queue_number, minion_queue.size()-1);
-
             //handle minion job
             if(minion_queue.size() == 1 && boss_queue.size() == 0){
                 handleMinion();
@@ -154,7 +136,7 @@ void Player::handleMessage(cMessage *msg)
 
 /**
  * handle a MINION opponent.
- * Process minion message and emit signals to store statistics (waiting time)
+ * Process minion message and emit signals to store statistics
  */
 void Player::handleMinion(){
     //take the first element of the MINION QUEUE and scheduleAt new simtime to process it
@@ -178,7 +160,7 @@ void Player::handleMinion(){
 
 /**
  * handle a BOSS opponent.
- * Process boss message and emit signals to store statistics (waiting time)
+ * Process boss message and emit signals to store statistics
  */
 void Player::handleBoss(){
     //take the first element of the BOSS QUEUE and scheduleAt new simtime to process it
@@ -211,7 +193,7 @@ void Player::recoverMinion(){
 
 
     //COMPUTE the recovered life
-    simtime_t life_recovered = compute_life_recovered();
+    simtime_t life_recovered = computeLifeRecovered();
 
     //CREATE NEW MINION and set the new actual life
     OpponentMessage* minion_recovered_msg = new OpponentMessage();
@@ -249,20 +231,20 @@ void Player::recoverMinion(){
  * Function to compute the recovered minion life (life = service_time)
  * minion recovering steps:
  *      1)compute the lost life (gap between simTimes)
- *      2)compute the remianing life percentage (based on lost life)
+ *      2)compute the remaining life percentage (based on lost life)
  *      3)compute the recover rate "x" to apply to the actual life
  *          3.1)no minion life recover (recover rate <= 0)
- *          3.2)x % of the recover percentage (recover rate  0 < x < 100)
- *          3.3)100% of the recover percentage (recover rate >= 100)
+ *          3.2)100% of the recover percentage (recover rate >= 100)
+ *          3.3)x % of the recover percentage (recover rate  0 < x < 100)
  *      4)update the actual life
  *
  */
-simtime_t Player::compute_life_recovered(){
+simtime_t Player::computeLifeRecovered(){
 
     //1)compute the minion actual life
     simtime_t simTime_gap = simTime() - current_opponent_simTime; //difference between the current simTime and the fight start simTime
     simtime_t actual_life = current_opponent_lifetime - simTime_gap; //minion actual life (when it stops to fight)
-    EV << "PLAYER - compute_life_recovered() - original life : " << current_opponent_lifetime << ", actual life: " << actual_life << endl;
+    EV << "PLAYER - computeLifeRecovered() - original life : " << current_opponent_lifetime << ", actual life: " << actual_life << endl;
 
     //2)compute the remaining life percentage (based on the chosen scenario (1)calculated recover rate, 2)no recover rate, 3)pre-defined recover rate
     double current_opponent_life_percentage = 0; //minion actual life percentage
@@ -273,15 +255,15 @@ simtime_t Player::compute_life_recovered(){
     else{
         current_opponent_life_percentage = 90; //standard case (recover the 10% of the actual life)
     }
-    EV << "PLAYER - compute_life_recovered() - actual life percentage : " << current_opponent_life_percentage << "%" << endl;
+    EV << "PLAYER - computeLifeRecovered() - actual life percentage : " << current_opponent_life_percentage << "%" << endl;
 
     //3)compute the recover rate "x" to apply to the actual life
     double current_rate_x;
 
-    if(recover_rate_x <= 0){ //3.2) "no minion life recover"
+    if(recover_rate_x <= 0){ //3.1) "no minion life recover"
         current_rate_x = 0;
     }
-    else if(recover_rate_x >= 100){ //3.1) "100% recover rate"
+    else if(recover_rate_x >= 100){ //3.2) "100% recover rate"
         current_rate_x = 100 - current_opponent_life_percentage; //not possible to recover more than the 100%
     }
     else{ //recover_rate_x > 0, //3.3) "x% recover rate"
@@ -289,12 +271,12 @@ simtime_t Player::compute_life_recovered(){
 
     }
 
-    EV << "PLAYER - compute_life_recovered() - percentage to recover : " << current_rate_x << "%" << endl;
+    EV << "PLAYER - computeLifeRecovered() - percentage to recover : " << current_rate_x << "%" << endl;
 
     //4)update the actual life
     simtime_t recovered_life = (actual_life / 100) * current_rate_x; //life to add to the minion actual life
     actual_life = actual_life + recovered_life;
-    EV << "PLAYER - compute_life_recovered() - MINION LIFE RECOVERED : " << actual_life << "  Life added : " << recovered_life << "  Minion id : " << current_opponent->message->getId() << endl;
+    EV << "PLAYER - computeLifeRecovered() - MINION LIFE RECOVERED : " << actual_life << "  Life added : " << recovered_life << "  Minion id : " << current_opponent->message->getId() << endl;
 
 
     return actual_life;
@@ -319,32 +301,22 @@ void Player::defeatOpponent(cMessage *msg){
         defeated_opponent = boss_queue.front();
         boss_queue.pop();
         EV << "PLAYER - defeatOpponent() - BOSS defeated. remaining bosses: "<< get_number_of_bosses() << endl;
+
         //collect statistics
-        emit(signal_boss_jobs_number, boss_queue.size());
         counter_boss_defeated = counter_boss_defeated + 1;
         emit(signal_boss_defeated, counter_boss_defeated);
         EV << "PLAYER - defeatOpponent() - Total Bosses Defeated : "<< counter_boss_defeated << endl;
-        if(boss_queue.size() > 0){
-            emit(signal_boss_jobs_queue_number, boss_queue.size()-1);
-        }
-        else
-            emit(signal_boss_jobs_queue_number,0);
     }
     //defeat a MINION
     else if(msg_type == "MinionMessage"){
         defeated_opponent = minion_queue.front();
         minion_queue.pop();
         EV << "PLAYER - defeatOpponent() - MINION defeated. remaining minions:  "<< get_number_of_minions() << endl;
+
         //collect statistics
-        emit(signal_minion_jobs_number, minion_queue.size());
         counter_minion_defeated = counter_minion_defeated + 1;
         emit(signal_minion_defeated,counter_minion_defeated);
         EV << "PLAYER - defeatOpponent() - Total Minion Defeated : "<< counter_minion_defeated << endl;
-        if(minion_queue.size() > 0){
-            emit(signal_minion_jobs_queue_number, minion_queue.size()-1);
-        }
-        else
-            emit(signal_minion_jobs_queue_number,0);
     }
     else{
         EV << "PLAYER - defeatOpponent() - ERROR!" << endl;
@@ -382,7 +354,7 @@ unsigned int Player::get_number_of_bosses(){
 
 
 /**
- * ovveride the finish method, in order to deallocate memory
+ * ovveride the finish method, in order to compute the final statistics and deallocate memory
  */
 
 void Player::finish(){

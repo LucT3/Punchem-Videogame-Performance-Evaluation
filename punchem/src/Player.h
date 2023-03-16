@@ -59,16 +59,13 @@ class Player : public cSimpleModule
 
 
     //signals
-    simsignal_t signal_minion_jobs_number = 0;
-    simsignal_t signal_minion_jobs_queue_number = 0;
     simsignal_t signal_minion_response_time = 0;
     simsignal_t signal_minion_waiting_time = 0;
     simsignal_t signal_minion_defeated = 0;
     simsignal_t signal_minion_recovered = 0;
     simsignal_t signal_minion_throughput;
 
-    simsignal_t signal_boss_jobs_number = 0;
-    simsignal_t signal_boss_jobs_queue_number = 0;
+
     simsignal_t signal_boss_response_time = 0;
     simsignal_t signal_boss_waiting_time = 0;
     simsignal_t signal_boss_defeated = 0;
@@ -80,7 +77,7 @@ class Player : public cSimpleModule
     void handleBoss();
 
     void recoverMinion();
-    simtime_t compute_life_recovered();
+    simtime_t computeLifeRecovered();
 
     void defeatOpponent(cMessage *msg);
 

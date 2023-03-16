@@ -28,20 +28,20 @@ void Minion::initialize()
     timer_ = new cMessage("timer");
 
     //first arrival
-    wait_new_arrival();
+    waitNewArrival();
 }
 
 void Minion::handleMessage(cMessage *msg)
 {
     //generate new MINION
-    generate_new_opponent();
+    generateNewOpponent();
 
     //wait new arrival
-    wait_new_arrival();
+    waitNewArrival();
 }
 
 //Wait for a new opponent arrival (random time), extracted from an exponential distribution
-void Minion::wait_new_arrival(){
+void Minion::waitNewArrival(){
     simtime_t arrival_time;
 
     //to handle the degeneracy test
@@ -66,7 +66,7 @@ void Minion::wait_new_arrival(){
 }
 
 //generate new opponent and set the service time (opponent life)
-void Minion::generate_new_opponent(){
+void Minion::generateNewOpponent(){
     simtime_t service_time;
     //to handle the degeneracy test
     if(arrival_mean != 0 && service_mean != 0){

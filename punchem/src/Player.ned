@@ -25,13 +25,7 @@ simple Player
         int counter_minion_defeated = default(0);
         int counter_boss_defeated = default(0);
         
-        //MINION PARAMETERS
-        @signal [signal_minion_jobs_number];
-        @statistic [minion_jobs_number_stat] (source="signal_minion_jobs_number"; record = mean, vector);
-        
-        @signal [signal_minion_jobs_queue_number];
-        @statistic [minion_jobs_queue_number_stat] (source="signal_minion_jobs_queue_number"; record = vector);
-        
+        //MINION PARAMETERS   
         //to measure the minion response time
         @signal [signal_minion_response_time];
         @statistic [minion_response_time_stat] (source="signal_minion_response_time"; record = mean, vector);
@@ -52,13 +46,7 @@ simple Player
         
         
         
-        //BOSS PARAMETERS
-        @signal [signal_boss_jobs_number];
-        @statistic [boss_jobs_number_stat] (source="signal_boss_jobs_number"; record = vector);
-        
-        @signal [signal_boss_jobs_queue_number];
-        @statistic [boss_jobs_queue_number_stat] (source="signal_boss_jobs_queue_number"; record = vector);
-        
+        //BOSS PARAMETERS      
         @signal [signal_boss_response_time];
         @statistic [boss_response_time_stat] (source="signal_boss_response_time"; record = mean, vector);
         

@@ -1,0 +1,48 @@
+file 211969 1678872378                                          
+version 2
+run theoretical_model_minions-16-20230315-10:26:18-7555
+attr configname theoretical_model_minions
+attr datetime 20230315-10:26:18
+attr experiment theoretical_model_minions
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Network
+attr processid 7555
+attr repetition 16
+attr replication #16
+attr resultdir results
+attr runnumber 16
+attr seedset 16
+param *.minion.arrival_distribution 0
+param *.minion.service_distribution 0
+param *.minion.arrival_mean 1
+param *.minion.service_mean 0.8
+param *.boss.arrival_distribution 1
+param *.boss.service_distribution 1
+param *.boss.arrival_mean 0
+param *.boss.service_mean 0
+
+vector 0 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 1 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 2 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 3 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 4 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 5 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 6 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1324 8 0 0 0 0 1 0 0 0 0
+1	1332 57882 0 6075 0 1999.68319571742 2026 0 2025 2051325 2769972525
+2	59214 8 0 0 0 0 1 0 0 0 0
+3	59222 73603 2 6074 0.476582857967 1999.033621133877 2025 0 13.007053238869 5750.4347506853 32476.347334384
+4	132825 79110 3 6075 0.673963455588 1999.68319571742 2025 0.000233455721 15.012371113205 7290.1276373689 43429.30297894
+5	211935 19 6076 6076 2000 2000 1 1.0125 1.0125 1.0125 1.02515625
+6	211954 14 6076 6076 2000 2000 1 0 0 0 0
+
