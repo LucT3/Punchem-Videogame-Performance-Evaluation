@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="174mm" height="115mm" viewBox="0 0 17400 11500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke-width="28.222" stroke-linejoin="round" xml:space="preserve">
+ <path fill="rgb(255,255,255)" stroke="none" d="M 8688,11479 L 0,11479 0,0 17376,0 17376,11479 8688,11479 Z"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 9689,9287 L 2350,9287 2350,1573 17029,1573 17029,9287 9689,9287 Z"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 17029,9286 L 2350,9286"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 17029,7743 L 2350,7743"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 17029,6200 L 2350,6200"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 17029,4658 L 2350,4658"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 17029,3114 L 2350,3114"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 17029,1571 L 2350,1571"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 2350,9436 L 2350,9286"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 17029,9436 L 17029,9286"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 2350,9286 L 17029,9286"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 2200,9286 L 2350,9286"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 2200,7743 L 2350,7743"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 2200,6200 L 2350,6200"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 2200,4658 L 2350,4658"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 2200,3115 L 2350,3115"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 2200,1571 L 2350,1571"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 2350,9286 L 2350,1572"/>
+ <path fill="rgb(0,69,134)" stroke="none" d="M 5612,9286 L 7243,9286 7243,7742 5612,7742 5612,9286 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 8873,9286 L 10504,9286 10504,6721 8873,6721 8873,9286 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 12135,9286 L 13766,9286 13766,2342 12135,2342 12135,9286 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 6427,7910 L 6427,7742 6427,7608"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 6527,7910 L 6327,7910"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 6327,7608 L 6527,7608"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 9689,6863 L 9689,6721 9689,6604"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 9789,6863 L 9589,6863"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 9589,6604 L 9789,6604"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 12951,2435 L 12951,2342 12951,2260"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 13051,2435 L 12851,2435"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 12851,2260 L 13051,2260"/>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="1439" y="9407"><tspan fill="rgb(0,0,0)" stroke="none">0.01</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="1624" y="7864"><tspan fill="rgb(0,0,0)" stroke="none">0.1</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="1915" y="6321"><tspan fill="rgb(0,0,0)" stroke="none">1</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="1730" y="4778"><tspan fill="rgb(0,0,0)" stroke="none">10</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="1544" y="3235"><tspan fill="rgb(0,0,0)" stroke="none">100</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="1359" y="1691"><tspan fill="rgb(0,0,0)" stroke="none">1000</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="459px" font-weight="400"><tspan class="TextPosition" x="3475" y="900"><tspan fill="rgb(0,0,0)" stroke="none">Consistency Test - Bosses Mean Waiting Time E[W]</tspan></tspan></tspan></text>
+ <path fill="rgb(0,69,134)" stroke="none" d="M 2959,11284 L 2854,11284 2854,11073 3065,11073 3065,11284 2959,11284 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 6864,11284 L 6759,11284 6759,11073 6970,11073 6970,11284 6864,11284 Z"/>
+ <path fill="rgb(255,211,32)" stroke="none" d="M 10769,11284 L 10663,11284 10663,11073 10874,11073 10874,11284 10769,11284 Z"/>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="3165" y="11298"><tspan fill="rgb(0,0,0)" stroke="none">mean_service_time_1</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="7070" y="11298"><tspan fill="rgb(0,0,0)" stroke="none">mean_service_time_2</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="10974" y="11298"><tspan fill="rgb(0,0,0)" stroke="none">mean_service_time_15</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="318px" font-weight="400"><tspan class="TextPosition" x="8810" y="10102"><tspan fill="rgb(0,0,0)" stroke="none">Tests</tspan></tspan></tspan></text>
+ <text class="TextShape" transform="rotate(-90 837 6937)"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="318px" font-weight="400"><tspan class="TextPosition" x="837" y="6937"><tspan fill="rgb(0,0,0)" stroke="none">Waiting Time E[W] [s]</tspan></tspan></tspan></text>
+</svg>
