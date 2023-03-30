@@ -12,5 +12,9 @@ NOTE 2KR ANALYSIS
 	2)RISULTATI SU WAITING TIME
 	
 
-*RISULTATI FINALI MIGLIORI: BOSS RANGE = [20,25]
-		
+*RISULTATI FINALI MIGLIORI: BOSS RANGE = [20,30]
+	-per via del fatto che il throughput ha ottenuto delle percentuali di impatto dei fattori più visibili.
+	-Mentre per il waiting time si può notare come applicando una trasformazione logarimtica i risultati migliorano,
+	 ma comunque le percentuali di impatto non possono essere utilizzate per via della trend line non lineare, anche 
+	 se l'homoskedasticity produce buoni risultati. In generale l'assumption di avere valori IID non è soddisfatta.
+	
