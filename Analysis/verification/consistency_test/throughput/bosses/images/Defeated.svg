@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="198mm" height="133mm" viewBox="0 0 19800 13300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" stroke-width="28.222" stroke-linejoin="round" xml:space="preserve">
+ <path fill="rgb(255,255,255)" stroke="none" d="M 9901,13332 L 0,13332 0,0 19802,0 19802,13332 9901,13332 Z"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 10321,10788 L 2265,10788 2265,1419 18377,1419 18377,10788 10321,10788 Z"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 18377,10787 L 2265,10787"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 18377,9225 L 2265,9225"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 18377,7663 L 2265,7663"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 18377,6102 L 2265,6102"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 18377,4541 L 2265,4541"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 18377,2979 L 2265,2979"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 18377,1417 L 2265,1417"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 2265,10937 L 2265,10787"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 18377,10937 L 18377,10787"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 2265,10787 L 18377,10787"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 2115,10787 L 2265,10787"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 2115,9225 L 2265,9225"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 2115,7663 L 2265,7663"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 2115,6102 L 2265,6102"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 2115,4541 L 2265,4541"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 2115,2979 L 2265,2979"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 2115,1417 L 2265,1417"/>
+ <path fill="none" stroke="rgb(179,179,179)" stroke-linejoin="round" d="M 2265,10787 L 2265,1417"/>
+ <path fill="rgb(0,69,134)" stroke="none" d="M 7300,10787 L 9314,10787 9314,3001 7300,3001 7300,10787 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 11327,10787 L 13341,10787 13341,5597 11327,5597 11327,10787 Z"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 8307,3063 L 8307,3001 8307,2938"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 8407,3063 L 8207,3063"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 8207,2938 L 8407,2938"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 12334,5644 L 12334,5597 12334,5550"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 12434,5644 L 12234,5644"/>
+ <path fill="none" stroke="rgb(0,0,0)" stroke-linejoin="round" d="M 12234,5550 L 12434,5550"/>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="1830" y="10908"><tspan fill="rgb(0,0,0)" stroke="none">0</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="1459" y="9346"><tspan fill="rgb(0,0,0)" stroke="none">100</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="1459" y="7784"><tspan fill="rgb(0,0,0)" stroke="none">200</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="1459" y="6222"><tspan fill="rgb(0,0,0)" stroke="none">300</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="1459" y="4661"><tspan fill="rgb(0,0,0)" stroke="none">400</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="1459" y="3099"><tspan fill="rgb(0,0,0)" stroke="none">500</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="1459" y="1537"><tspan fill="rgb(0,0,0)" stroke="none">600</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="459px" font-weight="400"><tspan class="TextPosition" x="4964" y="1008"><tspan fill="rgb(0,0,0)" stroke="none">Consistency Test - Mean Number of Bosses Defeated</tspan></tspan></tspan></text>
+ <path fill="rgb(0,69,134)" stroke="none" d="M 6240,12456 L 6135,12456 6135,12245 6346,12245 6346,12456 6240,12456 Z"/>
+ <path fill="rgb(255,66,14)" stroke="none" d="M 10757,12456 L 10651,12456 10651,12245 10862,12245 10862,12456 10757,12456 Z"/>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="6446" y="12470"><tspan fill="rgb(0,0,0)" stroke="none">mean_service_time_2</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="353px" font-weight="400"><tspan class="TextPosition" x="10962" y="12470"><tspan fill="rgb(0,0,0)" stroke="none">mean_service_time_3</tspan></tspan></tspan></text>
+ <text class="TextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="318px" font-weight="400"><tspan class="TextPosition" x="9964" y="11375"><tspan fill="rgb(0,0,0)" stroke="none">Tests</tspan></tspan></tspan></text>
+ <text class="TextShape" transform="rotate(-90 888 8576)"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="318px" font-weight="400"><tspan class="TextPosition" x="888" y="8576"><tspan fill="rgb(0,0,0)" stroke="none">Mean Number of Defeated Bosses</tspan></tspan></tspan></text>
+</svg>
