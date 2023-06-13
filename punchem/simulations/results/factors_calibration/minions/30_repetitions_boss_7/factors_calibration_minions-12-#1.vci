@@ -1,0 +1,55 @@
+file 27026 1679223335                                           
+version 2
+run factors_calibration_minions-181-20230319-11:55:35-8056
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:35
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=12
+attr iterationvarsf 12-
+attr measurement $0=12
+attr network Network
+attr processid 8056
+attr repetition 1
+attr replication #1
+attr resultdir results
+attr runnumber 181
+attr seedset 1
+param *.minion.arrival_mean 20
+param *.minion.service_mean 12
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 1 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 2 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 3 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 4 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 5 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 6 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1567 2676 84 711 350.002799755532 2485.822666187349 100 18 117 6750 538950
+1	4243 3871 84 711 350.002799755532 2485.822666187349 100 0.009995287948 44.855020510449 829.72124590106 13458.668056231
+2	8114 7185 84 711 350.002799755532 2485.822666187349 182 8.54224009239 325.27487699613 20842.030064544 3753229.6852078
+3	15299 2718 85 706 359.176470400035 2474.669590098006 102 7 108 5865 425663
+4	18017 4025 85 706 359.176470400035 2474.669590098006 102 10.610360204319 326.24619617882 12865.023333827 2392623.7483745
+5	22042 2124 88 713 369.375255317272 2496.852317827315 80 9 88 3880 230840
+6	24166 2823 88 713 369.375255317272 2496.852317827315 100 0 28.272206165535 186.03743316202 3182.835823449
+7	26989 18 714 714 2500 2500 1 0.0432 0.0432 0.0432 0.00186624
+8	27007 18 714 714 2500 2500 1 0.0468 0.0468 0.0468 0.00219024
+

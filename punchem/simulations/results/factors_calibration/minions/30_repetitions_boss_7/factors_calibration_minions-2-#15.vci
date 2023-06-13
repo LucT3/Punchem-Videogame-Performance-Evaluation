@@ -1,0 +1,55 @@
+file 22106 1679223307                                           
+version 2
+run factors_calibration_minions-45-20230319-11:55:07-7376
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:07
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=2
+attr iterationvarsf 2-
+attr measurement $0=2
+attr network Network
+attr processid 7376
+attr repetition 15
+attr replication #15
+attr resultdir results
+attr runnumber 45
+attr seedset 15
+param *.minion.arrival_mean 20
+param *.minion.service_mean 2
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 1 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 2 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 3 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 4 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 5 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 6 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1564 2403 117 714 351.144076842292 2479.215121800012 90 18 107 5625 412305
+1	3967 3501 117 714 351.144076842292 2479.215121800012 90 0.020798325778 87.45852547696 1656.7741061331 77461.856133648
+2	7468 3519 119 713 352.515911808299 2478.590442202063 101 0 87.293727203953 1650.4698038232 76725.94068019
+3	10987 3504 122 708 390.19208526962 2465.667683041898 110 0 56.401216068057 754.26283670512 19398.120604803
+4	14491 2968 125 711 390.840364411142 2475.014997752796 110 22 131 8415 754655
+5	17459 4297 125 711 390.840364411142 2475.014997752796 110 0.037002671495 64.397269621112 1785.1447320345 49168.170805786
+6	21756 313 208 613 751.804402087226 2134.440791909142 12 1 12 78 650
+7	22069 18 715 715 2500 2500 1 0.0428 0.0428 0.0428 0.00183184
+8	22087 18 715 715 2500 2500 1 0.0524 0.0524 0.0524 0.00274576
+

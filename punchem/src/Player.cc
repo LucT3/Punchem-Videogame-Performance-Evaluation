@@ -258,23 +258,23 @@ simtime_t Player::computeLifeRecovered(){
     EV << "PLAYER - computeLifeRecovered() - actual life percentage : " << current_opponent_life_percentage << "%" << endl;
 
     //3)compute the recover rate "x" to apply to the actual life
-    double current_rate_x;
+    double recovering_percentage;
 
     if(recover_rate_x <= 0){ //3.1) "no minion life recover"
-        current_rate_x = 0;
+        recovering_percentage = 0;
     }
     else if(recover_rate_x >= 100){ //3.2) "100% recover rate"
-        current_rate_x = 100 - current_opponent_life_percentage; //not possible to recover more than the 100%
+        recovering_percentage = 100 - current_opponent_life_percentage; //all percentage that he lost (not possible to recover more than the 100%)
     }
     else{ //recover_rate_x > 0, //3.3) "x% recover rate"
-            current_rate_x = ((100 - current_opponent_life_percentage) / 100) * recover_rate_x;
+            recovering_percentage = ((100 - current_opponent_life_percentage) / 100) * recover_rate_x;
 
     }
 
-    EV << "PLAYER - computeLifeRecovered() - percentage to recover : " << current_rate_x << "%" << endl;
+    EV << "PLAYER - computeLifeRecovered() - percentage to recover : " << recovering_percentage << "%" << endl;
 
     //4)update the actual life
-    simtime_t recovered_life = (actual_life / 100) * current_rate_x; //life to add to the minion actual life
+    simtime_t recovered_life = (actual_life / 100) * recovering_percentage; //life to add to the minion actual life
     actual_life = actual_life + recovered_life;
     EV << "PLAYER - computeLifeRecovered() - MINION LIFE RECOVERED : " << actual_life << "  Life added : " << recovered_life << "  Minion id : " << current_opponent->message->getId() << endl;
 

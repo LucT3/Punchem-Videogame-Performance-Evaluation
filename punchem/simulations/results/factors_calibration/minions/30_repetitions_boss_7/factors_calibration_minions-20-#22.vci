@@ -1,0 +1,55 @@
+file 22563 1679223351                                           
+version 2
+run factors_calibration_minions-262-20230319-11:55:51-8461
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:51
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=20
+attr iterationvarsf 20-
+attr measurement $0=20
+attr network Network
+attr processid 8461
+attr repetition 22
+attr replication #22
+attr resultdir results
+attr runnumber 262
+attr seedset 22
+param *.minion.arrival_mean 20
+param *.minion.service_mean 20
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 1 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 2 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 3 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 4 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 5 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 6 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1570 1784 97 682 351.730382039297 2471.785064696673 67 13 79 3082 166830
+1	3354 2647 97 682 351.730382039297 2471.785064696673 67 18.283065340585 530.18432888877 21569.259418508 8414970.1443487
+2	6001 5559 97 685 351.730382039297 2489.764103609395 141 12.273833407356 529.79513580761 41856.325502447 15930211.839592
+3	11560 1959 99 684 352.732720250375 2486.924382343612 74 10 83 3441 193769
+4	13519 2736 99 684 352.732720250375 2486.924382343612 96 0 16.915072589512 167.91313298891 1785.6186088551
+5	16255 2561 102 685 359.643498698874 2489.764103609395 96 19 114 6384 498256
+6	18816 3710 102 685 359.643498698874 2489.764103609395 96 0.057356254122 34.053337139914 765.96774915306 11083.930651652
+7	22526 18 686 686 2500 2500 1 0.0316 0.0316 0.0316 0.00099856
+8	22544 18 686 686 2500 2500 1 0.0456 0.0456 0.0456 0.00207936
+

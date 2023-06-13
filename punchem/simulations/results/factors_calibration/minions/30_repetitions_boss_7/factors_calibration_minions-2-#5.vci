@@ -1,0 +1,55 @@
+file 23448 1679223305                                           
+version 2
+run factors_calibration_minions-35-20230319-11:55:05-7326
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:05
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=2
+attr iterationvarsf 2-
+attr measurement $0=2
+attr network Network
+attr processid 7326
+attr repetition 5
+attr replication #5
+attr resultdir results
+attr runnumber 35
+attr seedset 5
+param *.minion.arrival_mean 20
+param *.minion.service_mean 2
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 1 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 2 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 3 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 4 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 5 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 6 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1561 2732 86 723 353.215778133134 2482.155833515979 102 19 120 7089 581111
+1	4293 3964 86 723 353.215778133134 2482.155833515979 102 0.002965492084 53.078106870756 1159.6289379812 27386.374329242
+2	8257 4287 86 728 353.215778133134 2494.88959864497 130 0 66.491668789802 1017.7944405714 32554.713004017
+3	12544 3053 87 729 355.198253772514 2498.083163715713 114 10 123 7581 627589
+4	15597 4412 87 729 355.198253772514 2498.083163715713 114 0.104215173235 67.657107501213 1113.9073483346 33428.021568413
+5	20009 2984 92 722 381.910508285344 2471.034788360199 101 0 44.238666939915 391.60284412887 8611.1108988572
+6	22993 419 230 697 877.543810870645 2379.332298766566 16 3 18 168 2104
+7	23412 18 730 730 2500 2500 1 0.0492 0.0492 0.0492 0.00242064
+8	23430 17 730 730 2500 2500 1 0.048 0.048 0.048 0.002304
+

@@ -1,0 +1,55 @@
+file 24907 1679223335                                           
+version 2
+run factors_calibration_minions-183-20230319-11:55:35-8066
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:35
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=12
+attr iterationvarsf 12-
+attr measurement $0=12
+attr network Network
+attr processid 8066
+attr repetition 3
+attr replication #3
+attr resultdir results
+attr runnumber 183
+attr seedset 3
+param *.minion.arrival_mean 20
+param *.minion.service_mean 12
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 1 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 2 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 3 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 4 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 5 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 6 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1567 2518 110 703 362.225444868444 2488.431977191883 94 20 113 6251 484899
+1	4085 3665 110 703 362.225444868444 2488.431977191883 94 0.218669637945 57.589716077671 1221.2836483207 33244.535456443
+2	7750 5926 110 704 362.225444868444 2491.688311782259 154 0 191.0492413256 12296.03577565 1414947.1256421
+3	13676 1220 114 687 380.659473743649 2446.030079873069 46 14 59 1679 69391
+4	14896 2905 114 702 380.659473743649 2477.447201084217 93 0 53.155215680912 597.74491460136 16887.950746801
+5	17801 2858 121 704 404.005941416268 2491.688311782259 107 9 115 6634 513386
+6	20659 4212 121 704 404.005941416268 2491.688311782259 107 0.828723871447 192.08618991189 9146.945009349 1106639.8368758
+7	24871 17 707 707 2500 2500 1 0.046 0.046 0.046 0.002116
+8	24888 18 707 707 2500 2500 1 0.0452 0.0452 0.0452 0.00204304
+

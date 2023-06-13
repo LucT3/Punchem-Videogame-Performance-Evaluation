@@ -1,0 +1,55 @@
+file 27609 1679472512                                           
+version 2
+run analysis_2kr_easy_game_mode-112-20230322-09:08:32-7443
+attr configname analysis_2kr_easy_game_mode
+attr datetime 20230322-09:08:32
+attr experiment analysis_2kr_easy_game_mode
+attr inifile omnetpp.ini
+attr iterationvars "$0=25, $1=5, $2=15, $3=3.5, $4=0"
+attr iterationvarsf 25,5,15,3.5,0-
+attr measurement "$0=25, $1=5, $2=15, $3=3.5, $4=0"
+attr network Network
+attr processid 7443
+attr repetition 2
+attr replication #2
+attr resultdir results
+attr runnumber 112
+attr seedset 2
+param *.boss.arrival_mean 25
+param *.boss.service_mean 5
+param *.minion.arrival_mean 15
+param *.minion.service_mean 3.5
+param *.player.recover_rate_x 0
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 1 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 2 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 3 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 4 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 5 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 6 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1635 2463 125 867 352.177164766961 2481.007604656757 92 20 111 6026 459586
+1	4098 3564 125 867 352.177164766961 2481.007604656757 92 0.030088770256 27.020592804381 588.14072796953 7510.4786909293
+2	7662 6110 125 869 352.177164766961 2491.720255473208 186 0 39.768529863396 827.03480568361 14067.415027611
+3	13772 4329 126 870 354.565960103085 2492.125413415547 160 20 179 15920 1925360
+4	18101 6196 126 870 354.565960103085 2492.125413415547 160 0.016010022234 45.595302006665 1211.4759235921 19179.50517789
+5	24297 682 129 850 355.761739551976 2408.50609489948 26 4 29 429 8541
+6	24979 2593 129 872 355.761739551976 2495.016053017395 92 0 21.340469061193 99.497192769696 959.76428443345
+7	27572 18 873 873 2500 2500 1 0.0716 0.0716 0.0716 0.00512656
+8	27590 18 873 873 2500 2500 1 0.0444 0.0444 0.0444 0.00197136
+

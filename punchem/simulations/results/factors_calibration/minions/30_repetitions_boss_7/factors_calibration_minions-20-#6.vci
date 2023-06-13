@@ -1,0 +1,55 @@
+file 21043 1679223348                                           
+version 2
+run factors_calibration_minions-246-20230319-11:55:48-8381
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:48
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=20
+attr iterationvarsf 20-
+attr measurement $0=20
+attr network Network
+attr processid 8381
+attr repetition 6
+attr replication #6
+attr resultdir results
+attr runnumber 246
+attr seedset 6
+param *.minion.arrival_mean 20
+param *.minion.service_mean 20
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 1 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 2 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 3 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 4 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 5 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 6 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1567 1599 82 610 350.911095348185 2499.404620087199 60 11 70 2430 116410
+1	3166 2803 82 610 350.911095348185 2499.404620087199 94 0 24.732512434251 230.72202072943 3266.6607449168
+2	5969 2490 83 606 353.910733801157 2490.269989406851 93 22 114 6324 497054
+3	8459 3614 83 606 353.910733801157 2490.269989406851 93 0.003805112344 34.053566153802 858.96291954475 14560.796741844
+4	12073 4803 83 606 353.910733801157 2490.269989406851 122 0.654647628952 473.15690154541 17005.520943584 4051689.6956028
+5	16876 1654 84 586 357.915255983224 2413.077145151108 63 4 66 2205 98007
+6	18530 2476 84 586 357.915255983224 2413.077145151108 63 13.260349076617 461.08117120153 8163.0657529255 1720307.1611985
+7	21006 18 611 611 2500 2500 1 0.0264 0.0264 0.0264 0.00069696
+8	21024 18 611 611 2500 2500 1 0.0456 0.0456 0.0456 0.00207936
+

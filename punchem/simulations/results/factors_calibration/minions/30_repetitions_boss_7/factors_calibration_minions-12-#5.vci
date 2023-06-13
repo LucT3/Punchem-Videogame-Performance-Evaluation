@@ -1,0 +1,55 @@
+file 25201 1679223335                                           
+version 2
+run factors_calibration_minions-185-20230319-11:55:35-8076
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:35
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=12
+attr iterationvarsf 12-
+attr measurement $0=12
+attr network Network
+attr processid 8076
+attr repetition 5
+attr replication #5
+attr resultdir results
+attr runnumber 185
+attr seedset 5
+param *.minion.arrival_mean 20
+param *.minion.service_mean 12
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 1 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 2 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 3 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 4 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 5 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 6 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1567 2732 84 697 353.215778133134 2482.155833515979 102 19 120 7089 581111
+1	4299 3964 84 697 353.215778133134 2482.155833515979 102 0.002965492084 53.078106870756 1159.6289379812 27386.374329242
+2	8263 6220 84 698 353.215778133134 2492.050740976382 159 0 348.27312619828 17095.340664231 3111629.227347
+3	14483 2360 85 698 355.982672747133 2492.050740976382 89 8 96 4628 299396
+4	16843 3506 85 698 355.982672747133 2492.050740976382 89 5.645513159855 342.70105348718 9660.4100965797 1663181.5673317
+5	20349 1832 90 696 381.910508285344 2471.034788360199 69 7 75 2829 143359
+6	22181 2984 90 696 381.910508285344 2471.034788360199 101 0 44.238666939915 391.60284412887 8611.1108988572
+7	25165 18 703 703 2500 2500 1 0.0384 0.0384 0.0384 0.00147456
+8	25183 17 703 703 2500 2500 1 0.048 0.048 0.048 0.002304
+

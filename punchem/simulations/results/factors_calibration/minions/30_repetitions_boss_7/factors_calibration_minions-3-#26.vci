@@ -1,0 +1,55 @@
+file 25997 1679223315                                           
+version 2
+run factors_calibration_minions-86-20230319-11:55:15-7581
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:15
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=3
+attr iterationvarsf 3-
+attr measurement $0=3
+attr network Network
+attr processid 7581
+attr repetition 26
+attr replication #26
+attr resultdir results
+attr runnumber 86
+attr seedset 26
+param *.minion.arrival_mean 20
+param *.minion.service_mean 3
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 1 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 2 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 3 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 4 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 5 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 6 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1564 3254 77 770 360.864535828211 2497.285207450237 105 0 37.020134109906 548.18504213952 11906.97234501
+1	4818 2814 78 771 360.986550899831 2498.103102893978 105 12 116 6720 526540
+2	7632 4087 78 771 360.986550899831 2498.103102893978 105 0.12201507162 46.782808163425 1322.7610496024 31796.138192622
+3	11719 5254 80 767 415.673079967841 2490.415002608561 151 0 195.0753475832 2201.0990272068 153565.14169649
+4	16973 3415 81 768 415.679823244471 2490.717770961427 127 15 141 9906 943356
+5	20388 4939 81 768 415.679823244471 2490.717770961427 127 0.00674327663 197.37564482225 2409.9528394492 163306.02420488
+6	25327 633 121 718 533.662990720296 2272.375387945966 24 3 26 348 6196
+7	25960 18 772 772 2500 2500 1 0.0564 0.0564 0.0564 0.00318096
+8	25978 18 772 772 2500 2500 1 0.0464 0.0464 0.0464 0.00215296
+

@@ -1,0 +1,55 @@
+file 23804 1679223342                                           
+version 2
+run factors_calibration_minions-215-20230319-11:55:42-8226
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:42
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=15
+attr iterationvarsf 15-
+attr measurement $0=15
+attr network Network
+attr processid 8226
+attr repetition 5
+attr replication #5
+attr resultdir results
+attr runnumber 215
+attr seedset 5
+param *.minion.arrival_mean 20
+param *.minion.service_mean 15
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 1 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 2 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 3 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 4 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 5 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 6 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1567 2732 84 681 353.215778133134 2482.155833515979 102 19 120 7089 581111
+1	4299 3964 84 681 353.215778133134 2482.155833515979 102 0.002965492084 53.078106870756 1159.6289379812 27386.374329242
+2	8263 5756 84 683 353.215778133134 2490.642907772141 146 8.165419178563 492.03406060641 27780.836703837 7425077.3613664
+3	14019 1961 85 683 356.674396400633 2490.642907772141 74 8 81 3293 180301
+4	15980 2919 85 683 356.674396400633 2490.642907772141 74 23.609241326583 492.47236415644 13837.779139067 3561735.3478108
+5	18899 1885 90 680 381.910508285344 2471.034788360199 71 7 77 2982 155064
+6	20784 2984 90 680 381.910508285344 2471.034788360199 101 0 44.238666939915 391.60284412887 8611.1108988572
+7	23768 18 688 688 2500 2500 1 0.0324 0.0324 0.0324 0.00104976
+8	23786 17 688 688 2500 2500 1 0.048 0.048 0.048 0.002304
+

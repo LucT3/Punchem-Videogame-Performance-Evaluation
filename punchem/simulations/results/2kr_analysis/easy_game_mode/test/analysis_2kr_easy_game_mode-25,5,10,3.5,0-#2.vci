@@ -1,0 +1,55 @@
+file 35390 1679472508                                           
+version 2
+run analysis_2kr_easy_game_mode-92-20230322-09:08:28-7338
+attr configname analysis_2kr_easy_game_mode
+attr datetime 20230322-09:08:28
+attr experiment analysis_2kr_easy_game_mode
+attr inifile omnetpp.ini
+attr iterationvars "$0=25, $1=5, $2=10, $3=3.5, $4=0"
+attr iterationvarsf 25,5,10,3.5,0-
+attr measurement "$0=25, $1=5, $2=10, $3=3.5, $4=0"
+attr network Network
+attr processid 7338
+attr repetition 2
+attr replication #2
+attr resultdir results
+attr runnumber 92
+attr seedset 2
+param *.boss.arrival_mean 25
+param *.boss.service_mean 5
+param *.minion.arrival_mean 10
+param *.minion.service_mean 3.5
+param *.player.recover_rate_x 0
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 1 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 2 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 3 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 4 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 5 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 6 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1633 2470 155 1100 352.177164766961 2481.007604656757 92 20 111 6026 459586
+1	4103 3571 155 1100 352.177164766961 2481.007604656757 92 0.030088770256 27.020592804381 588.14072796953 7510.4786909293
+2	7674 8914 155 1106 352.177164766961 2491.854625862879 262 0 58.353567077583 1984.4654900778 49338.135104443
+3	16588 817 157 1099 355.761739551976 2480.682844313459 31 4 34 589 13671
+4	17405 2601 157 1109 355.761739551976 2495.016053017395 92 0 21.340469061193 99.497192769696 959.76428443345
+5	20006 6329 161 1107 366.539764991402 2494.168010473151 231 28 258 33033 5750899
+6	26335 9016 161 1107 366.539764991402 2494.168010473151 231 0.016010022234 62.008390448211 2463.0660844048 59266.124786883
+7	35351 19 1110 1110 2500 2500 1 0.1032 0.1032 0.1032 0.01065024
+8	35370 19 1110 1110 2500 2500 1 0.0444 0.0444 0.0444 0.00197136
+

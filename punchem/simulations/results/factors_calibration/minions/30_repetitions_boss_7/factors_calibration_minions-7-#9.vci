@@ -1,0 +1,55 @@
+file 29112 1679223324                                           
+version 2
+run factors_calibration_minions-129-20230319-11:55:24-7796
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:24
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=7
+attr iterationvarsf 7-
+attr measurement $0=7
+attr network Network
+attr processid 7796
+attr repetition 9
+attr replication #9
+attr resultdir results
+attr runnumber 129
+attr seedset 9
+param *.minion.arrival_mean 20
+param *.minion.service_mean 7
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 1 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 2 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 3 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 4 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 5 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 6 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1563 3101 78 794 354.747128827509 2496.862962986354 116 10 125 7830 658590
+1	4664 4511 78 794 354.747128827509 2496.862962986354 116 0.283735344049 46.311731437654 1233.8798766267 22319.958801749
+2	9175 6752 80 794 358.816528523987 2496.862962986354 179 0 106.75447832033 5096.8651968224 247516.50138691
+3	15927 3337 81 795 361.135324505299 2499.724398040074 124 17 140 9734 922994
+4	19264 4881 81 795 361.135324505299 2499.724398040074 124 0.037085957817 112.63930422453 4456.6728031125 237519.00951655
+5	24145 3483 83 793 366.90674060042 2481.626538504285 115 0 34.64834922516 431.86311763105 6824.8234436951
+6	27628 1450 100 793 399.549588799422 2481.626538504285 55 3 57 1650 63360
+7	29078 17 796 796 2500 2500 1 0.056 0.056 0.056 0.003136
+8	29095 16 796 796 2500 2500 1 0.05 0.05 0.05 0.0025
+

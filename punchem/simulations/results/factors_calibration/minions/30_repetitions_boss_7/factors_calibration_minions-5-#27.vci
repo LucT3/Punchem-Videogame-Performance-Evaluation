@@ -1,0 +1,55 @@
+file 25177 1679223321                                           
+version 2
+run factors_calibration_minions-117-20230319-11:55:21-7736
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:21
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=5
+attr iterationvarsf 5-
+attr measurement $0=5
+attr network Network
+attr processid 7736
+attr repetition 27
+attr replication #27
+attr resultdir results
+attr runnumber 117
+attr seedset 27
+param *.minion.arrival_mean 20
+param *.minion.service_mean 5
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 1 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 2 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 3 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 4 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 5 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 6 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1566 4994 110 761 353.894451396096 2488.214744947182 142 0 82.608375134616 2343.6744680863 98171.784132256
+1	6560 2914 111 762 362.768823932107 2498.549007015783 108 24 131 8370 753642
+2	9474 4227 111 762 362.768823932107 2498.549007015783 108 0.024645011449 95.322039253162 2294.5439731085 97419.790990215
+3	13701 3328 113 755 368.831334544424 2480.169364514395 110 0 42.826984502234 518.80676247521 11599.632190669
+4	17029 2937 114 756 376.171375430312 2481.546800045214 110 14 123 7535 627055
+5	19966 4274 114 756 376.171375430312 2481.546800045214 110 0.053901428826 49.121919868045 1318.7150434249 31057.355931836
+6	24240 900 124 735 406.857955342912 2423.759721043991 34 8 41 833 23681
+7	25140 18 763 763 2500 2500 1 0.0524 0.0524 0.0524 0.00274576
+8	25158 18 763 763 2500 2500 1 0.0492 0.0492 0.0492 0.00242064
+

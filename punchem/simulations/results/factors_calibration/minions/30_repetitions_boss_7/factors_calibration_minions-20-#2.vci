@@ -1,0 +1,55 @@
+file 23272 1679223347                                           
+version 2
+run factors_calibration_minions-242-20230319-11:55:47-8361
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:47
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=20
+attr iterationvarsf 20-
+attr measurement $0=20
+attr network Network
+attr processid 8361
+attr repetition 2
+attr replication #2
+attr resultdir results
+attr runnumber 242
+attr seedset 2
+param *.minion.arrival_mean 20
+param *.minion.service_mean 20
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 1 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 2 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 3 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 4 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 5 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 6 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1567 1985 115 739 368.958402505989 2411.664070294826 75 6 80 3225 173825
+1	3552 3943 115 773 368.958402505989 2488.498831523037 127 0 40.836095564881 517.90483092083 8478.9855876818
+2	7495 3426 116 776 369.764205255802 2495.119444905325 127 23 149 10922 1109980
+3	10921 4948 116 776 369.764205255802 2495.119444905325 127 0.042124278359 48.788268805344 1439.3385588601 29346.275812631
+4	15869 4605 116 776 369.764205255802 2495.119444905325 117 19.30278186474 998.97830864549 42570.114745113 24939780.140673
+5	20474 1109 117 693 380.607372938139 2330.597129100629 42 12 53 1365 50533
+6	21583 1652 117 693 380.607372938139 2330.597129100629 42 30.562456963944 854.46007223483 14177.312016035 8065327.9985285
+7	23235 18 777 777 2500 2500 1 0.0212 0.0212 0.0212 0.00044944
+8	23253 18 777 777 2500 2500 1 0.0596 0.0596 0.0596 0.00355216
+

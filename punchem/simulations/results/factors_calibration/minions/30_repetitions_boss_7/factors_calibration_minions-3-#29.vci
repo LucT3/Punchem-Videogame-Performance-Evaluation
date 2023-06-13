@@ -1,0 +1,55 @@
+file 22745 1679223316                                           
+version 2
+run factors_calibration_minions-89-20230319-11:55:16-7596
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:16
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=3
+attr iterationvarsf 3-
+attr measurement $0=3
+attr network Network
+attr processid 7596
+attr repetition 29
+attr replication #29
+attr resultdir results
+attr runnumber 89
+attr seedset 29
+param *.minion.arrival_mean 20
+param *.minion.service_mean 3
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 1 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 2 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 3 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 4 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 5 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 6 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1564 3032 95 707 361.021825549164 2455.75371522284 101 0 38.835636117898 301.88274066345 6736.4362865972
+1	4596 2700 96 708 363.267943121906 2456.117992460462 101 14 114 6464 499546
+2	7296 3918 96 708 363.267943121906 2456.117992460462 101 0.310178780559 53.256955267 958.94642885136 19594.959747032
+3	11214 4037 114 719 453.942007288347 2498.150480111202 122 0 100.12046301717 1162.3819722127 59138.919558414
+4	15251 2902 115 720 454.397087514669 2498.702817437803 108 19 126 7830 672642
+5	18153 4193 115 720 454.397087514669 2498.702817437803 108 0.066300969178 103.20836202806 1295.6681511955 52708.043126833
+6	22346 362 129 625 530.555131859566 2184.469118021856 14 3 16 133 1491
+7	22708 18 721 721 2500 2500 1 0.0504 0.0504 0.0504 0.00254016
+8	22726 18 721 721 2500 2500 1 0.0456 0.0456 0.0456 0.00207936
+

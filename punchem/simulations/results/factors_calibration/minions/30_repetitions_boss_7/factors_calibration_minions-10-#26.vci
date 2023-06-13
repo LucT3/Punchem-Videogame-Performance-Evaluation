@@ -1,0 +1,55 @@
+file 27471 1679223334                                           
+version 2
+run factors_calibration_minions-176-20230319-11:55:34-8031
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:34
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=10
+attr iterationvarsf 10-
+attr measurement $0=10
+attr network Network
+attr processid 8031
+attr repetition 26
+attr replication #26
+attr resultdir results
+attr runnumber 176
+attr seedset 26
+param *.minion.arrival_mean 20
+param *.minion.service_mean 10
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 1 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 2 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 3 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 4 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 5 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 6 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1570 3254 77 754 360.864535828211 2497.285207450237 105 0 37.020134109906 548.18504213952 11906.97234501
+1	4824 2814 78 755 360.986550899831 2498.103102893978 105 12 116 6720 526540
+2	7638 4087 78 755 360.986550899831 2498.103102893978 105 0.12201507162 46.782808163425 1322.7610496024 31796.138192622
+3	11725 6750 80 755 415.673079967841 2498.103102893978 172 0 336.49994218897 28968.448514524 6496250.7976494
+4	18475 2983 81 752 415.695557556607 2494.945453802167 111 15 125 7770 657860
+5	21458 4386 81 752 415.695557556607 2494.945453802167 111 0.022477588766 342.91018708221 20702.716271867 4900594.8527232
+6	25844 1592 85 754 434.192491993633 2497.285207450237 60 8 67 2250 102370
+7	27436 16 756 756 2500 2500 1 0.05 0.05 0.05 0.0025
+8	27452 18 756 756 2500 2500 1 0.0464 0.0464 0.0464 0.00215296
+

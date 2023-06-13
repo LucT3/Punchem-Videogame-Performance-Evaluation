@@ -1,0 +1,55 @@
+file 23509 1679472511                                           
+version 2
+run analysis_2kr_easy_game_mode-106-20230322-09:08:31-7413
+attr configname analysis_2kr_easy_game_mode
+attr datetime 20230322-09:08:31
+attr experiment analysis_2kr_easy_game_mode
+attr inifile omnetpp.ini
+attr iterationvars "$0=25, $1=5, $2=15, $3=1, $4=100"
+attr iterationvarsf 25,5,15,1,100-
+attr measurement "$0=25, $1=5, $2=15, $3=1, $4=100"
+attr network Network
+attr processid 7413
+attr repetition 1
+attr replication #1
+attr resultdir results
+attr runnumber 106
+attr seedset 1
+param *.boss.arrival_mean 25
+param *.boss.service_mean 5
+param *.minion.arrival_mean 15
+param *.minion.service_mean 1
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 1 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 2 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 3 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 4 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 5 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 6 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1635 2003 89 776 354.757849584372 2491.799713292694 76 0 10.991965547433 23.650999299669 179.19973301561
+1	3638 1993 90 771 358.234802709137 2482.754434960343 75 13 87 3750 222650
+2	5631 2894 90 771 358.234802709137 2482.754434960343 75 0.080191438015 20.520905601596 347.71957106841 3073.2725263025
+3	8525 4682 92 773 371.428454236413 2486.563364433927 160 0 17.932022969391 183.10309696095 1577.289994141
+4	13207 4170 93 774 376.119283862982 2487.046913895316 154 18 171 14553 1679601
+5	17377 5942 93 774 376.119283862982 2487.046913895316 154 0.001643519969 18.656604278956 336.64410957029 2232.3124556238
+6	23319 153 208 751 709.61990692432 2366.81641764498 6 2 7 27 139
+7	23472 18 777 777 2500 2500 1 0.0684 0.0684 0.0684 0.00467856
+8	23490 18 777 777 2500 2500 1 0.0348 0.0348 0.0348 0.00121104
+

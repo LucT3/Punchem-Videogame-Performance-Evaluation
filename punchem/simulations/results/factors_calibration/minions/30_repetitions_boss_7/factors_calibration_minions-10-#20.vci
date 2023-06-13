@@ -1,0 +1,55 @@
+file 25937 1679223332                                           
+version 2
+run factors_calibration_minions-170-20230319-11:55:32-8001
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:32
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=10
+attr iterationvarsf 10-
+attr measurement $0=10
+attr network Network
+attr processid 8001
+attr repetition 20
+attr replication #20
+attr resultdir results
+attr runnumber 170
+attr seedset 20
+param *.minion.arrival_mean 20
+param *.minion.service_mean 10
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 1 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 2 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 3 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 4 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 5 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 6 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1570 2613 78 710 354.29130166409 2442.073827193994 98 14 111 6125 461237
+1	4183 3847 78 710 354.29130166409 2442.073827193994 98 0.938099476014 294.84557949183 14389.507825412 3026817.1387578
+2	8030 5627 80 710 355.34438184687 2442.073827193994 147 0 290.64678908063 20126.495815492 4052092.0999287
+3	13657 1336 95 712 429.805982642391 2447.619588604821 50 8 57 1625 63225
+4	14993 3544 95 729 429.805982642391 2492.807218373104 113 0 52.161340340314 747.60628043774 21184.604637994
+5	18537 3006 98 729 433.228701775695 2492.807218373104 112 13 124 7672 642600
+6	21543 4357 98 729 433.228701775695 2492.807218373104 112 0.02879511791 69.892871711883 1525.1784213669 47532.987720458
+7	25900 18 730 730 2500 2500 1 0.0444 0.0444 0.0444 0.00197136
+8	25918 18 730 730 2500 2500 1 0.0496 0.0496 0.0496 0.00246016
+

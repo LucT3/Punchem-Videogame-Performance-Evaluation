@@ -1,0 +1,55 @@
+file 23117 1679223332                                           
+version 2
+run factors_calibration_minions-169-20230319-11:55:32-7996
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:32
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=10
+attr iterationvarsf 10-
+attr measurement $0=10
+attr network Network
+attr processid 7996
+attr repetition 19
+attr replication #19
+attr resultdir results
+attr runnumber 169
+attr seedset 19
+param *.minion.arrival_mean 20
+param *.minion.service_mean 10
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 1 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 2 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 3 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 4 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 5 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 6 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1570 2190 85 667 355.958167533706 2497.526623374651 83 16 98 4731 317309
+1	3760 3250 85 667 355.958167533706 2497.526623374651 83 0.087687359203 139.10906036473 3396.0701408321 247522.4864433
+2	7010 4901 85 667 355.958167533706 2497.526623374651 131 0 134.53553452547 5117.7222297812 396971.58828823
+3	11911 1259 93 659 383.641814753773 2483.711986540473 48 5 52 1368 48200
+4	13170 3075 93 659 383.641814753773 2483.711986540473 104 0 26.853787337667 290.52243716174 4591.5188132855
+5	16245 2785 94 662 385.06147733653 2492.953097535389 104 12 115 6604 513084
+6	19030 4051 94 662 385.06147733653 2492.953097535389 104 0.029760943396 44.383561502835 1070.1532618962 19960.191058941
+7	23081 18 668 668 2500 2500 1 0.0392 0.0392 0.0392 0.00153664
+8	23099 17 668 668 2500 2500 1 0.046 0.046 0.046 0.002116
+

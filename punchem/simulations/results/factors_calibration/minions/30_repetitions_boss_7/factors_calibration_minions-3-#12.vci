@@ -1,0 +1,55 @@
+file 22697 1679223312                                           
+version 2
+run factors_calibration_minions-72-20230319-11:55:12-7511
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:12
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=3
+attr iterationvarsf 3-
+attr measurement $0=3
+attr network Network
+attr processid 7511
+attr repetition 12
+attr replication #12
+attr resultdir results
+attr runnumber 72
+attr seedset 12
+param *.minion.arrival_mean 20
+param *.minion.service_mean 3
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 1 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 2 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 3 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 4 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 5 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 6 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1564 3032 105 732 353.31726191334 2495.788002783707 113 19 131 8475 755857
+1	4596 4372 105 732 353.31726191334 2495.788002783707 113 0.020081489154 29.548707002334 812.79540919542 10685.853313449
+2	8968 2821 107 715 353.492191333855 2429.253213841085 97 0 18.269783303035 155.45502346052 1383.7500711136
+3	11789 2584 108 716 359.733270225707 2435.335400913232 97 17 113 6305 485873
+4	14373 3756 108 716 359.733270225707 2435.335400913232 97 0.048053576244 26.972598011408 776.58330222965 10258.863911194
+5	18129 4118 118 731 376.982702434593 2493.081541814909 128 0 25.712074228884 557.92545408655 7164.6437908653
+6	22247 413 120 646 380.352000414881 2110.335738409846 16 1 16 136 1496
+7	22660 18 733 733 2500 2500 1 0.0524 0.0524 0.0524 0.00274576
+8	22678 18 733 733 2500 2500 1 0.0452 0.0452 0.0452 0.00204304
+

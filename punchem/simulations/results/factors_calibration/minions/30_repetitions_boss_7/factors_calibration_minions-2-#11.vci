@@ -1,0 +1,55 @@
+file 24252 1679223306                                           
+version 2
+run factors_calibration_minions-41-20230319-11:55:06-7356
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:06
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=2
+attr iterationvarsf 2-
+attr measurement $0=2
+attr network Network
+attr processid 7356
+attr repetition 11
+attr replication #11
+attr resultdir results
+attr runnumber 41
+attr seedset 11
+param *.minion.arrival_mean 20
+param *.minion.service_mean 2
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 1 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 2 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 3 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 4 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 5 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 6 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1564 3306 104 772 367.040322711825 2499.540555403066 123 12 134 8979 810529
+1	4870 4798 104 772 367.040322711825 2499.540555403066 123 0.036762050833 80.818208558823 2112.9210748706 73941.815245752
+2	9668 4003 104 772 367.040322711825 2499.540555403066 123 0 67.198117257267 1246.7865995441 42988.815040374
+3	13671 3729 112 758 384.135277395986 2468.901182745237 110 0 129.16945799938 1669.033890485 98819.12906904
+4	17400 2676 113 759 388.013691419628 2471.798479960366 100 21 120 7050 580350
+5	20076 3883 113 759 388.013691419628 2471.798479960366 100 0.034198640451 131.41822987897 1667.7896014314 91026.725411048
+6	23959 257 129 737 434.397689262197 2379.095213703034 10 3 12 75 645
+7	24216 17 773 773 2500 2500 1 0.048 0.048 0.048 0.002304
+8	24233 18 773 773 2500 2500 1 0.0536 0.0536 0.0536 0.00287296
+

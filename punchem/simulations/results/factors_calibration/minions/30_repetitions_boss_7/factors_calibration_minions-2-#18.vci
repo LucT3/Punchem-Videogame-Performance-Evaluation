@@ -1,0 +1,55 @@
+file 23282 1679223307                                           
+version 2
+run factors_calibration_minions-48-20230319-11:55:07-7391
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:07
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=2
+attr iterationvarsf 2-
+attr measurement $0=2
+attr network Network
+attr processid 7391
+attr repetition 18
+attr replication #18
+attr resultdir results
+attr runnumber 48
+attr seedset 18
+param *.minion.arrival_mean 20
+param *.minion.service_mean 2
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 1 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 2 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 3 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 4 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 5 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 6 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1564 3127 95 749 352.65760743913 2490.238705866935 101 0 40.927663635977 631.60979008456 14354.628910851
+1	4691 2664 96 746 355.937870705036 2478.165443027063 100 17 116 6650 525550
+2	7355 3883 96 746 355.937870705036 2478.165443027063 100 0.080930907251 58.987766453552 1379.7802181344 35572.27838229
+3	11238 4034 104 746 380.672198371226 2478.165443027063 127 0 100.06608613791 1434.6504230887 70174.976341466
+4	15272 3173 107 747 381.972593978299 2483.424578485885 118 16 133 8791 791839
+5	18445 4571 107 747 381.972593978299 2483.424578485885 118 0.011142476686 100.64247896772 1584.897657689 74684.238430482
+6	23016 229 160 688 576.409290106954 2206.891406240519 9 1 9 45 285
+7	23245 18 754 754 2500 2500 1 0.0532 0.0532 0.0532 0.00283024
+8	23263 18 754 754 2500 2500 1 0.0464 0.0464 0.0464 0.00215296
+

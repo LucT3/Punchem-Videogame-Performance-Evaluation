@@ -1,0 +1,55 @@
+file 25394 1679223331                                           
+version 2
+run factors_calibration_minions-164-20230319-11:55:31-7971
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:31
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=10
+attr iterationvarsf 10-
+attr measurement $0=10
+attr network Network
+attr processid 7971
+attr repetition 14
+attr replication #14
+attr resultdir results
+attr runnumber 164
+attr seedset 14
+param *.minion.arrival_mean 20
+param *.minion.service_mean 10
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 1 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 2 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 3 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 4 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 5 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 6 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1570 2676 88 710 354.411155526407 2467.88464691787 100 15 114 6450 499350
+1	4246 3885 88 710 354.411155526407 2467.88464691787 100 0.254253496276 25.477853311762 852.30385047932 11157.61318961
+2	8131 6025 88 710 354.411155526407 2467.88464691787 157 0 126.71460144534 5945.8576379767 348387.22320499
+3	14156 1355 90 709 357.206506079018 2464.141668652333 51 8 58 1683 66589
+4	15511 2918 90 709 357.206506079018 2464.141668652333 99 0 21.022820552648 163.34502957396 1666.7114480647
+5	18429 2802 96 707 387.51424217041 2462.654591127779 105 12 116 6720 526540
+6	21231 4126 96 707 387.51424217041 2462.654591127779 105 0.18826647074 127.45848542701 4858.3979558503 302881.53886538
+7	25357 18 715 715 2500 2500 1 0.0464 0.0464 0.0464 0.00215296
+8	25375 18 715 715 2500 2500 1 0.0456 0.0456 0.0456 0.00207936
+

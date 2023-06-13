@@ -1,0 +1,55 @@
+file 21268 1679223353                                           
+version 2
+run factors_calibration_minions-269-20230319-11:55:53-8496
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:53
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=20
+attr iterationvarsf 20-
+attr measurement $0=20
+attr network Network
+attr processid 8496
+attr repetition 29
+attr replication #29
+attr resultdir results
+attr runnumber 269
+attr seedset 29
+param *.minion.arrival_mean 20
+param *.minion.service_mean 20
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 1 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 2 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 3 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 4 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 5 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 6 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1570 1772 89 647 361.021825549164 2455.75371522284 67 6 72 2613 126965
+1	3342 3030 89 647 361.021825549164 2455.75371522284 101 0 38.835636117898 301.88274066345 6736.4362865972
+2	6372 2698 90 648 363.267943121906 2456.117992460462 101 14 114 6464 499546
+3	9070 3916 90 648 363.267943121906 2456.117992460462 101 0.310178780559 53.256955267 958.94642885136 19594.959747032
+4	12986 4739 90 655 363.267943121906 2490.657029963891 120 77.552742797 662.95657148245 52675.762731704 25930504.308286
+5	17725 1414 97 655 387.272631506916 2490.657029963891 53 13 65 2067 93015
+6	19139 2093 97 655 387.272631506916 2490.657029963891 53 92.577751264462 668.145416698 24723.527856849 12611249.512895
+7	21232 17 660 660 2500 2500 1 0.026 0.026 0.026 0.000676
+8	21249 18 660 660 2500 2500 1 0.0456 0.0456 0.0456 0.00207936
+

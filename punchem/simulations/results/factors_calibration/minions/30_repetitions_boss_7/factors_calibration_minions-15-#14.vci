@@ -1,0 +1,55 @@
+file 24364 1679223343                                           
+version 2
+run factors_calibration_minions-224-20230319-11:55:43-8271
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:43
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=15
+attr iterationvarsf 15-
+attr measurement $0=15
+attr network Network
+attr processid 8271
+attr repetition 14
+attr replication #14
+attr resultdir results
+attr runnumber 224
+attr seedset 14
+param *.minion.arrival_mean 20
+param *.minion.service_mean 15
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 1 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 2 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 3 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 4 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 5 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 6 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1570 2675 84 680 354.411155526407 2467.88464691787 100 15 114 6450 499350
+1	4245 3884 84 680 354.411155526407 2467.88464691787 100 0.254253496276 25.477853311762 852.30385047932 11157.61318961
+2	8129 6027 84 687 354.411155526407 2499.838948995914 153 82.921024476374 432.61774781954 30023.432798434 6921787.9531072
+3	14156 1859 86 679 357.206506079018 2464.141668652333 70 9 78 3045 161035
+4	16015 2917 86 679 357.206506079018 2464.141668652333 99 0 21.022820552648 163.34502957396 1666.7114480647
+5	18932 2171 90 687 370.775900393063 2499.838948995914 82 8 89 3977 238825
+6	21103 3224 90 687 370.775900393063 2499.838948995914 82 94.387052853662 433.21738053272 17555.610704732 4368238.7962855
+7	24327 18 688 688 2500 2500 1 0.0356 0.0356 0.0356 0.00126736
+8	24345 18 688 688 2500 2500 1 0.0456 0.0456 0.0456 0.00207936
+

@@ -1,0 +1,55 @@
+file 25516 1679223346                                           
+version 2
+run factors_calibration_minions-235-20230319-11:55:46-8326
+attr configname factors_calibration_minions
+attr datetime 20230319-11:55:46
+attr experiment factors_calibration_minions
+attr inifile omnetpp.ini
+attr iterationvars $0=15
+attr iterationvarsf 15-
+attr measurement $0=15
+attr network Network
+attr processid 8326
+attr repetition 25
+attr replication #25
+attr resultdir results
+attr runnumber 235
+attr seedset 25
+param *.minion.arrival_mean 20
+param *.minion.service_mean 15
+param *.boss.arrival_mean 20
+param *.boss.service_mean 7
+param *.player.recover_rate_x 100
+param **.minion.arrival_distribution 0
+param **.minion.service_distribution 0
+param **.boss.arrival_distribution 0
+param **.boss.service_distribution 0
+
+vector 0 Network.player minion_defeated_stat:vector ETV
+attr source signal_minion_defeated
+vector 1 Network.player minion_response_time_stat:vector ETV
+attr source signal_minion_response_time
+vector 2 Network.player minion_waiting_time_stat:vector ETV
+attr source signal_minion_waiting_time
+vector 3 Network.player minion_recovered_stat:vector ETV
+attr source signal_minion_recovered
+vector 4 Network.player boss_waiting_time_stat:vector ETV
+attr source signal_boss_waiting_time
+vector 5 Network.player boss_defeated_stat:vector ETV
+attr source signal_boss_defeated
+vector 6 Network.player boss_response_time_stat:vector ETV
+attr source signal_boss_response_time
+vector 7 Network.player minion_throughput:vector ETV
+attr source signal_minion_throughput
+vector 8 Network.player boss_throughput:vector ETV
+attr source signal_boss_throughput
+0	1570 2071 122 761 357.450925414442 2492.943280688837 78 9 86 3705 215527
+1	3641 3081 122 761 357.450925414442 2492.943280688837 78 163.79179481303 653.21980438917 30947.122411231 14629070.443632
+2	6722 6200 122 761 357.450925414442 2492.943280688837 157 153.01381946532 652.2027938127 61643.497899232 28683680.849267
+3	12922 2107 136 759 407.023051346512 2475.119593842137 79 18 96 4503 297751
+4	15029 3226 136 759 407.023051346512 2475.119593842137 110 0 26.294031442968 273.70094357896 4241.9718083252
+5	18255 2954 137 760 410.04179882869 2491.018386382419 110 22 131 8415 754655
+6	21209 4270 137 760 410.04179882869 2491.018386382419 110 0.018774068682 34.303546360196 985.90082849395 16382.295907737
+7	25479 18 764 764 2500 2500 1 0.0344 0.0344 0.0344 0.00118336
+8	25497 18 764 764 2500 2500 1 0.0524 0.0524 0.0524 0.00274576
+
