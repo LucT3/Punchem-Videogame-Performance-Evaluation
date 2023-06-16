@@ -28,7 +28,7 @@ void Minion::initialize()
     timer_ = new cMessage("timer");
 
     //first arrival
-    waitNewArrival();
+    scheduleNextArrival();
 }
 
 void Minion::handleMessage(cMessage *msg)
@@ -36,12 +36,14 @@ void Minion::handleMessage(cMessage *msg)
     //generate new MINION
     generateNewOpponent();
 
-    //wait new arrival
-    waitNewArrival();
+    //schedule a new opponent arrival
+    scheduleNextArrival();
 }
 
-//Wait for a new opponent arrival (random time), extracted from an exponential distribution
-void Minion::waitNewArrival(){
+/**
+ * Schedule a new opponent arrival with random (extracted from an exponential distribution) or constant time
+ */
+void Minion::scheduleNextArrival(){
     simtime_t arrival_time;
 
     //to handle the degeneracy test
@@ -57,15 +59,16 @@ void Minion::waitNewArrival(){
 
         scheduleAt(simTime() + arrival_time, timer_);
 
-        EV << "MINION - new opponent arrives at: " << simTime()+arrival_time << endl;
+        EV << "MINION - scheduleNextArrival() - new opponent arrives at: " << simTime()+arrival_time << endl;
     }
     else{
-        EV << "MINION - GAME MODE WITHOUT MINIONS "<< endl;
-        //endSimulation();
+        EV << "MINION - scheduleNextArrival() - GAME MODE WITHOUT MINIONS "<< endl;
     }
 }
 
-//generate new opponent and set the service time (opponent life)
+/**
+ * Generate new opponent and set the service time (opponent life)
+ */
 void Minion::generateNewOpponent(){
     simtime_t service_time;
     //to handle the degeneracy test
@@ -80,18 +83,11 @@ void Minion::generateNewOpponent(){
         // Send the new opponent to the player as a message containing the service time (opponent life)
         OpponentMessage* msg = new OpponentMessage();
         msg->setService_time(service_time);
-        //msg->setType(1); //0 is a boss, 1 is a minion
         msg->setName("MinionMessage");
         send(msg, "out");
 
-        EV << "MINION - generated new opponent. life = " << service_time << endl;
+        EV << "MINION - generateNewOpponent() - generated new opponent. life = " << service_time << endl;
     }
-    else{
-        EV << "MINION - no minions, not possible to play"<< endl;
-        endSimulation();
-    }
-
-
 }
 
 

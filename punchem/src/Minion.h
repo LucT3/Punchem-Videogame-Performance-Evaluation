@@ -41,7 +41,7 @@ class Minion : public cSimpleModule
     cMessage* timer_ = nullptr;
 
     //functions
-    void waitNewArrival();
+    void scheduleNextArrival();
     void generateNewOpponent();
 
   protected:

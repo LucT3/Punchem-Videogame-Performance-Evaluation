@@ -60,14 +60,11 @@ void Player::initialize()
  *  2)recover minion life if a BOSS arrive and a MINION is under service(recoverMinion function)
  *  3)emit signals to store statistics about minion/bosses number of jobs
  *
- *
  */
-void Player::handleMessage(cMessage *msg)
-{
+void Player::handleMessage(cMessage *msg){
 
     //check the message type
     EV << "PLAYER - handleMessage() - message type: " << msg->getName() << " id: "<< msg->getId() << endl;
-
 
     //service time ends - DEFEAT OPPONENT
     if(msg->isSelfMessage()){
@@ -92,20 +89,19 @@ void Player::handleMessage(cMessage *msg)
         std::string message_type = msg->getName();
         EV << "PLAYER - handleMessage() - NEW OPPONENT CREATED, type: " << message_type << endl;
 
-        //enqueue msg in BOSS QUEUE and if necessary recover minion
+        //enqueue boss msg in BOSS QUEUE and if necessary recover minion
         if(message_type == "BossMessage"){
             //push boss in the queue
             boss_queue.push(new_opponent);
             EV << "PLAYER - handleMessage() - ENQUEUED IN BOSS QUEUE. bosses:  "<< get_number_of_bosses() << endl;
 
-            //check if a minion is been serving and skip its process (doing the recover)
+            //check if a minion is been serving and skip its process (do the minion recover)
             if(current_opponent != nullptr){
                 std::string current_opponent_type = current_opponent->message->getName();
                 if(current_opponent_type == "MinionMessage"){
                     recoverMinion();
                 }
             }
-
             //handle boss job
             if(boss_queue.size() == 1 ){
                 if (minion_queue.size() > 0){ //if minion is serving cancel its scheduled event
@@ -113,9 +109,8 @@ void Player::handleMessage(cMessage *msg)
                 }
                 handleBoss();
             }
-
         }
-        //enqueue msg in MINION QUEUE
+        //enqueue minion msg in MINION QUEUE
         else if(message_type == "MinionMessage"){
             minion_queue.push(new_opponent);
             EV << "PLAYER - handleMessage() - ENQUEUED IN MINION QUEUE. minions: " << get_number_of_minions() << endl;
@@ -129,7 +124,6 @@ void Player::handleMessage(cMessage *msg)
         else{
             EV <<"PLAYER - handleMessage() - error occurred on new opponent arriving! " << endl;
         }
-
     }
 }
 
@@ -191,7 +185,6 @@ void Player::recoverMinion(){
     //check the current opponent
     EV << "PLAYER - recoverMinion() - RECOVERING MINION: " << current_opponent->message->getName() << " id: " << current_opponent->message->getId() << endl;
 
-
     //COMPUTE the recovered life
     simtime_t life_recovered = computeLifeRecovered();
 
@@ -230,12 +223,12 @@ void Player::recoverMinion(){
 /**
  * Function to compute the recovered minion life (life = service_time)
  * minion recovering steps:
- *      1)compute the lost life (gap between simTimes)
- *      2)compute the remaining life percentage (based on lost life)
+ *      1)compute the lost life (gap between current simTime and start process simTIme)
+ *      2)compute the remaining life percentage (based on the original life)
  *      3)compute the recover rate "x" to apply to the actual life
  *          3.1)no minion life recover (recover rate <= 0)
- *          3.2)100% of the recover percentage (recover rate >= 100)
- *          3.3)x % of the recover percentage (recover rate  0 < x < 100)
+ *          3.2)100% of the recovering percentage (recover rate >= 100)
+ *          3.3)x % of the recovering percentage (recover rate  0 < x < 100)
  *      4)update the actual life
  *
  */
@@ -246,7 +239,7 @@ simtime_t Player::computeLifeRecovered(){
     simtime_t actual_life = current_opponent_lifetime - simTime_gap; //minion actual life (when it stops to fight)
     EV << "PLAYER - computeLifeRecovered() - original life : " << current_opponent_lifetime << ", actual life: " << actual_life << endl;
 
-    //2)compute the remaining life percentage (based on the chosen scenario (1)calculated recover rate, 2)no recover rate, 3)pre-defined recover rate
+    //2)compute the current life percentage
     double current_opponent_life_percentage = 0; //minion actual life percentage
     if(actual_life > 0){
         current_opponent_life_percentage = (actual_life / current_opponent_lifetime) * 100;
@@ -257,7 +250,7 @@ simtime_t Player::computeLifeRecovered(){
     }
     EV << "PLAYER - computeLifeRecovered() - actual life percentage : " << current_opponent_life_percentage << "%" << endl;
 
-    //3)compute the recover rate "x" to apply to the actual life
+    //3)compute the recovering percentage to add to the actual life (based on the chosen recover rate "x")
     double recovering_percentage;
 
     if(recover_rate_x <= 0){ //3.1) "no minion life recover"
@@ -278,15 +271,13 @@ simtime_t Player::computeLifeRecovered(){
     actual_life = actual_life + recovered_life;
     EV << "PLAYER - computeLifeRecovered() - MINION LIFE RECOVERED : " << actual_life << "  Life added : " << recovered_life << "  Minion id : " << current_opponent->message->getId() << endl;
 
-
     return actual_life;
 }
 
 
 /**
- * Function to delete opponents (boss or minion) from queue and update the current opponent.
- * update player life. the damage is equal to the opponent original life (service time)
- * Collect statistics (fight/service time)
+ * Function to delete opponents (boss or minion) from queue, update the current opponent and
+ * collect statistics (opponents defeated and response time)
  */
 void Player::defeatOpponent(cMessage *msg){
     //check the opponent type to defeat
@@ -338,15 +329,16 @@ void Player::defeatOpponent(cMessage *msg){
     current_opponent = nullptr;
 }
 
+
 /**
- * return the total number of MINIONS in the queue
+ * Return the total number of MINIONS in the queue
  */
 unsigned int Player::get_number_of_minions(){
     return minion_queue.size();
 }
 
 /**
- * return the total number of BOSSES in the queue
+ * Return the total number of BOSSES in the queue
  */
 unsigned int Player::get_number_of_bosses(){
     return boss_queue.size();
@@ -354,7 +346,7 @@ unsigned int Player::get_number_of_bosses(){
 
 
 /**
- * ovveride the finish method, in order to compute the final statistics and deallocate memory
+ * Override the finish method, in order to compute the final statistics and deallocate memory
  */
 
 void Player::finish(){

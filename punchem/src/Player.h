@@ -31,7 +31,6 @@ struct Opponent{
 };
 
 
-
 class Player : public cSimpleModule
 {
 
@@ -50,7 +49,6 @@ class Player : public cSimpleModule
     simtime_t current_opponent_lifetime;
     cMessage *minion = nullptr; //timer for minion messages
     cMessage *boss = nullptr; //timer for boss messages
-
 
 
     //queues for minions and bosses
@@ -83,7 +81,6 @@ class Player : public cSimpleModule
 
     unsigned int get_number_of_minions();
     unsigned int get_number_of_bosses();
-
 
   protected:
     virtual void initialize();

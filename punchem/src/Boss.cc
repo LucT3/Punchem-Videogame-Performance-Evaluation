@@ -28,7 +28,7 @@ void Boss::initialize()
     timer_ = new cMessage("timer");
 
     //first arrival
-    waitNewArrival();
+    scheduleNextArrival();
 }
 
 void Boss::handleMessage(cMessage *msg)
@@ -36,13 +36,16 @@ void Boss::handleMessage(cMessage *msg)
     //generate new BOSS
     generateNewOpponent();
 
-    //wait new arrival
-    waitNewArrival();
+    //schedule a new opponent arrival
+    scheduleNextArrival();
 }
 
-//Wait for a new opponent arrival (random time), extracted from an exponential distribution
-void Boss::waitNewArrival(){
+/**
+ * Schedule a new opponent arrival with random (extracted from an exponential distribution) or constant time
+ */
+void Boss::scheduleNextArrival(){
     simtime_t arrival_time;
+
     //to handle the degeneracy test
     if (arrival_mean != 0 && service_mean != 0){ //if no bosses arrives or arrive with 0 life is intended as GAME MODE WITHOUT BOSSES
         // exponential distribution
@@ -56,16 +59,17 @@ void Boss::waitNewArrival(){
 
         scheduleAt(simTime() + arrival_time, timer_);
 
-        EV << "BOSS - new opponent arrives at: " << simTime()+arrival_time << endl;
+        EV << "BOSS - scheduleNextArrival() - new opponent arrives at: " << simTime()+arrival_time << endl;
     }
     else{
-        EV << "BOSS - GAME MODE WITHOUT BOSSES " << endl;
-        //endSimulation();
+        EV << "BOSS - scheduleNextArrival() -  GAME MODE WITHOUT BOSSES " << endl;
     }
 }
 
 
-//generate new opponent and set the service time (opponent life)
+/**
+ * Generate new opponent and set the service time (opponent life)
+ */
 void Boss::generateNewOpponent(){
     simtime_t service_time;
 
@@ -79,11 +83,10 @@ void Boss::generateNewOpponent(){
     // Send the new opponent to the player as a message containing the service time (opponent life)
     OpponentMessage* msg = new OpponentMessage();
     msg->setService_time(service_time);
-    //msg->setType(0); //0 is a boss, 1 is a minion
     msg->setName("BossMessage");
     send(msg, "out");
 
-    EV << "BOSS - generated new opponent. life = " << service_time << endl;
+    EV << "BOSS - generateNewOpponent() - generated new opponent. life = " << service_time << endl;
 
 
 }
