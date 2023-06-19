@@ -93,7 +93,7 @@ void Player::handleMessage(cMessage *msg){
         if(message_type == "BossMessage"){
             //push boss in the queue
             boss_queue.push(new_opponent);
-            EV << "PLAYER - handleMessage() - ENQUEUED IN BOSS QUEUE. bosses:  "<< get_number_of_bosses() << endl;
+            EV << "PLAYER - handleMessage() - ENQUEUED IN BOSS QUEUE. bosses:  "<< boss_queue.size() << endl;
 
             //check if a minion is been serving and skip its process (do the minion recover)
             if(current_opponent != nullptr){
@@ -113,7 +113,7 @@ void Player::handleMessage(cMessage *msg){
         //enqueue minion msg in MINION QUEUE
         else if(message_type == "MinionMessage"){
             minion_queue.push(new_opponent);
-            EV << "PLAYER - handleMessage() - ENQUEUED IN MINION QUEUE. minions: " << get_number_of_minions() << endl;
+            EV << "PLAYER - handleMessage() - ENQUEUED IN MINION QUEUE. minions: " << minion_queue.size() << endl;
 
             //handle minion job
             if(minion_queue.size() == 1 && boss_queue.size() == 0){
@@ -147,7 +147,7 @@ void Player::handleMinion(){
 
     //job enter in the service - record the waiting time
     emit(signal_minion_waiting_time, simTime() - current_opponent->enter_queue_time);
-    EV <<"Current opponent Enter queue time: " << current_opponent->enter_queue_time << endl;
+    EV <<"PLAYER - handleMinion() - Current opponent Enter queue time: " << current_opponent->enter_queue_time << endl;
 
 }
 
@@ -168,7 +168,7 @@ void Player::handleBoss(){
 
     //job enter in the service - record the waiting time
     emit(signal_boss_waiting_time, simTime() - current_opponent->enter_queue_time);
-    EV <<"Current opponent Enter queue time: " << current_opponent->enter_queue_time << endl;
+    EV <<"PLAYER - handleBoss() - Current opponent Enter queue time: " << current_opponent->enter_queue_time << endl;
 
 
 }
@@ -205,7 +205,7 @@ void Player::recoverMinion(){
     delete defeated_opponent->message;
     delete defeated_opponent;
 
-    EV << "PLAYER - recoverMinion() - MINION CORRECTLY RECOVERED/RE-ENQUEUED. life: "<< life_recovered << " minions in the queue : "<< get_number_of_minions() << endl;
+    EV << "PLAYER - recoverMinion() - MINION CORRECTLY RECOVERED/RE-ENQUEUED. life: "<< life_recovered << " minions in the queue : "<< minion_queue.size() << endl;
 
     //UPDATE current_opponent (boss that is arrived)
     current_opponent = boss_queue.front();
@@ -291,7 +291,7 @@ void Player::defeatOpponent(cMessage *msg){
     if (msg_type == "BossMessage"){
         defeated_opponent = boss_queue.front();
         boss_queue.pop();
-        EV << "PLAYER - defeatOpponent() - BOSS defeated. remaining bosses: "<< get_number_of_bosses() << endl;
+        EV << "PLAYER - defeatOpponent() - BOSS defeated. remaining bosses: "<< boss_queue.size() << endl;
 
         //collect statistics
         counter_boss_defeated = counter_boss_defeated + 1;
@@ -302,7 +302,7 @@ void Player::defeatOpponent(cMessage *msg){
     else if(msg_type == "MinionMessage"){
         defeated_opponent = minion_queue.front();
         minion_queue.pop();
-        EV << "PLAYER - defeatOpponent() - MINION defeated. remaining minions:  "<< get_number_of_minions() << endl;
+        EV << "PLAYER - defeatOpponent() - MINION defeated. remaining minions:  "<< minion_queue.size() << endl;
 
         //collect statistics
         counter_minion_defeated = counter_minion_defeated + 1;
@@ -331,28 +331,12 @@ void Player::defeatOpponent(cMessage *msg){
 
 
 /**
- * Return the total number of MINIONS in the queue
- */
-unsigned int Player::get_number_of_minions(){
-    return minion_queue.size();
-}
-
-/**
- * Return the total number of BOSSES in the queue
- */
-unsigned int Player::get_number_of_bosses(){
-    return boss_queue.size();
-}
-
-
-/**
  * Override the finish method, in order to compute the final statistics and deallocate memory
  */
-
 void Player::finish(){
     EV << "PLAYER - finish() - GAME OVER! " << endl;
 
-    //compute final statistics (defeated minions and bosses per unit of time (seconds))
+    //compute final statistics (defeated minions and bosses per unit of time [seconds])
     emit(signal_minion_throughput, (double) counter_minion_defeated /simTime());
     emit(signal_boss_throughput, (double)counter_boss_defeated / simTime());
 

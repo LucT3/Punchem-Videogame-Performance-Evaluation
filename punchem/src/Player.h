@@ -79,9 +79,6 @@ class Player : public cSimpleModule
 
     void defeatOpponent(cMessage *msg);
 
-    unsigned int get_number_of_minions();
-    unsigned int get_number_of_bosses();
-
   protected:
     virtual void initialize();
     virtual void handleMessage(cMessage *msg);
