@@ -225,7 +225,7 @@ void Player::recoverMinion(){
  * minion recovering steps:
  *      1)compute the lost life (gap between current simTime and start process simTIme)
  *      2)compute the remaining life percentage (based on the original life)
- *      3)compute the recover rate "x" to apply to the actual life
+ *      3)compute the recovering percentage to add to the actual life
  *          3.1)no minion life recover (recover rate <= 0)
  *          3.2)100% of the recovering percentage (recover rate >= 100)
  *          3.3)x % of the recovering percentage (recover rate  0 < x < 100)
