@@ -1,6 +1,6 @@
 # Performance Evaluation of Secure Systems and Networks Project - Punch'em Videogame
 
-University project for **Performance Evaluation of Computer Systems and Networks** course (MSc Computer Engineering @ University of Pisa, A.Y. 2021-22).
+University project for **Performance Evaluation of Computer Systems and Networks** course (MSc Computer Engineering at University of Pisa, A.Y. 2021-22).
 
 The project aimed to design, model, and implement a system that simulates a fighting videogame, or even called Punch'em Videogame, and finally evaluate the overall system performance in different game scenarios.
 
