@@ -26,6 +26,7 @@ void Player::initialize()
     counter_minion_defeated = par("counter_minion_defeated");
     counter_minion_recovered = 0;
     counter_boss_defeated = par("counter_boss_defeated");
+    warmup_period = getSimulation()->getWarmupPeriod();
 
     //initialize current opponent
     current_opponent = nullptr;
@@ -214,9 +215,15 @@ void Player::recoverMinion(){
     current_opponent_lifetime = msg->getService_time();
 
 
-    //emit signals (statistics for recovering part)
-    counter_minion_recovered = counter_minion_recovered + 1;
-    emit(signal_minion_recovered,counter_minion_recovered);
+    //collect statistics on recovery (only if the warm up time period is over)
+    if (warmup_period < simTime()){
+        counter_minion_recovered = counter_minion_recovered + 1;
+        emit(signal_minion_recovered,counter_minion_recovered);
+    }
+    else{
+        EV << "PLAYER - recoverMinion() - minion recovered not recorded, time left to recording: "<< (warmup_period-simTime()) << endl;
+    }
+
 
 }
 
@@ -293,10 +300,16 @@ void Player::defeatOpponent(cMessage *msg){
         boss_queue.pop();
         EV << "PLAYER - defeatOpponent() - BOSS defeated. remaining bosses: "<< boss_queue.size() << endl;
 
-        //collect statistics
-        counter_boss_defeated = counter_boss_defeated + 1;
-        emit(signal_boss_defeated, counter_boss_defeated);
-        EV << "PLAYER - defeatOpponent() - Total Bosses Defeated : "<< counter_boss_defeated << endl;
+        //collect statistics (only if the warm up time period is over)
+        if (warmup_period < simTime()){
+            counter_boss_defeated = counter_boss_defeated + 1;
+            emit(signal_boss_defeated, counter_boss_defeated);
+            EV << "PLAYER - defeatOpponent() - Total Bosses Defeated : "<< counter_boss_defeated << endl;
+        }
+        else{
+            EV << "PLAYER - defeatOpponent() - Boss defeated not recorded, time left to recording: "<< (warmup_period-simTime()) << endl;
+        }
+
     }
     //defeat a MINION
     else if(msg_type == "MinionMessage"){
@@ -304,10 +317,15 @@ void Player::defeatOpponent(cMessage *msg){
         minion_queue.pop();
         EV << "PLAYER - defeatOpponent() - MINION defeated. remaining minions:  "<< minion_queue.size() << endl;
 
-        //collect statistics
-        counter_minion_defeated = counter_minion_defeated + 1;
-        emit(signal_minion_defeated,counter_minion_defeated);
-        EV << "PLAYER - defeatOpponent() - Total Minion Defeated : "<< counter_minion_defeated << endl;
+        //collect statistics (only if the warm up time period is over)
+        if (warmup_period < simTime()){
+            counter_minion_defeated = counter_minion_defeated + 1;
+            emit(signal_minion_defeated,counter_minion_defeated);
+            EV << "PLAYER - defeatOpponent() - Total Minion Defeated : "<< counter_minion_defeated << endl;
+        }
+        else{
+            EV << "PLAYER - defeatOpponent() - Minion defeated not recorded, time left to recording: "<< (warmup_period-simTime()) << endl;
+        }
     }
     else{
         EV << "PLAYER - defeatOpponent() - ERROR!" << endl;
@@ -337,8 +355,11 @@ void Player::finish(){
     EV << "PLAYER - finish() - GAME OVER! " << endl;
 
     //compute final statistics (defeated minions and bosses per unit of time [seconds])
-    emit(signal_minion_throughput, (double) counter_minion_defeated /simTime());
-    emit(signal_boss_throughput, (double)counter_boss_defeated / simTime());
+    emit(signal_minion_throughput, (double) counter_minion_defeated / (simTime()-warmup_period));
+    EV << "PLAYER - finish() - TOTAL MINIONS DEFEATED: "<< counter_minion_defeated <<". MINION THROUGHPUT : " << counter_minion_defeated / (simTime()-warmup_period) <<". ON SIMULATION TIME : " << (simTime()-warmup_period) << endl;
+
+    emit(signal_boss_throughput, (double)counter_boss_defeated / (simTime()-warmup_period));
+    EV << "PLAYER - finish() - TOTAL BOSSES DEFEATED: "<< counter_boss_defeated <<". BOSS THROUGHPUT : " << counter_boss_defeated / (simTime()-warmup_period) <<". ON SIMULATION TIME : " << (simTime()-warmup_period) << endl;
 
     //delete minion queue
     while (!minion_queue.empty()){

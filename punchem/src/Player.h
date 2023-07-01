@@ -42,7 +42,7 @@ class Player : public cSimpleModule
     unsigned int counter_minion_defeated = 0;
     unsigned int counter_minion_recovered = 0;
     unsigned int counter_boss_defeated = 0;
-
+    simtime_t warmup_period = 0;
 
     Opponent *current_opponent = nullptr;
     simtime_t current_opponent_simTime;
